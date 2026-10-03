@@ -1,0 +1,265 @@
+/**
+ * Single source of truth for the organisation's Name / Address / Phone (NAP).
+ *
+ * The same values feed the visible site, the JSON-LD graph, the sitemap,
+ * llms.txt and the machine-readable feed at /data/packages.json. Entity
+ * consistency across all of these is the strongest local-SEO and GEO signal
+ * available, so nothing here may be duplicated anywhere else in the codebase.
+ *
+ * ---------------------------------------------------------------------------
+ * OWNER ACTION REQUIRED — replace every value marked `TODO` below before going
+ * live. See README.md § "Before you launch".
+ * ---------------------------------------------------------------------------
+ */
+
+export const SITE_URL = 'https://hitech-haj-umrah.in'
+
+export type Branch = {
+  id: string
+  person: string
+  personHi: string
+  phone: string
+  locality: string
+  localityHi: string
+  area: string
+  /** Flags a detail printed on the banner that still needs owner verification. */
+  note?: string
+}
+
+export type Office = {
+  id: string
+  name: string
+  nameHi: string
+  type: string
+  person: string
+  personHi: string
+  phone: string
+  locality: string
+  localityHi: string
+  street: string
+  hours: string
+  hoursHi: string
+}
+
+export const site = {
+  name: 'Hi-Tech Haj Umrah Services',
+  nameHi: 'हज उमरा सर्विस',
+  legalName: 'Hi-Tech Haj Umrah Services',
+  tagline: 'Marathwada’s Haj & Umrah desk',
+  taglineHi: 'मराठवाड़े की हज व उमरा सेवा',
+  shortDescription:
+    'Haj and Umrah travel services from Jalna, serving pilgrims across Marathwada with Umrah packages, visa assistance, air tickets, hotels, ziyarat and complete on-ground support in Makkah and Madinah.',
+  shortDescriptionHi:
+    'जालना से हज व उमरा सेवाएँ — मराठवाड़े भर के जायरीनों के लिए उमरा पैकेज, वीज़ा सहायता, एयर टिकट, होटल, ज़ियारत और मक्का-मदीना में पूरी सहायता।',
+
+  /** TODO(owner): exact street address of the Jalna head office. */
+  street: 'Jalna Head Office — address to be confirmed',
+  streetHi: 'जालना मुख्य कार्यालय — पता पुष्टि होना बाकी',
+  locality: 'Jalna',
+  localityHi: 'जालना',
+  region: 'Maharashtra',
+  regionHi: 'महाराष्ट्र',
+  postalCode: '431203',
+  country: 'IN',
+  countryHi: 'भारत',
+  /** TODO(owner): decimal coordinates of the Jalna office. */
+  geo: { lat: 19.841, lng: 75.885 },
+
+  /**
+   * TODO(owner): the banner does not publish a dedicated business number.
+   * Replace with the number pilgrims should call/WhatsApp.
+   */
+  phone: '9303313313',
+  /** TODO(owner): dedicated WhatsApp business number (may differ from phone). */
+  whatsapp: '9303313313',
+  email: 'info@hitech-haj-umrah.in', // TODO(owner)
+
+  /** Claimed or to be confirmed before use. Rendered only once `verified`. */
+  credentials: [
+    {
+      key: 'haj-umrah',
+      value: 'Assisted Hajj & Umrah departures from Jalna, Marathwada',
+      verified: true,
+    },
+    { key: 'iota', value: 'IATA recognised ticketing', verified: false },
+    { key: 'tourism', value: 'Ministry of Tourism recognised tour operator', verified: false },
+  ],
+
+  /**
+   * Banner groups. `verified: false` entries are rendered in the UI with a
+   * "confirm with office" cue so we never assert an unconfirmed fact.
+   */
+  groups: [
+    {
+      name: 'Ramadan Umrah Special',
+      nameHi: 'रमजान उमरा स्पेशल',
+      duration: '32–40 days',
+      blurb: 'Extended stay across Ramadan for Taraweeh, Qiyam and the last ten nights.',
+    },
+    {
+      name: 'Umrah 15 Days',
+      nameHi: 'उमरा 15 दिन',
+      duration: '15 days',
+      blurb: 'A compact first-Umrah package built around the core rites and essential ziyarat.',
+    },
+    {
+      name: 'Umrah 30 Days',
+      nameHi: 'उमरा 30 दिन',
+      duration: '30 days',
+      blurb: 'A month-long stay for families and pilgrims who prefer a slower, unhurried schedule.',
+    },
+    {
+      name: 'Delhi Umrah',
+      nameHi: 'दिल्ली उमरा',
+      duration: 'Delhi departures',
+      blurb: 'Group departures from Delhi with Makkah and Madinah hotels arranged together.',
+    },
+  ],
+
+  offices: [
+    {
+      id: 'jalna-head-office',
+      name: 'Jalna Head Office',
+      nameHi: 'जालना मुख्य कार्यालय',
+      type: 'head',
+      person: 'Mohan Pathan',
+      personHi: 'मोहन पठाण',
+      phone: '9175107214',
+      locality: 'Jalna, Maharashtra',
+      localityHi: 'जालना, महाराष्ट्र',
+      street: 'Address to be confirmed',
+      hours: 'Sat–Thu, 9:30 am – 8:30 pm',
+      hoursHi: 'शनि–गुरुवार, सवेरे ९:३० – रात्रि ८:३०',
+    },
+  ] satisfies Office[],
+
+  /**
+   * Branch contacts printed on the banner. Several addresses are abbreviated
+   * local landmarks rather than postal addresses; they are kept verbatim and
+   * flagged so the owner can expand them.
+   */
+  branches: [
+    {
+      id: 'asgar',
+      person: 'Sheikh Asgar',
+      personHi: 'शेख असगर',
+      phone: '9303313313',
+      locality: 'Masrit Chowk, Chhatrapati Sambhajinagar',
+      localityHi: 'मसरीत चौक, छत्रपती संभाजीनगर',
+      area: 'Chhatrapati Sambhajinagar',
+    },
+    {
+      id: 'imran',
+      person: 'Sheikh Imran',
+      personHi: 'शेख इमरान',
+      phone: '7276525242',
+      locality: 'Chhatrapati Sambhajinagar',
+      localityHi: 'छत्रपती संभाजीनगर',
+      area: 'Chhatrapati Sambhajinagar',
+    },
+    {
+      id: 'mohan',
+      person: 'Mohan Pathan',
+      personHi: 'मोहन पठाण',
+      phone: '9175107214',
+      locality: 'Jalna',
+      localityHi: 'जालना',
+      area: 'Jalna',
+    },
+    {
+      id: 'yaseer',
+      person: 'Yaseer Pathan',
+      personHi: 'यासीर पठाण',
+      phone: '9921834080',
+      locality: 'In front of Kalareshwar Holisell, Railway Chowk, Chhatrapati Sambhajinagar',
+      localityHi: 'केलारेश्वर हॉलिसेल के सामने, रेलवे चौक, छत्रपती संभाजीनगर',
+      area: 'Chhatrapati Sambhajinagar',
+    },
+    {
+      id: 'mustafa',
+      person: 'Mohd Mustafa',
+      personHi: 'मोहम्मद मुस्तफा',
+      phone: '9028543538',
+      locality: 'Near M.N. Bhavit, Manjeur, Chhatrapati Sambhajinagar',
+      localityHi: 'एम.एन. भवित के पास, मंजूर, छत्रपति संभाजीनगर',
+      area: 'Chhatrapati Sambhajinagar',
+    },
+    {
+      id: 'riyaz',
+      person: 'Moulana Riyaz Sab',
+      personHi: 'मौलाना रियाज साब',
+      phone: '973029093',
+      locality: 'Kavam Che Wauwa, Talwadi, Chhatrapati Sambhajinagar',
+      localityHi: 'कवम चे वौपा, ताळेबडा, छत्रपति संभाजीनगर',
+      area: 'Chhatrapati Sambhajinagar',
+      note: 'banner prints 9 digits — confirm with office',
+    },
+    {
+      id: 'waqatullah',
+      person: 'Waqatullah Shah',
+      personHi: 'वखतुल्लाह शेख',
+      phone: '9766633885',
+      locality: 'Bamna Polin, Pachghat, Chhatrapati Sambhajinagar',
+      localityHi: 'बामणा पोलीन, पचघटा, छत्रपति संभाजीनगर',
+      area: 'Chhatrapati Sambhajinagar',
+    },
+    {
+      id: 'qari-akbar',
+      person: 'Qari Akbar',
+      personHi: 'कारी अकबर',
+      phone: '8182828080',
+      locality: 'Pachma Ringana (landmark as printed on banner)',
+      localityHi: 'पचमा रिंगणा (बैनर पर छपा निशान)',
+      area: 'Jalna district',
+      note: 'locality to be expanded by owner',
+    },
+  ] satisfies Branch[],
+
+  /**
+   * Social handles — TODO(owner): create and confirm these profiles before
+   * launch, then replace the placeholder handles below.
+   */
+  social: {
+    facebook: 'https://www.facebook.com/hitech-haj-umrah-jalna',
+    instagram: 'https://www.instagram.com/hitech.haj.umrah/',
+    youtube: '',
+  },
+
+  /**
+   * Aggregate facts. Only `verified` values are ever rendered as a number on
+   * the page; the rest are suppressed rather than guessed.
+   */
+  stats: [
+    { key: 'districts', value: 8, suffix: '', labelKey: 'stats.districts', verified: true },
+    { key: 'contacts', value: 8, suffix: '', labelKey: 'stats.contacts', verified: true },
+    { key: 'packageTiers', value: 3, suffix: '', labelKey: 'stats.packageTiers', verified: true },
+    { key: 'years', value: null, suffix: '+', labelKey: 'stats.years', verified: false },
+  ],
+
+  /** Values the owner must supply; surfaced on /contact as a transparency note. */
+  pendingFacts: [
+    'Exact street address and map pin of the Jalna head office',
+    'Dedicated business phone and WhatsApp number',
+    'Years in operation and total pilgrims served',
+    'IATA / Ministry of Tourism registration numbers, if held',
+    'Google Business Profile URL for verified customer reviews',
+  ],
+}
+
+export type Site = typeof site
+
+/** Full postal string used in schema.org and on the contact page. */
+export function postalAddress(locale: 'en' | 'hi') {
+  return {
+    streetAddress: locale === 'hi' ? site.streetHi : site.street,
+    addressLocality: locale === 'hi' ? site.localityHi : site.locality,
+    addressRegion: locale === 'hi' ? site.regionHi : site.region,
+    postalCode: site.postalCode,
+    addressCountry: site.country,
+  }
+}
+
+export const allContacts = [
+  ...site.offices.map((o) => ({ ...o, isOffice: true as const })),
+  ...site.branches.map((b) => ({ ...b, isOffice: false as const })),
+]

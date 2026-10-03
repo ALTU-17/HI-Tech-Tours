@@ -1,0 +1,15 @@
+# Netlify / Cloudflare Pages host rules.
+#
+# The real site lives under /en and /hi so each language can carry its own
+# <html lang> and be crawled independently. Bare `/` and extensionless URLs are
+# forwarded here rather than handled in the app.
+
+/    /en/    302
+/en    /en/    301
+/hi    /hi/    301
+
+# Fingerprinted build assets never change; everything else revalidates.
+/_next/static/*  Cache-Control: public, max-age=31536000, immutable
+/*.svg           Cache-Control: public, max-age=31536000, immutable
+/*.woff2         Cache-Control: public, max-age=31536000, immutable
+/*.png           Cache-Control: public, max-age=31536000, immutable

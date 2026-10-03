@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 64" width="220" height="64" role="img" aria-labelledby="t d">
+  <title id="t">Hi-Tech Haj Umrah Services, Jalna</title>
+  <desc id="d">Eight-point star badge enclosing a Kaaba, with the bilingual wordmark.</desc>
+
+  <!-- Badge -->
+  <g fill="none" stroke="#C9A227" stroke-width="1.6" opacity="0.9">
+    <path d="M32 3 L61 32 L32 61 L3 32 Z"/>
+    <path d="M32 11.7 L52.3 32 L32 52.3 L11.7 32 Z" opacity="0.5"/>
+    <circle cx="32" cy="32" r="29.4" opacity="0.35"/>
+  </g>
+  <rect x="20.5" y="24" width="23" height="23" rx="1.2" fill="#0B5D3B" opacity="0.94"/>
+  <rect x="20.5" y="32.4" width="23" height="3.6" fill="#C9A227"/>
+  <rect x="34.6" y="24" width="3.4" height="23" fill="#C9A227" opacity="0.65"/>
+
+  <!-- Wordmark -->
+  <text x="72" y="28" font-family="Georgia, 'Times New Roman', serif" font-size="21" font-weight="700" fill="#062E22" letter-spacing="0.4">HI-TECH</text>
+  <text x="73" y="42" font-family="Helvetica, Arial, sans-serif" font-size="8" font-weight="600" fill="#0B5D3B" letter-spacing="1.9">HAJ UMRAH SERVICES</text>
+  <text x="73" y="55" font-family="'Noto Sans Devanagari', 'Nirmala UI', sans-serif" font-size="9" font-weight="500" fill="#4A5568">हज उमरा सर्विस</text>
+</svg>

@@ -1,0 +1,14 @@
+node_modules
+.next
+out
+.DS_Store
+*.pem
+.env*
+!.env.example
+.vercel
+.netlify
+*.tsbuildinfo
+next-env.d.ts
+
+# Freebuff desktop-app metadata (local tooling, not part of the site)
+.freebuff

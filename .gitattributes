@@ -1,0 +1,22 @@
+# Normalize line endings in the repository so that the Windows working copy
+# and the Linux Vercel build agree, avoiding whitespace-only diff churn.
+* text=auto eol=lf
+
+# Files that must stay CRLF on Windows checkout.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Binary / non-text assets.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.webp binary
+*.avif binary
+*.ico binary
+*.woff binary
+*.woff2 binary
+
+# Lockfiles and generated files that should not be diffed or merged by hand.
+package-lock.json -diff linguist-generated=true
