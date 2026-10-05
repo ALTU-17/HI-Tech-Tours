@@ -207,12 +207,12 @@ export const site = {
       area: 'Beed district',
     },
     {
-      id: 'waqatullah',
-      person: 'Waqatullah Shah',
-      personHi: 'वखतुल्लाह शेख',
+      id: 'ubaidullah',
+      person: 'Ubaidullah Shah',
+      personHi: 'उबेदुल्लाह शाह',
       phone: '9766633885',
-      locality: 'Bamna Polin, Pachghat, CSN (Aurangabad)',
-      localityHi: 'बामणा पोलीन, पचघटा, छत्रपति संभाजीनगर',
+      locality: 'Kamgar Chowk, Pandarpur, CSN (Aurangabad)',
+      localityHi: 'कामगार चौक, पंडारपुर, औरंगाबाद',
       area: 'CSN (Aurangabad)',
     },
     // {
