@@ -137,6 +137,10 @@ export const en = {
       'Sample layout. These are placeholders — replace them with real customer reviews before launch. No ratings are shown in search results until genuine reviews are published.',
     reviewSampleChip: 'Sample',
     trustStrip: 'Nine districts · Six feeder cities · One office that answers',
+    founderEyebrow: 'From the founder',
+    founderTitle: 'The person at the other end of the line',
+    founderLede:
+      'Ashfaq Shaikh — Founder and Expedition Guide — leads every Aurangabad departure himself and carries the number you call when something needs sorting in Saudi Arabia.',
   },
 
   packagesPage: {

@@ -322,6 +322,75 @@ export const guides: Guide[] = [
       },
     ],
   },
+  {
+    slug: 'expedition-guide',
+    title: {
+      en: 'Your expedition guide: who accompanies you, and how to know they are thorough',
+      hi: 'आपका प्रतिदिन मार्गदर्शक: कौन साथ ले जाता है, और कैसे पता चलेगा कि वह समझदार हैं',
+    },
+    description: {
+      en: 'What an expedition guide does from landing to return, why the same person should carry you from document check to final pickup, and the signs that your guide is hardworking and leaves no pilgrim behind.',
+      hi: 'लैंडिंग से लेकर वापसी तक प्रतिदिन मार्गदर्शक क्या करता है, क्यों एक ही व्यक्ति को दस्तावेज़ जाँच से लेकर आखिरी पिकअप तक साथ रखना चाहिए, और यह संकेत कि आपका मार्गदर्शक मेहनती हैं और किसी भी जायरीन को पीछे नहीं छोड़ते।',
+    },
+    answer: {
+      en: 'Your expedition guide is the person who stays with your group in Saudi Arabia from landing to return. They are the one who meets you at the airport, checks your documents, walks every step of the Haram with you, and is the number you call when something needs sorting. A good expedition guide works hard at every stage — from the first document check to the last return pickup — listing every detail so families never miss a step, and taking each and every pilgrim along with them so no one is left alone in a foreign country.',
+      hi: 'आपका प्रतिदिन मार्गदर्शक वह व्यक्ति है जो सऊदी अरब में आपके समूह के साथ लैंडिंग से लेकर वापसी तक रहता है। वही है जो हवाई अड्डे पर मिलेंगे, आपके दस्तावेज़ों की जाँच करेंगे, हरम का हर कद आपके साथ चलेंगे, और वही नंबर है जिस पर आप फ़ोन कर सकते हैं जब किसी चीज़ को सुलझाने की ज़रूरत हो। एक अच्छा प्रतिदिन मार्गदर्शक हर चरण पर मेहनत करता है — पहली दस्तावेज़ जाँच से लेकर आखिरी वापसी पिकअप तक — हर चीज़ का ध्यान रखता है ताकि कोई परिवार कदम न छोड़े, और हर एक जायरीन को साथ ले जाता है ताकि कोई विदेश में अकेला न रहे।',
+    },
+    datePublished: '2026-10-03',
+    dateModified: '2026-10-03',
+    sections: [
+      {
+        heading: {
+          en: 'What an expedition guide actually does',
+          hi: 'प्रतिदिन मार्गदर्शक वास्तव में क्या करता हैं',
+        },
+        body: {
+          en: [
+            'The guide meets your group at the airport in Saudi Arabia, accompanies you through immigration, and stays with you through hotel check-in, the first Tawaf, and the first few days of orientation. After that, they are on call for the whole group for the duration of the stay — document issues, health questions, transport changes, and anything that does not go to plan.',
+            'On return, the same guide is there for your final pickup, makes sure every bag is loaded, and walks with you until you are on the plane home. The person who greets you on arrival is the same person who sees you off at the airport.',
+          ],
+          hi: [
+            'मार्गदर्शक आपके समूह का स्वागत सऊदी अरब के हवाई अड्डे पर करता है, आपके साथ आवंशनीकरण के माध्यम से चलता है, और होटल चेक-इन, पहला तवाफ़ और शुरुआती कुछ दिनों के अभियान के बाद तक आपके साथ रहता है। उसके बाद, वह पूरे समूह के लिए बुक रहा होता है जब तक ठहराव की अवधि निर्धारित नहीं होती — दस्तावेज़ समस्याएँ, स्वास्थ्य सवाल, ट्रांसपोर्ट बदलाव और कुछ भी जो योजना के साथ नहीं चलता।',
+            'वापसी पर, वही मार्गदर्शक आपके आखिरी पिकअप के लिए होता है, यह सुनिश्चित करता है कि हर बैग लोड हो गया है, और आपके हवाई जहाज़ पर बैठे जाने तक आपके साथ चलता है। जो आपका स्वागत पहले हवाई अड्डे पर करता है, वही वही है जो आपका विदाई पहले हवाई अड्डे पर देखता है।',
+          ],
+        },
+      },
+      {
+        heading: {
+          en: 'How to tell if your guide is thorough',
+          hi: 'कैसे पता चलेगा कि आपका मार्गदर्शक समझदार हैं',
+        },
+        body: {
+          en: [
+            'A thorough guide lists every detail — hotel distances, meal plans, prayer timings, emergency contacts — instead of assuming you will figure it out on the spot. They work hard at every stage: document checks, pickup coordination, hotel handovers, and daily check-ins with the group. They answer every question in full, and they make sure each pilgrim is looked after.',
+            'At Hi-Tech Haj Umrah Services, the founder Ashfaq Shaikh leads every departure himself. He is hardworking and listing from the first document check to the last return pickup, and he takes each and every pilgrim along with him — sab ku sath leke chalte hai — because no family should have to sort things out alone in a foreign country.',
+          ],
+          hi: [
+            'एक समझदार मार्गदर्शक हर चीज़ की सूची बनाता है — होटल की दूरी, भोजन योजना, प्रार्थना समय, आपात संपर्क — बजाय इसके कि वह मान लेगा कि आप ठहर पर ठीक से ढूँढ़ लेंगे। वह हर चरण पर मेहनत करता है: दस्तावेज़ जाँच, पिकअप का समन्वय, होटल हाथाहाथ, और समूह के साथ दैनिक जाँच। वह हर सवाल का पूरा जवाब देता है, और यह सुनिश्चित करता है कि प्रत्येक जायरीन का ध्यान रहे।',
+            'हाइ-टेक हज उमरा सर्विसेज में, संस्थापक अशफ़ाक शेख़ हर रवाने का नेतृत्व स्वयं करते हैं। वह मेहनती और सूचीबद्ध हैं — पहली दस्तावेज़ जाँच से लेकर आखिरी वापसी पिकअप तक — और वह हर एक जायरीन को साथ ले जाते हैं — सबकुछ साथ लेकर चलते हैं — क्योंकि किसी परिवार को विदेश में अकेला चीज़ों को सुलझाने की ज़रूरत नहीं है।',
+          ],
+        },
+      },
+      {
+        heading: {
+          en: 'What to expect from our Expedition Guide',
+          hi: 'हमारे प्रतिदिन मार्गदर्शक से आशा क्या करें',
+        },
+        body: {
+          en: [
+            'Before you travel: the office confirms the group, sends a written itinerary with pickup time and point, and answers any question about visa or documents.',
+            'In Saudi Arabia: a dedicated guide meets you at the airport, checks documents, and stays on call for the whole group. They carry the local number, the hotel address, and the emergency contact.',
+            'Throughout: the guide walks the Haram with you, explains the rites, helps with Qurbani or Rawdah bookings, and checks in daily so no one is missed.',
+          ],
+          hi: [
+            'यात्रा से पहले: कार्यालय समूह की पुष्टि करता है, लिखित यात्रा-क्रम भेजता है जिसमें पिकअप समय और बिंदु होता है, और वीज़ा या दस्तावेज़ों के बारे में किसी भी सवाल का जवाब देता है।',
+            'सऊदी अरब में: एक समर्पित मार्गदर्शक आपका स्वागत हवाई अड्डे पर करता है, दस्तावेज़ों की जाँच करता है, और पूरे समूह के लिए बुक रहा होता है। वह स्थानीय नंबर, होटल का पता, और आपात संपर्क को साथ रखता है।',
+            'संपूर्ण: मार्गदर्शक हरम के साथ आपका चलता है, अनुष्ठानों की व्याख्या करता है, कुर्बानी या रावढ़ा बुकिंग में मदद करता है, और दैनिक जाँच करता है ताकि कोई भी जायरीन न छूटे।',
+          ],
+        },
+      },
+    ],
+  },
 ]
 
 export function getGuide(slug: string) {

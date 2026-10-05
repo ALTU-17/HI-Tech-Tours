@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 
 import { BranchesSection, CtaBand } from '@/components/home/Branches'
 import { CoverageSection, PillarsSection } from '@/components/home/Coverage'
+import { FounderSection } from '@/components/home/FounderSection'
 import { Hero } from '@/components/home/Hero'
 import { InclusionsSection, JourneySection } from '@/components/home/Inclusions'
 import { PackagesSection } from '@/components/home/Packages'
@@ -124,6 +125,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <InclusionsSection locale={locale} />
       <JourneySection locale={locale} />
       <PillarsSection locale={locale} />
+      <FounderSection locale={locale} />
       <CoverageSection locale={locale} />
       <ReviewsSection locale={locale} />
 

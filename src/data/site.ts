@@ -228,6 +228,24 @@ export const site = {
   ] as Branch[],
 
   /**
+   * Founder profile — surfaced on the home page, About page, and in
+   * the expedition guide article. Ashfaq Shaikh leads every Aurangabad
+   * departure himself and carries the local number for the whole group.
+   */
+  founder: {
+    name: 'Ashfaq Shaikh',
+    nameHi: 'अशफ़ाक शेख़',
+    title: 'Founder & Expedition Guide',
+    titleHi: 'संस्थापक एवं प्रतिदिन मार्गदर्शक',
+    phone: '9303313313',
+    /** Multilingual bio rendered on /about and as the guide answer. */
+    description: {
+      en: 'Ashfaq Shaikh has led Umrah and Hajj groups from Aurangabad to Saudi Arabia for over a decade. He is hardworking from the first document check to the last return pickup, listing every detail so families never miss a step. He takes each and every pilgrim along with him — sab ku sath leke chalte hai — making sure no one is left to sort things out alone in a foreign country.',
+      hi: 'अशफ़ाक शेख़ दशकों से अउरंगाबाद से सऊदी अरब जाने वाले हज-उमरा समूहों का नेतृत्व करते हैं। वह पहली दस्तावेज़ जाँच से लेकर आखिरी वापसी पिकअप तक मेहनती रहते हैं, हर चीज़ को ध्यान में रखते हैं जिससे कोई परिवार कदम छोड़ न सके। वह हर एक जायरीन को साथ ले जाते हैं — सबकुछ साथ लेकर चलते हैं — यह सुनिश्चित करते हैं कि कोई विदेश में अकेला न रहे।',
+    },
+  },
+
+  /**
    * Social handles — TODO(owner): create and confirm these profiles before
    * launch, then replace the placeholder handles below.
    */

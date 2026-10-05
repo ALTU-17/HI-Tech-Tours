@@ -177,8 +177,8 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
               <h2 className="text-xs font-bold tracking-[0.18em] text-forest-700 uppercase">
                 {d.nav.guides}
               </h2>
-              <ul className="mt-4 space-y-2.5 text-sm">
-                {[
+              <ul className="mt-4 space-y-2.5 text-sm">                {[
+                  { slug: 'expedition-guide', en: 'Expedition guide', hi: 'प्रतिदिन मार्गदर्शक' },
                   { slug: 'haj-vs-umrah', en: 'Haj vs Umrah', hi: 'हज बनाम उमरा' },
                   { slug: 'umrah-visa-for-indians', en: 'Umrah visa for Indians', hi: 'भारतीयों के लिए उमरा वीज़ा' },
                   { slug: 'choosing-an-umrah-package', en: 'Choosing a package', hi: 'पैकेज कैसे चुनें' },
