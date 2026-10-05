@@ -222,7 +222,7 @@ a dual LTR/RTL progress rail is driven by real signals (`document.fonts.ready` +
 ## Deployment
 
 The build output is a plain folder — any static host works. (Locally this
-also produces `out/`; on Vercel the Next.js builder handles it — see below.)
+also produces `out/`; on Vercel it is published as-is — see below.)
 
 ```bash
 npm run build
@@ -232,14 +232,24 @@ npm run build
 **Netlify / Cloudflare Pages** — build `npm run build`, publish `out`.
 `public/_redirects` is included and handles `/` → `/en/` and cache headers.
 
-**Vercel** — `vercel.json` is included (build command, cache headers,
-redirects). Import the GitHub repo at <https://github.com/ALTU-17/HI-Tech-Tours>
-and leave the framework preset on **Next.js**. Do **not** set an Output
-Directory in the dashboard or in `vercel.json`: `output: 'export'` writes to
-`out/`, and Vercel's Next.js builder detects the export and serves that
-directory automatically. Pointing Output Directory at `out` breaks the deploy
-with `routes-manifest.json couldn't be found`, because the builder looks for
-Next.js server artifacts there and a static export has none.
+**Vercel** — `vercel.json` pins `"framework": null` (the "Other" / static
+preset) with `"outputDirectory": "out"`, plus the build command, cache
+headers and redirects. Import the GitHub repo at
+<https://github.com/ALTU-17/HI-Tech-Tours> and push — that is the whole
+configuration. Vercel runs `npm run build` and publishes `out/` as a plain
+static site; both keys in the file override any build settings saved in the
+dashboard, so the deploy is deterministic.
+
+Why not the Next.js preset: the Next.js builder always reads
+`routes-manifest.json` from the output directory, which a static export
+(`output: 'export'`) never produces. Any deploy that points that builder at
+`out/` — whether via `"outputDirectory": "out"` in `vercel.json` or an Output
+Directory field in **Project → Settings → Build & Development** — fails with
+`routes-manifest.json couldn't be found`. If a deploy ever fails that way
+again, clear the dashboard's Output Directory field and check the production
+deployment for a saved configuration override (the dashboard shows a banner:
+"Configuration Settings in the current Production deployment differ from your
+current Project Settings").
 
 ### Vercel Web Analytics
 
