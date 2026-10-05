@@ -145,12 +145,12 @@ export const site = {
   branches: [
     {
       id: 'asgar',
-      person: 'Sheikh Asgar',
-      personHi: 'शेख असगर',
+      person: 'Sheikh Asfak',
+      personHi: 'शेख अशफाक',
       phone: '9303313313',
-      locality: 'Masrit Chowk, CSN (Aurangabad)',
-      localityHi: 'मसरीत चौक, छत्रपती संभाजीनगर(अउरंगाबाद)',
-      area: 'CSN (Aurangabad)',
+      locality: 'Mahavir Chowk, Ambad',
+      localityHi: 'महावीर चौक, अंबड',
+      area: 'Jalna district',
     },
     {
       id: 'imran',
