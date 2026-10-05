@@ -195,7 +195,7 @@ export const site = {
       phone: '9730229093',
       locality: 'Kavam Che Wauwa, Talwadi, CSN (Aurangabad)',
       localityHi: 'कचग्म् चे चौगान, ताललहर्टा, औरंगाबाद',
-      area: 'CSN (Aurangabad)',
+      area: 'Devgaon Kannad (Aurangabad)',
     },
     {
       id: 'qari-akther',
