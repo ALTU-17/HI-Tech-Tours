@@ -193,8 +193,8 @@ export const site = {
       person: 'Maulana Riyaz Sahab',
       personHi: 'मौलाना रियाज साहब',
       phone: '9730229093',
-      locality: 'Kavam Che Wauwa, Talwadi, CSN (Aurangabad)',
-      localityHi: 'कचग्म् चे चौगान, ताललहर्टा, औरंगाबाद',
+      locality: 'Devgaon Kannad (Aurangabad)',
+      localityHi: 'डेवगाँव कन्नड, औरंगाबाद',
       area: 'Devgaon Kannad (Aurangabad)',
     },
     {
