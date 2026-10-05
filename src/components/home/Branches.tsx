@@ -4,11 +4,12 @@ import { Icon } from '@/components/Icon'
 import { Reveal } from '@/components/Reveal'
 import { SectionHeading } from '@/components/ui/SectionHeading'
 import { site } from '@/data/site'
-import { enquiryMessage, telHref, whatsappHref } from '@/lib/contact'
+import { enquiryMessage, mapEmbedUrl, telHref, whatsappHref } from '@/lib/contact'
 import { getDictionary, t_, type Locale } from '@/i18n'
 
 export function BranchesSection({ locale }: { locale: Locale }) {
   const d = getDictionary(locale)
+  const office = site.offices[0]
 
   return (
     <section className="py-20 sm:py-24">
@@ -18,6 +19,66 @@ export function BranchesSection({ locale }: { locale: Locale }) {
           title={d.sections.branches.title}
           lede={d.sections.branches.lede}
         />
+
+        {/* Head office on the map — the pin every branch number starts from. */}
+        <Reveal className="mt-12">
+          <div className="grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-stretch">
+            <div className="overflow-hidden rounded-card border border-sand/80">
+              <iframe
+                title={d.sections.branches.mapTitle}
+                src={mapEmbedUrl()}
+                className="h-72 w-full sm:h-80 lg:h-full lg:min-h-[24rem]"
+                style={{ border: 0 }}
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+
+            <div className="card-surface flex flex-col justify-between gap-6 p-6">
+              <div className="space-y-4 text-[0.9375rem] leading-relaxed">
+                <p className="text-xs font-bold tracking-[0.18em] text-forest-700 uppercase">
+                  {d.contactPage.headOffice}
+                </p>
+                <p className="flex items-start gap-3">
+                  <Icon name="pin" className="mt-0.5 h-4.5 w-4.5 shrink-0 text-forest-600" />
+                  <span>
+                    {t_({ en: office.name, hi: office.nameHi }, locale)}
+                    <br />
+                    {t_({ en: office.street, hi: office.streetHi }, locale)}
+                    <br />
+                    {t_({ en: office.locality, hi: office.localityHi }, locale)} — {site.postalCode}
+                  </span>
+                </p>
+                <p className="flex items-center gap-3">
+                  <Icon name="clock" className="h-4.5 w-4.5 shrink-0 text-forest-600" />
+                  <span>
+                    {d.contactPage.hours}:{' '}
+                    {t_({ en: office.hours, hi: office.hoursHi }, locale)}
+                  </span>
+                </p>
+                <p className="flex items-center gap-3">
+                  <Icon name="phone" className="h-4.5 w-4.5 shrink-0 text-forest-600" />
+                  <a
+                    href={telHref(office.phone)}
+                    className="font-semibold text-forest-800 tabular link-underline"
+                  >
+                    {office.phone}
+                  </a>
+                </p>
+              </div>
+              <a
+                href={office.mapUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex w-fit items-center gap-2 rounded-full border border-forest-700/25 px-5 py-2.5 text-sm font-semibold text-forest-800 transition-colors hover:bg-forest-100/60"
+              >
+                <Icon name="external" className="h-4 w-4" />
+                {d.contactPage.directions}
+              </a>
+            </div>
+          </div>
+        </Reveal>
 
         <ul className="mt-12 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {site.branches.map((branch, i) => (

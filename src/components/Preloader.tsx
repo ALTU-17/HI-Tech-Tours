@@ -293,11 +293,19 @@ export function Preloader({ locale }: { locale: Locale }) {
           </div>
         </div>
 
-        {/* ---- Date ---- */}
+        {/*
+          ---- Date ----
+
+          This is a live "today", but the HTML is baked at build time and served
+          as a static file. A visitor who opens the site on any day after the
+          build would otherwise trigger a hydration mismatch on every page, so
+          the two date spans opt out explicitly. The text is decorative and
+          aria-hidden; suppressing here costs nothing real.
+        */}
         <div className="mt-8 flex flex-col items-center gap-1 text-[0.66rem] tracking-[0.14em] text-paper/40 uppercase">
-          <span>{formatHijri(now, locale)}</span>
+          <span suppressHydrationWarning>{formatHijri(now, locale)}</span>
           <span className="h-px w-6 bg-paper/20" />
-          <span>{formatGregorian(now, locale)}</span>
+          <span suppressHydrationWarning>{formatGregorian(now, locale)}</span>
         </div>
       </div>
 

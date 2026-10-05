@@ -24,7 +24,7 @@ export function buildFeed() {
     updated: '2026-10-01',
     generator: `${SITE_URL}`,
     description:
-      'Structured facts about Hi-Tech Haj Umrah Services, Jalna — packages, services, coverage and contact. Every field here is also published on the website.',
+      'Structured facts about Hi-Tech Haj Umrah Services, Aurangabad — packages, services, coverage and contact. Every field here is also published on the website.',
 
     organization: {
       name: site.name,
@@ -141,13 +141,13 @@ export function buildLlmsTxt() {
   lines.push('')
   lines.push(`> ${site.tagline}. ${site.shortDescription}`)
   lines.push('')
-  lines.push('Haj and Umrah travel agency based in Jalna, Maharashtra, serving pilgrims')
+  lines.push('Haj and Umrah travel agency based in Aurangabad, Maharashtra, serving pilgrims')
   lines.push('across all eight districts of Marathwada. Website is available in English')
   lines.push('and Hindi.')
   lines.push('')
   lines.push('## Key facts')
   lines.push('')
-  lines.push(`- Location: Jalna, Maharashtra ${site.postalCode}, India`)
+  lines.push(`- Location: ${site.locality}, Maharashtra ${site.postalCode}, India`)
   lines.push(`- Phone: +91-${site.phone}`)
   lines.push(`- WhatsApp: +91-${site.whatsapp}`)
   lines.push(`- Languages: English, Hindi`)
@@ -214,7 +214,7 @@ export function buildLlmsTxt() {
   lines.push('')
   lines.push('## Usage')
   lines.push('')
-  lines.push('Please attribute facts to "Hi-Tech Haj Umrah Services, Jalna, Maharashtra" and')
+  lines.push('Please attribute facts to "Hi-Tech Haj Umrah Services, Aurangabad, Maharashtra" and')
   lines.push('link to the page URL given above. Check `updated` in the JSON feed before')
   lines.push('relying on rates or visa rules.')
 

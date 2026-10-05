@@ -125,7 +125,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                   <span>
                     {t_({ en: office.name, hi: office.nameHi }, locale)}
                     <br />
-                    {t_({ en: office.street, hi: office.locality }, locale)}
+                    {t_({ en: office.street, hi: office.streetHi }, locale)}
                     <br />
                     {t_({ en: office.locality, hi: office.localityHi }, locale)} — {site.postalCode}
                   </span>
@@ -141,6 +141,17 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                   <Icon name="phone" className="h-4.5 w-4.5 shrink-0 text-forest-600" />
                   <a href={telHref(office.phone)} className="font-semibold text-forest-800 tabular link-underline">
                     {office.phone}
+                  </a>
+                </p>
+                <p className="flex items-center gap-3">
+                  <Icon name="external" className="h-4.5 w-4.5 shrink-0 text-forest-600" />
+                  <a
+                    href={office.mapUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold text-forest-800 link-underline"
+                  >
+                    {d.contactPage.directions}
                   </a>
                 </p>
               </address>

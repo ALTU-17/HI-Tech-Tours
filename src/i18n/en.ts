@@ -10,11 +10,11 @@
 
 export const en = {
   meta: {
-    title: 'Hi-Tech Haj Umrah Services — Haj & Umrah from Jalna, Marathwada',
+    title: 'Hi-Tech Haj Umrah Services — Haj & Umrah from Aurangabad, Marathwada',
     titleTemplate: '%s · Hi-Tech Haj Umrah Services',
     description:
-      'Haj and Umrah travel services from Jalna serving all eight districts of Marathwada. Umrah packages, visa assistance, air tickets, hotels, ziyarat, Indian food and on-ground support in Makkah and Madinah.',
-    ogAlt: 'Hi-Tech Haj Umrah Services, Jalna — Haj and Umrah packages for Marathwada',
+      'Haj and Umrah travel services from Aurangabad serving all eight districts of Marathwada. Umrah packages, visa assistance, air tickets, hotels, ziyarat, Indian food and on-ground support in Makkah and Madinah.',
+    ogAlt: 'Hi-Tech Haj Umrah Services, Aurangabad — Haj and Umrah packages for Marathwada',
   },
 
   nav: {
@@ -63,7 +63,7 @@ export const en = {
   },
 
   hero: {
-    eyebrow: 'Haj & Umrah from Jalna, Marathwada',
+    eyebrow: 'Haj & Umrah from Marathwada',
     titleTop: 'Turn the dream of Umrah',
     titleBottom: 'into something real',
     subtitle:
@@ -124,13 +124,14 @@ export const en = {
     branches: {
       eyebrow: 'Reach us',
       title: 'Eight numbers, one office',
-      lede: 'Call the contact closest to you, or start at the Jalna head office.',
+      lede: 'Call the contact closest to you, or start at the Aurangabad head office.',
+      mapTitle: 'Head office map',
       viewContact: 'Full contact page',
     },
   },
 
   home: {
-    heroCtaPrimary: 'Call the Jalna office',
+    heroCtaPrimary: 'Call the Aurangabad head office',
     heroCtaSecondary: 'Ask on WhatsApp',
     reviewSampleNote:
       'Sample layout. These are placeholders — replace them with real customer reviews before launch. No ratings are shown in search results until genuine reviews are published.',
@@ -154,7 +155,7 @@ export const en = {
       'Hajj in India is allotted only by the Haj Committee of India. We prepare your application, documents and pre-Hajj medical formalities correctly.',
     lede: 'Hajj quota in India comes from one place only: the Haj Committee of India, a statutory body under the Ministry of Minority Affairs. No agency can sell it, reserve it or allocate it. What we do is make sure that when you apply, nothing is rejected on a technicality.',
     factTitle: 'The three things to get right',
-    ctaTitle: 'Talk to the Jalna office about Hajj',
+    ctaTitle: 'Talk to the Aurangabad head office about Hajj',
     ctaBody:
       'Bring your passport and any previous application paperwork. We will tell you exactly which step is yours and which ones we handle.',
   },
@@ -169,7 +170,7 @@ export const en = {
   locationsPage: {
     title: 'Marathwada and feeder cities',
     description:
-      'Umrah and Hajj services for Jalna, Chhatrapati Sambhajinagar, Nanded, Latur, Beed, Parbhani, Hingoli, Washim, Dharashiv and feeder cities, with the nearest airport and road distance for each.',
+      'Umrah and Hajj services for Jalna, CSN (Aurangabad), Nanded, Latur, Beed, Parbhani, Hingoli, Washim, Dharashiv and feeder cities, with the nearest airport and road distance for each.',
     lede: 'Pick your district for the nearest airport, the road distance, and the contact who handles your area.',
     nearestAirport: 'Nearest airport',
     airports: 'Airports we use',
@@ -188,11 +189,12 @@ export const en = {
   contactPage: {
     title: 'Contact',
     description:
-      'Call the Jalna head office or any of our eight branch contacts across Chhatrapati Sambhajinagar and Marathwada. Office hours, WhatsApp and directions.',
+      'Call the Aurangabad head office or any of our eight branch contacts across CSN (Aurangabad) and Marathwada. Office hours, WhatsApp and directions.',
     lede: 'One call is usually enough to get an answer on packages, dates and the current rate.',
     headOffice: 'Head office',
     branchContacts: 'Branch contacts',
     hours: 'Office hours',
+    directions: 'Get directions',
     branchesNote: 'Landmarks are reproduced as printed on our banner; full addresses are confirmed at the time of booking.',
     faqTitle: 'Before you call',
     pendingTitle: 'Information we are still confirming',
@@ -203,11 +205,11 @@ export const en = {
   aboutPage: {
     title: 'About us',
     description:
-      'Hi-Tech Haj Umrah Services is a Haj and Umrah desk based in Jalna, Marathwada, with branch contacts across Chhatrapati Sambhajinagar.',
-    lede: 'A Haj and Umrah desk in Jalna, serving the eight districts of Marathwada with group departures that are planned and staffed locally.',
+      'Hi-Tech Haj Umrah Services is a Haj and Umrah desk based in Aurangabad, Marathwada, with branch contacts across CSN (Aurangabad).',
+    lede: 'A Haj and Umrah desk in Aurangabad, serving the eight districts of Marathwada with group departures that are planned and staffed locally.',
     storyTitle: 'How we work',
     story: [
-      'We are based in Jalna, and most of the pilgrims who travel with us come from within a few hours of our door — Latur and Beed to the west, Nanded and Parbhani to the east, Washim and Hingoli to the north. That distance is the reason our office exists. A Haj and Umrah desk that is actually reachable changes how much help a family gets before they leave, and how much they can sort out when something goes wrong in a foreign country.',
+      'We are based in Aurangabad, and most of the pilgrims who travel with us come from within a few hours of our door — Latur and Beed to the west, Nanded and Parbhani to the east, Washim and Hingoli to the north. That distance is the reason our office exists. A Haj and Umrah desk that is actually reachable changes how much help a family gets before they leave, and how much they can sort out when something goes wrong in a foreign country.',
       'The work is unglamorous and it is mostly preparation: checking that a passport has six months left, that a photograph is the right size and the right background, that a Hajj application names a previous attempt honestly. Most problems in this industry are not dramatic — they are a document that was slightly wrong, filed too late, or explained badly to someone who was nervous.',
       'So the promise is narrow on purpose. We will tell you the walking distance to the hotel before you pay. We will show you what is not included. We will not claim to get you Hajj quota, because nobody legitimately can. And when you are in Makkah, there will be a number you can call.',
     ],
@@ -225,13 +227,13 @@ export const en = {
 
   reviewsPage: {
     title: 'Reviews',
-    description: 'Pilgrim feedback from Marathwada for Hi-Tech Haj Umrah Services, Jalna.',
+    description: 'Pilgrim feedback from Marathwada for Hi-Tech Haj Umrah Services, Aurangabad.',
     lede: 'What people from across Marathwada have said after travelling with us.',
     sampleNote:
       'The reviews below are sample content showing how this page will look. They are not real customer reviews and are not published to search engines as such. Replace them with genuine reviews collected from pilgrims.',
     googleTitle: 'Verified reviews',
     googleBody:
-      'Once a Google Business Profile is active for our Jalna office, verified reviews will appear here and in search results. Until then, please ask anyone who travelled with us to leave a review — it is the most useful thing they can do for another pilgrim.',
+      'Once a Google Business Profile is active for our Aurangabad head office, verified reviews will appear here and in search results. Until then, please ask anyone who travelled with us to leave a review — it is the most useful thing they can do for another pilgrim.',
   },
 
   faqPage: {
@@ -249,14 +251,14 @@ export const en = {
   },
 
   cta: {
-    title: 'Talk to the Jalna office',
+    title: 'Talk to the Aurangabad head office',
     body: 'Tell us your district, how many pilgrims and roughly when you want to travel. We answer the same day with the packages that fit and a rate for your dates.',
     primary: 'Call now',
     secondary: 'WhatsApp',
   },
 
   footer: {
-    tagline: 'Haj and Umrah services from Jalna, serving Marathwada.',
+    tagline: 'Haj and Umrah services from Aurangabad, serving Marathwada.',
     quickLinks: 'Quick links',
     coverageLinks: 'Marathwada coverage',
     contactTitle: 'Contact',

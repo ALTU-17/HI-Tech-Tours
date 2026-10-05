@@ -80,7 +80,7 @@ export const faqs: FaqItem[] = [
       hi: 'जालना और मराठवाड़ा के जायरीन आमतौर पर किस हवाई अड्डे से उड़ान भरते हैं?',
     },
     a: {
-      en: 'Most pilgrims from Jalna use Chhatrapati Sambhajinagar airport (IXU), about 65 km from Jalna, or fly from Mumbai. Pilgrims from the eastern districts — Latur, Beed, Parbhani and Dharashiv — usually use Hyderabad, and those from Washim and Hingoli usually use Nagpur. Each location page on this site lists the nearest airports and the road distance for that district.',
+      en: 'Most pilgrims from Jalna use CSN (Aurangabad) airport (IXU), about 65 km from Jalna, or fly from Mumbai. Pilgrims from the eastern districts — Latur, Beed, Parbhani and Dharashiv — usually use Hyderabad, and those from Washim and Hingoli usually use Nagpur. Each location page on this site lists the nearest airports and the road distance for that district.',
       hi: 'जालना के अधिकांश जायरीन छत्रपति संभाजीनगर हवाई अड्डा (IXU) का उपयोग करते हैं, जो जालना से लगभग ६५ किमी दूर है, या मुंबई से उड़ान भरते हैं। पूर्वी जिलों — लातूर, बीड, परभणी और धाराशिव — के जायरीन आमतौर पर हैदराबाद का उपयोग करते हैं, और वाशिम व हिंगोली के जायरीन आमतौर पर नागपुर। इस साइट के हर लोकेशन पेज पर उस जिले के निकटतम हवाई अड्डे और सड़क दूरी दी गई है।',
     },
   },
@@ -100,8 +100,8 @@ export const faqs: FaqItem[] = [
       hi: 'उमरा पैकेज की कीमत कितनी होती है?',
     },
     a: {
-      en: 'The rate depends on the package tier, the departure month, the number of pilgrims and current airline pricing, so we do not publish a fixed number that could be wrong by the time you read it. Call the Jalna office for the current rate for your dates — we can quote an exact price in a few minutes once the group size is known.',
-      hi: 'दर पैकेज श्रेणी, रवाने के महीने, जायरीनों की संख्या और उस समय की एयरलाइंस कीमत पर निर्भर करती है, इसलिए हम कोई तय नंबर प्रकाशित नहीं करते जो पढ़ते समय ग़लत हो सके। अपनी तारीख़ों की मौजूदा दर के लिए जालना कार्यालय को कॉल करें — समूह का आकार पता होते ही हम कुछ ही मिनटों में सही दाम बता सकते हैं।',
+      en: 'The rate depends on the package tier, the departure month, the number of pilgrims and current airline pricing, so we do not publish a fixed number that could be wrong by the time you read it. Call the Aurangabad head office for the current rate for your dates — we can quote an exact price in a few minutes once the group size is known.',
+      hi: 'दर पैकेज श्रेणी, रवाने के महीने, जायरीनों की संख्या और उस समय की एयरलाइंस कीमत पर निर्भर करती है, इसलिए हम कोई तय नंबर प्रकाशित नहीं करते जो पढ़ते समय ग़लत हो सके। अपनी तारीख़ों की मौजूदा दर के लिए अउरंगाबाद मुख्य कार्यालय को कॉल करें — समूह का आकार पता होते ही हम कुछ ही मिनटों में सही दाम बता सकते हैं।',
     },
   },
   {

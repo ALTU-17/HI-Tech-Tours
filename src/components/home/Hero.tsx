@@ -33,7 +33,13 @@ export function Hero({ locale }: { locale: Locale }) {
         <div className="absolute -top-24 left-1/4 h-80 w-80 rounded-full bg-gold-300/40 blur-[120px]" />
       </div>
 
-      <div className="container-page grid items-center gap-14 pt-14 pb-8 sm:pt-20 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16 lg:pt-24 lg:pb-16">
+      {/*
+        `lg:pt-0` drops the desktop top padding. The header is `sticky`, not
+        `fixed`, so it already occupies its own space in flow — the extra 6rem
+        was pure breathing room and pushed the hero content well down the fold.
+        Mobile and tablet keep their padding, where vertical space matters more.
+      */}
+      <div className="container-page grid items-center gap-14 pt-14 pb-8 sm:pt-20 lg:grid-cols-[1.15fr_0.85fr] lg:gap-16 lg:pb-16 lg:pt-12">
         <div>
           <p className="kicker">{d.hero.eyebrow}</p>
 
@@ -68,7 +74,7 @@ export function Hero({ locale }: { locale: Locale }) {
           </div>
 
           {/* Trust chips */}
-          <ul className="mt-9 flex flex-wrap gap-x-5 gap-y-2.5">
+          <ul className="mt-7 flex flex-wrap gap-x-5 gap-y-2.5">
             {d.hero.chips.map((chip) => (
               <li key={chip} className="flex items-center gap-2 text-sm text-ink-soft">
                 <Icon name="check" className="h-4 w-4 text-forest-600" strokeWidth={2.2} />
@@ -78,7 +84,7 @@ export function Hero({ locale }: { locale: Locale }) {
           </ul>
 
           {/* Stats */}
-          <dl className="mt-11 grid max-w-lg grid-cols-3 gap-4 border-t border-sand/80 pt-7">
+          <dl className="mt-8 grid max-w-lg grid-cols-3 gap-4 border-t border-sand/80 pt-0">
             {stats.map((stat) => (
               <div key={stat.label}>
                 <dt className="order-2 mt-1 text-xs leading-snug text-ink-muted">{stat.label}</dt>
@@ -166,7 +172,7 @@ export function Hero({ locale }: { locale: Locale }) {
           <span aria-hidden="true" className="hidden h-3 w-px bg-sand sm:block" />
           <span className="flex items-center gap-2">
             <Icon name="pin" className="h-4 w-4 text-forest-600" />
-            {locale === 'hi' ? 'जालना मुख्य कार्यालय' : 'Jalna head office'}
+            {locale === 'hi' ? 'अउरंगाबाद मुख्य कार्यालय' : 'Aurangabad head office'}
           </span>
           <span aria-hidden="true" className="hidden h-3 w-px bg-sand sm:block" />
           <span className="flex items-center gap-2">

@@ -37,8 +37,11 @@ export type Office = {
   locality: string
   localityHi: string
   street: string
+  streetHi: string
   hours: string
   hoursHi: string
+  /** Owner-supplied map pin for this office. */
+  mapUrl: string
 }
 
 export const site = {
@@ -48,22 +51,21 @@ export const site = {
   tagline: 'Marathwada’s Haj & Umrah desk',
   taglineHi: 'मराठवाड़े की हज व उमरा सेवा',
   shortDescription:
-    'Haj and Umrah travel services from Jalna, serving pilgrims across Marathwada with Umrah packages, visa assistance, air tickets, hotels, ziyarat and complete on-ground support in Makkah and Madinah.',
+    'Haj and Umrah travel services from Aurangabad, serving pilgrims across Marathwada with Umrah packages, visa assistance, air tickets, hotels, ziyarat and complete on-ground support in Makkah and Madinah.',
   shortDescriptionHi:
-    'जालना से हज व उमरा सेवाएँ — मराठवाड़े भर के जायरीनों के लिए उमरा पैकेज, वीज़ा सहायता, एयर टिकट, होटल, ज़ियारत और मक्का-मदीना में पूरी सहायता।',
+    'अउरंगाबाद से हज व उमरा सेवाएँ — मराठवाड़े भर के जायरीनों के लिए उमरा पैकेज, वीज़ा सहायता, एयर टिकट, होटल, ज़ियारत और मक्का-मदीना में पूरी सहायता।',
 
-  /** TODO(owner): exact street address of the Jalna head office. */
-  street: 'Jalna Head Office — address to be confirmed',
-  streetHi: 'जालना मुख्य कार्यालय — पता पुष्टि होना बाकी',
-  locality: 'Jalna',
-  localityHi: 'जालना',
+  street: 'Jinsi Chowk, in front of Kelgaonkar Hospital, Jinsi Police Station Road',
+  streetHi: 'जिन्सी चौक, केलगावकर हॉस्पिटल के सामने, जिन्सी पुलिस स्टेशन रोड',
+  locality: 'Aurangabad',
+  localityHi: 'अउरंगाबाद',
   region: 'Maharashtra',
   regionHi: 'महाराष्ट्र',
   postalCode: '431203',
   country: 'IN',
   countryHi: 'भारत',
-  /** TODO(owner): decimal coordinates of the Jalna office. */
-  geo: { lat: 19.841, lng: 75.885 },
+  /** Map pin of the head office, from the owner's maps link. */
+  geo: { lat: 19.885166, lng: 75.340079 },
 
   /**
    * TODO(owner): the banner does not publish a dedicated business number.
@@ -78,7 +80,7 @@ export const site = {
   credentials: [
     {
       key: 'haj-umrah',
-      value: 'Assisted Hajj & Umrah departures from Jalna, Marathwada',
+      value: 'Assisted Hajj & Umrah departures from Aurangabad, Marathwada',
       verified: true,
     },
     { key: 'iota', value: 'IATA recognised ticketing', verified: false },
@@ -118,18 +120,20 @@ export const site = {
 
   offices: [
     {
-      id: 'jalna-head-office',
-      name: 'Jalna Head Office',
-      nameHi: 'जालना मुख्य कार्यालय',
+      id: 'aurangabad-head-office',
+      name: 'Aurangabad Head Office',
+      nameHi: 'अउरंगाबाद मुख्य कार्यालय',
       type: 'head',
       person: 'Mohan Pathan',
       personHi: 'मोहन पठाण',
       phone: '9175107214',
-      locality: 'Jalna, Maharashtra',
-      localityHi: 'जालना, महाराष्ट्र',
-      street: 'Address to be confirmed',
+      locality: 'Aurangabad, Maharashtra',
+      localityHi: 'अउरंगाबाद, महाराष्ट्र',
+      street: 'Jinsi Chowk, in front of Kelgaonkar Hospital, Jinsi Police Station Road',
+      streetHi: 'जिन्सी चौक, केलगावकर हॉस्पिटल के सामने, जिन्सी पुलिस स्टेशन रोड',
       hours: 'Sat–Thu, 9:30 am – 8:30 pm',
       hoursHi: 'शनि–गुरुवार, सवेरे ९:३० – रात्रि ८:३०',
+      mapUrl: 'https://maps.app.goo.gl/oheuGFCW3mZ8R7mj7',
     },
   ] satisfies Office[],
 
@@ -144,18 +148,18 @@ export const site = {
       person: 'Sheikh Asgar',
       personHi: 'शेख असगर',
       phone: '9303313313',
-      locality: 'Masrit Chowk, Chhatrapati Sambhajinagar',
+      locality: 'Masrit Chowk, CSN (Aurangabad)',
       localityHi: 'मसरीत चौक, छत्रपती संभाजीनगर',
-      area: 'Chhatrapati Sambhajinagar',
+      area: 'CSN (Aurangabad)',
     },
     {
       id: 'imran',
       person: 'Sheikh Imran',
       personHi: 'शेख इमरान',
       phone: '7276525242',
-      locality: 'Chhatrapati Sambhajinagar',
+      locality: 'CSN (Aurangabad)',
       localityHi: 'छत्रपती संभाजीनगर',
-      area: 'Chhatrapati Sambhajinagar',
+      area: 'CSN (Aurangabad)',
     },
     {
       id: 'mohan',
@@ -171,27 +175,27 @@ export const site = {
       person: 'Yaseer Pathan',
       personHi: 'यासीर पठाण',
       phone: '9921834080',
-      locality: 'In front of Kalareshwar Holisell, Railway Chowk, Chhatrapati Sambhajinagar',
+      locality: 'In front of Kalareshwar Holisell, Railway Chowk, CSN (Aurangabad)',
       localityHi: 'केलारेश्वर हॉलिसेल के सामने, रेलवे चौक, छत्रपती संभाजीनगर',
-      area: 'Chhatrapati Sambhajinagar',
+      area: 'CSN (Aurangabad)',
     },
     {
       id: 'mustafa',
       person: 'Mohd Mustafa',
       personHi: 'मोहम्मद मुस्तफा',
       phone: '9028543538',
-      locality: 'Near M.N. Bhavit, Manjeur, Chhatrapati Sambhajinagar',
+      locality: 'Near M.N. Bhavit, Manjeur, CSN (Aurangabad)',
       localityHi: 'एम.एन. भवित के पास, मंजूर, छत्रपति संभाजीनगर',
-      area: 'Chhatrapati Sambhajinagar',
+      area: 'CSN (Aurangabad)',
     },
     {
       id: 'riyaz',
       person: 'Moulana Riyaz Sab',
       personHi: 'मौलाना रियाज साब',
       phone: '973029093',
-      locality: 'Kavam Che Wauwa, Talwadi, Chhatrapati Sambhajinagar',
+      locality: 'Kavam Che Wauwa, Talwadi, CSN (Aurangabad)',
       localityHi: 'कवम चे वौपा, ताळेबडा, छत्रपति संभाजीनगर',
-      area: 'Chhatrapati Sambhajinagar',
+      area: 'CSN (Aurangabad)',
       note: 'banner prints 9 digits — confirm with office',
     },
     {
@@ -199,9 +203,9 @@ export const site = {
       person: 'Waqatullah Shah',
       personHi: 'वखतुल्लाह शेख',
       phone: '9766633885',
-      locality: 'Bamna Polin, Pachghat, Chhatrapati Sambhajinagar',
+      locality: 'Bamna Polin, Pachghat, CSN (Aurangabad)',
       localityHi: 'बामणा पोलीन, पचघटा, छत्रपति संभाजीनगर',
-      area: 'Chhatrapati Sambhajinagar',
+      area: 'CSN (Aurangabad)',
     },
     {
       id: 'qari-akbar',
@@ -238,7 +242,6 @@ export const site = {
 
   /** Values the owner must supply; surfaced on /contact as a transparency note. */
   pendingFacts: [
-    'Exact street address and map pin of the Jalna head office',
     'Dedicated business phone and WhatsApp number',
     'Years in operation and total pilgrims served',
     'IATA / Ministry of Tourism registration numbers, if held',

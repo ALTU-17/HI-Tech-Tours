@@ -38,8 +38,8 @@ export async function generateMetadata({
   const name = t_({ en: city.name, hi: city.nameHi }, locale)
   const title =
     locale === 'hi'
-      ? `${name} से उमरा व हज सेवाएँ — हज उमरा सर्विस, जालना`
-      : `Umrah & Hajj from ${name} — Hi-Tech Haj Umrah Services, Jalna`
+      ? `${name} से उमरा व हज सेवाएँ — हज उमरा सर्विस, अउरंगाबाद`
+      : `Umrah & Hajj from ${name} — Hi-Tech Haj Umrah Services, Aurangabad`
 
   const description =
     locale === 'hi'

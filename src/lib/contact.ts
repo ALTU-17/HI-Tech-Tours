@@ -37,3 +37,12 @@ const topics: Record<Locale, Record<EnquiryTopic, string>> = {
 export function enquiryMessage(locale: Locale, topic: EnquiryTopic = 'general') {
   return topics[locale][topic]
 }
+
+/**
+ * Keyless Google Maps embed centred on the head-office pin.
+ * Built from site.geo — the same coordinates the JSON-LD publishes —
+ * so the pin on the page and the pin in search results never drift apart.
+ */
+export function mapEmbedUrl(zoom = 15) {
+  return `https://www.google.com/maps?q=${site.geo.lat},${site.geo.lng}&z=${zoom}&output=embed`
+}

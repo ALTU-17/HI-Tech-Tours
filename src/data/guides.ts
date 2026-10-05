@@ -227,7 +227,7 @@ export const guides: Guide[] = [
       hi: 'मराठवाड़ा का कौन सा जिला किस हवाई अड्डे का उपयोग करे, स्थानांतरण में कितना समय लगे, और समूह की पिकअप कैसे होती है।',
     },
     answer: {
-      en: 'Jalna and Chhatrapati Sambhajinagar pilgrims usually fly from Chhatrapati Sambhajinagar (IXU), Latur, Beed, Parbhani and Dharashiv from Hyderabad (HYD), and Washim and Hingoli from Nagpur (NAG). Group pickups are arranged so that everyone from an area travels to the airport together rather than separately.',
+      en: 'Jalna and CSN (Aurangabad) pilgrims usually fly from CSN (Aurangabad) (IXU), Latur, Beed, Parbhani and Dharashiv from Hyderabad (HYD), and Washim and Hingoli from Nagpur (NAG). Group pickups are arranged so that everyone from an area travels to the airport together rather than separately.',
       hi: 'जालना और छत्रपति संभाजीनगर के जायरीन आमतौर पर छत्रपति संभाजीनगर (IXU) से, लातूर, बीड, परभणी और धाराशिव के जायरीन हैदराबाद (HYD) से, और वाशिम व हिंगोली के जायरीन नागपुर (NAG) से उड़ान भरते हैं। समूह की पिकअप इस तरह होती है कि एक इलाके के सभी लोग अलग-अलग नहीं बल्कि साथ हवाई अड्डे जाएँ।',
     },
     datePublished: '2026-04-18',
@@ -240,7 +240,7 @@ export const guides: Guide[] = [
         },
         body: {
           en: [
-            'Chhatrapati Sambhajinagar has the closest airport to the two holy cities of anywhere in Marathwada, which is why a high share of our groups form there. Jalna pilgrims make the short run to the same airport or fly from Mumbai. In the east, Hyderabad serves Latur, Beed, Parbhani and Dharashiv. In the north, Nagpur serves Washim, Hingoli and parts of Nanded.',
+            'CSN (Aurangabad) has the closest airport to the two holy cities of anywhere in Marathwada, which is why a high share of our groups form there. Jalna pilgrims make the short run to the same airport or fly from Mumbai. In the east, Hyderabad serves Latur, Beed, Parbhani and Dharashiv. In the north, Nagpur serves Washim, Hingoli and parts of Nanded.',
             'Rough road distances, for orientation only: Jalna to IXU is about 65 km; Nanded to Hyderabad about 200 km; Latur to Hyderabad about 180 km; Beed to Hyderabad about 160 km; Washim to Nagpur about 170 km; Hingoli to Nagpur about 200 km. The exact itinerary is confirmed with the office when a group is formed, because road conditions and flight timings change.',
           ],
           hi: [

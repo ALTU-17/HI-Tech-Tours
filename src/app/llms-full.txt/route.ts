@@ -21,7 +21,7 @@ function main(): string {
   out.push('')
   out.push(site.shortDescription)
   out.push('')
-  out.push(`Contact: +91-${site.phone} · ${site.email} · Jalna, Maharashtra ${site.postalCode}`)
+  out.push(`Contact: +91-${site.phone} · ${site.email} · ${site.locality}, Maharashtra ${site.postalCode}`)
   out.push('')
   out.push('## Packages')
   out.push('')

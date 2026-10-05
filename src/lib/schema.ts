@@ -38,7 +38,7 @@ export function organizationNode() {
     areaServed: [
       { '@type': 'AdministrativeArea', name: 'Marathwada' },
       { '@type': 'City', name: 'Jalna' },
-      { '@type': 'City', name: 'Chhatrapati Sambhajinagar' },
+      { '@type': 'City', name: 'CSN (Aurangabad)' },
     ],
     knowsLanguage: ['en', 'hi', 'ur', 'ar'],
     parentOrganization: { '@id': ORG_ID },

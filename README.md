@@ -110,8 +110,9 @@ it, so they cannot drift apart. Change it there and rebuild.
 Items marked `TODO` in the code are deliberately left as honest placeholders
 rather than plausible-looking guesses. Search the codebase for `TODO(owner)`:
 
-- [ ] **Jalna head-office street address and map pin** — currently
-      "address to be confirmed" (see `site.street`, `site.geo`)
+- [x] **Aurangabad head-office street address and map pin** — Jinsi
+      Chowk, in front of Kelgaonkar Hospital, Jinsi Police Station Road
+      (see `site.street`, `site.geo`, `site.offices[0].mapUrl`)
 - [ ] **Dedicated business phone and WhatsApp number** — the site currently uses
       the first branch number printed on the banner
 - [ ] **Real customer reviews** — see below

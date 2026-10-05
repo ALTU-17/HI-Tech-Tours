@@ -30,7 +30,9 @@ export function Footer({ locale }: { locale: Locale }) {
         aria-hidden="true"
       />
 
-      <div className="relative container-page py-16">
+      {/* pt-16 only: the dev bar is the last child and carries its own
+          bottom padding, so the footer does not add a second 64px below it. */}
+      <div className="relative container-page pt-16">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_1fr_1fr]">
           {/* Brand + NAP */}
           <div>
@@ -128,6 +130,78 @@ export function Footer({ locale }: { locale: Locale }) {
               हिन्दी
             </Link>
           </nav>
+        </div>
+
+        {/* ===== Developer Info Bar ===== */}
+        <div className="border-t border-paper/10">
+          <div className="mx-auto max-w-7xl px-5 py-5 sm:px-8 lg:px-10">
+            <div className="flex flex-wrap items-center justify-center gap-3 text-[12px] text-paper sm:text-[13px]">
+              {/* Portfolio */}
+              <a
+                href="https://altamash-shaikh-portfolio.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="
+                  flex
+                  items-center
+                  gap-1.5
+                  text-paper
+                  no-underline
+                  transition-colors
+                  duration-300
+                  hover:text-forest-300
+                "
+                aria-label="Visit developer portfolio"
+              >
+                <Icon name="code" className="h-4 w-4 text-forest-500" />
+                <span>Developed by: ALTAMASH SHAIKH</span>
+              </a>
+
+              {/* Divider */}
+              <span className="h-3 w-px bg-forest-500/40" />
+
+              {/* Phone */}
+              <a
+                href="tel:+919766220055"
+                className="
+                  flex
+                  items-center
+                  gap-1.5
+                  text-paper
+                  no-underline
+                  transition-colors
+                  duration-300
+                  hover:text-forest-300
+                "
+                aria-label="Call developer"
+              >
+                <Icon name="phone" className="h-3.5 w-3.5 text-forest-500" />
+                <span>+91 9766220055</span>
+              </a>
+
+              {/* Divider */}
+              <span className="h-3 w-px bg-forest-500/40" />
+
+              {/* Email */}
+              <a
+                href="mailto:skaltamsh789@gmail.com"
+                className="
+                  flex
+                  items-center
+                  gap-1.5
+                  text-paper
+                  no-underline
+                  transition-colors
+                  duration-300
+                  hover:text-forest-300
+                "
+                aria-label="Email developer"
+              >
+                <Icon name="mail" className="h-3.5 w-3.5 text-forest-500" />
+                <span>skaltamsh789@gmail.com</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

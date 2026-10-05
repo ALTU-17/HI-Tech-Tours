@@ -33,7 +33,7 @@ export default async function OpengraphImage({ params }: { params: { locale: str
     ? { top: 'उमराह के सपनों को', bottom: 'हक़ीक़त में बदलें' }
     : { top: 'Turn the dream of Umrah', bottom: 'into something real' }
 
-  const eyebrow = isHi ? 'जालना, मराठवाड़ा से हज व उमरा' : 'Haj & Umrah from Jalna, Marathwada'
+  const eyebrow = isHi ? 'अउरंगाबाद, मराठवाड़ा से हज व उमरा' : 'Haj & Umrah from Aurangabad, Marathwada'
   const tagline = isHi ? 'मराठवाड़ा की हज व उमरा सेवा' : 'Marathwada’s Haj & Umrah desk'
   const wordmark = isHi ? 'हज उमरा सर्विस' : 'HAJ UMRAH SERVICES'
 

@@ -37,7 +37,7 @@ export async function generateMetadata({
   return buildMetadata({
     locale,
     path: `services/${slug}`,
-    title: `${slug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())} — ${site.name}, Jalna`,
+    title: `${slug.replace(/-/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase())} — ${site.name}, Aurangabad`,
     description: name,
   })
 }
@@ -165,8 +165,8 @@ export default async function ServicePage({
               </h2>
               <p className="mt-3 text-[0.9375rem] leading-relaxed text-ink-soft">
                 {locale === 'hi'
-                  ? 'जानकारी और मौजूदा दर के लिए जालना कार्यालय को कॉल करें।'
-                  : 'Call the Jalna office for details and the current rate.'}
+                  ? 'जानकारी और मौजूदा दर के लिए अउरंगाबाद मुख्य कार्यालय को कॉल करें।'
+                  : 'Call the Aurangabad head office for details and the current rate.'}
               </p>
               <div className="mt-5 flex flex-col gap-2.5">
                 <a

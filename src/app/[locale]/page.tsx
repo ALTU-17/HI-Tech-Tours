@@ -28,7 +28,16 @@ import {
   websiteNode,
 } from '@/lib/schema'
 import { verifiedReviews } from '@/data/reviews'
-import { getDictionary, isLocale } from '@/i18n'
+import { getDictionary, isLocale, locales } from '@/i18n'
+
+/**
+ * One home page per language. `output: 'export'` requires every page that sits
+ * under a dynamic segment to enumerate its own params — the root layout's
+ * generateStaticParams does not cover this page.
+ */
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }))
+}
 
 export async function generateMetadata({
   params,

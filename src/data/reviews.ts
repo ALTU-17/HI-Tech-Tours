@@ -55,8 +55,8 @@ export const reviews: Review[] = [
   },
   {
     id: 'r3',
-    name: 'Pilgrim, Chhatrapati Sambhajinagar',
-    city: 'Chhatrapati Sambhajinagar',
+    name: 'Pilgrim, CSN (Aurangabad)',
+    city: 'CSN (Aurangabad)',
     cityHi: 'छत्रपति संभाजीनगर',
     verified: false,
     quote: {

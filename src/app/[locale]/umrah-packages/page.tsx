@@ -34,7 +34,7 @@ export async function generateMetadata({
   return buildMetadata({
     locale,
     path: 'umrah-packages',
-    title: `${d.packagesPage.title} — Jalna, Marathwada`,
+    title: `${d.packagesPage.title} — Aurangabad, Marathwada`,
     description: d.packagesPage.description,
   })
 }

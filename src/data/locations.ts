@@ -52,11 +52,11 @@ const marathwadaDistricts: Location[] = [
     nameHi: 'जालना',
     state: 'Maharashtra',
     kind: 'marathwada',
-    hub: { en: 'Head office', hi: 'मुख्य कार्यालय' },
+    hub: { en: 'Served by head office', hi: 'मुख्य कार्यालय से सेवा' },
     airports: [
       {
         code: 'IXU',
-        name: 'Chhatrapati Sambhajinagar (Chikkalthana)',
+        name: 'CSN (Aurangabad) (Chikkalthana)',
         nameHi: 'छत्रपति संभाजीनगर (चिक्कलठाणा)',
         distanceKm: 65,
         travelTime: '1h 30m',
@@ -81,14 +81,14 @@ const marathwadaDistricts: Location[] = [
     contactPhone: '9175107214',
     answer: {
       en: (v) =>
-        `Hi-Tech Haj Umrah Services is based in Jalna, and the Jalna head office is where most Marathwada pilgrims start. Pilgrims from Jalna usually fly from Chhatrapati Sambhajinagar (IXU), about ${v.distance} km away, or from Mumbai. To begin a Umrah booking from Jalna, call ${v.branch} on the number below.`,
+        `Hi-Tech Haj Umrah Services is based in Aurangabad, and the Aurangabad head office is where most Marathwada pilgrims start. Pilgrims from Jalna usually fly from CSN (Aurangabad) (IXU), about ${v.distance} km away, or from Mumbai. To begin a Umrah booking from Jalna, call ${v.branch} on the number below.`,
       hi: (v) =>
-        `हज उमरा सर्विस का मुख्य कार्यालय जालना में है, और अधिकांश मराठवाड़ा जायरीन यहीं से यात्रा शुरू करते हैं। जालना के जायरीन आमतौर पर छत्रपति संभाजीनगर (IXU) से उड़ान भरते हैं, जो लगभग ${v.distance} किमी दूर है, या मुंबई से। जालना से उमरा बुकिंग शुरू करने के लिए नीचे दिए नंबर पर ${v.branchHi} से संपर्क करें।`,
+        `हज उमरा सर्विस का मुख्य कार्यालय अउरंगाबाद में है, और अधिकांश मराठवाड़ा जायरीन यहीं से यात्रा शुरू करते हैं। जालना के जायरीन आमतौर पर छत्रपति संभाजीनगर (IXU) से उड़ान भरते हैं, जो लगभग ${v.distance} किमी दूर है, या मुंबई से। जालना से उमरा बुकिंग शुरू करने के लिए नीचे दिए नंबर पर ${v.branchHi} से संपर्क करें।`,
     },
   },
   {
     slug: 'chhatrapati-sambhajinagar',
-    name: 'Chhatrapati Sambhajinagar',
+    name: 'CSN (Aurangabad)',
     nameHi: 'छत्रपति संभाजीनगर',
     state: 'Maharashtra',
     kind: 'marathwada',
@@ -96,7 +96,7 @@ const marathwadaDistricts: Location[] = [
     airports: [
       {
         code: 'IXU',
-        name: 'Chhatrapati Sambhajinagar (Chikkalthana)',
+        name: 'CSN (Aurangabad) (Chikkalthana)',
         nameHi: 'छत्रपति संभाजीनगर (चिक्कलठाणा)',
         distanceKm: 12,
         travelTime: '30m',
@@ -121,7 +121,7 @@ const marathwadaDistricts: Location[] = [
     contactPhone: '9303313313',
     answer: {
       en: (v) =>
-        `Chhatrapati Sambhajinagar (formerly Aurangabad) has the closest airport to Makkah and Madinah of any city in Marathwada, which is why several HI-TECH groups depart from here. For bookings call ${v.branch}, or reach any of the five Sambhajinagar branch contacts listed below.`,
+        `CSN (Aurangabad) (formerly Aurangabad) has the closest airport to Makkah and Madinah of any city in Marathwada, which is why several HI-TECH groups depart from here. For bookings call ${v.branch}, or reach any of the five Sambhajinagar branch contacts listed below.`,
       hi: (v) =>
         `छत्रपति संभाजीनगर (पूर्व में औरंगाबाद) के पास मक्का-मदीना के सबसे करीब का हवाई अड्डा है, इसीलिए हज उमरा सर्विस के कई समूह यहाँ से रवाना होते हैं। बुकिंग के लिए ${v.branchHi} को कॉल करें, या नीचे दिए गए पाँच शाखा संपर्कों में से किसी से बात करें।`,
     },
@@ -132,7 +132,7 @@ const marathwadaDistricts: Location[] = [
     nameHi: 'नांदेड़',
     state: 'Maharashtra',
     kind: 'marathwada',
-    hub: { en: 'Served by Jalna & Sambhajinagar', hi: 'जालना व संभाजीनगर से सेवा' },
+    hub: { en: 'Served by Aurangabad & Sambhajinagar', hi: 'अउरंगाबाद व संभाजीनगर से सेवा' },
     airports: [
       {
         code: 'HYD',
@@ -149,8 +149,8 @@ const marathwadaDistricts: Location[] = [
         travelTime: '4h 30m',
       },
     ],
-    contactName: 'Jalna head office',
-    contactNameHi: 'जालना मुख्य कार्यालय',
+    contactName: 'Aurangabad head office',
+    contactNameHi: 'अउरंगाबाद मुख्य कार्यालय',
     contactPhone: '9175107214',
     answer: {
       en: (v) =>
@@ -165,7 +165,7 @@ const marathwadaDistricts: Location[] = [
     nameHi: 'लातूर',
     state: 'Maharashtra',
     kind: 'marathwada',
-    hub: { en: 'Served by Jalna office', hi: 'जालना कार्यालय से सेवा' },
+    hub: { en: 'Served by Aurangabad head office', hi: 'अउरंगाबाद मुख्य कार्यालय से सेवा' },
     airports: [
       {
         code: 'HYD',
@@ -182,8 +182,8 @@ const marathwadaDistricts: Location[] = [
         travelTime: '11h',
       },
     ],
-    contactName: 'Jalna head office',
-    contactNameHi: 'जालना मुख्य कार्यालय',
+    contactName: 'Aurangabad head office',
+    contactNameHi: 'अउरंगाबाद मुख्य कार्यालय',
     contactPhone: '9175107214',
     answer: {
       en: (v) =>
@@ -198,7 +198,7 @@ const marathwadaDistricts: Location[] = [
     nameHi: 'बीड',
     state: 'Maharashtra',
     kind: 'marathwada',
-    hub: { en: 'Served by Jalna office', hi: 'जालना कार्यालय से सेवा' },
+    hub: { en: 'Served by Aurangabad head office', hi: 'अउरंगाबाद मुख्य कार्यालय से सेवा' },
     airports: [
       {
         code: 'HYD',
@@ -208,8 +208,8 @@ const marathwadaDistricts: Location[] = [
         travelTime: '3h 15m',
       },
     ],
-    contactName: 'Jalna head office',
-    contactNameHi: 'जालना मुख्य कार्यालय',
+    contactName: 'Aurangabad head office',
+    contactNameHi: 'अउरंगाबाद मुख्य कार्यालय',
     contactPhone: '9175107214',
     answer: {
       en: (v) =>
@@ -224,7 +224,7 @@ const marathwadaDistricts: Location[] = [
     nameHi: 'परभणी',
     state: 'Maharashtra',
     kind: 'marathwada',
-    hub: { en: 'Served by Jalna office', hi: 'जालना कार्यालय से सेवा' },
+    hub: { en: 'Served by Aurangabad head office', hi: 'अउरंगाबाद मुख्य कार्यालय से सेवा' },
     airports: [
       {
         code: 'HYD',
@@ -241,8 +241,8 @@ const marathwadaDistricts: Location[] = [
         travelTime: '5h',
       },
     ],
-    contactName: 'Jalna head office',
-    contactNameHi: 'जालना मुख्य कार्यालय',
+    contactName: 'Aurangabad head office',
+    contactNameHi: 'अउरंगाबाद मुख्य कार्यालय',
     contactPhone: '9175107214',
     answer: {
       en: (v) =>
@@ -257,7 +257,7 @@ const marathwadaDistricts: Location[] = [
     nameHi: 'हिंगोली',
     state: 'Maharashtra',
     kind: 'marathwada',
-    hub: { en: 'Served by Jalna office', hi: 'जालना कार्यालय से सेवा' },
+    hub: { en: 'Served by Aurangabad head office', hi: 'अउरंगाबाद मुख्य कार्यालय से सेवा' },
     airports: [
       {
         code: 'NAG',
@@ -267,8 +267,8 @@ const marathwadaDistricts: Location[] = [
         travelTime: '3h 30m',
       },
     ],
-    contactName: 'Jalna head office',
-    contactNameHi: 'जालना मुख्य कार्यालय',
+    contactName: 'Aurangabad head office',
+    contactNameHi: 'अउरंगाबाद मुख्य कार्यालय',
     contactPhone: '9175107214',
     answer: {
       en: (v) =>
@@ -283,7 +283,7 @@ const marathwadaDistricts: Location[] = [
     nameHi: 'वाशिम',
     state: 'Maharashtra',
     kind: 'marathwada',
-    hub: { en: 'Served by Jalna office', hi: 'जालना कार्यालय से सेवा' },
+    hub: { en: 'Served by Aurangabad head office', hi: 'अउरंगाबाद मुख्य कार्यालय से सेवा' },
     airports: [
       {
         code: 'NAG',
@@ -293,8 +293,8 @@ const marathwadaDistricts: Location[] = [
         travelTime: '3h',
       },
     ],
-    contactName: 'Jalna head office',
-    contactNameHi: 'जालना मुख्य कार्यालय',
+    contactName: 'Aurangabad head office',
+    contactNameHi: 'अउरंगाबाद मुख्य कार्यालय',
     contactPhone: '9175107214',
     answer: {
       en: (v) =>
@@ -309,7 +309,7 @@ const marathwadaDistricts: Location[] = [
     nameHi: 'धाराशिव',
     state: 'Maharashtra',
     kind: 'marathwada',
-    hub: { en: 'Served by Jalna office', hi: 'जालना कार्यालय से सेवा' },
+    hub: { en: 'Served by Aurangabad head office', hi: 'अउरंगाबाद मुख्य कार्यालय से सेवा' },
     airports: [
       {
         code: 'HYD',
@@ -319,8 +319,8 @@ const marathwadaDistricts: Location[] = [
         travelTime: '3h 30m',
       },
     ],
-    contactName: 'Jalna head office',
-    contactNameHi: 'जालना मुख्य कार्यालय',
+    contactName: 'Aurangabad head office',
+    contactNameHi: 'अउरंगाबाद मुख्य कार्यालय',
     contactPhone: '9175107214',
     answer: {
       en: (v) =>
@@ -348,8 +348,8 @@ const feederCityList: Location[] = [
         travelTime: 'In city',
       },
     ],
-    contactName: 'Jalna head office',
-    contactNameHi: 'जालना मुख्य कार्यालय',
+    contactName: 'Aurangabad head office',
+    contactNameHi: 'अउरंगाबाद मुख्य कार्यालय',
     contactPhone: '9175107214',
     answer: {
       en: (v) =>
@@ -374,8 +374,8 @@ const feederCityList: Location[] = [
         travelTime: 'In city',
       },
     ],
-    contactName: 'Jalna head office',
-    contactNameHi: 'जालना मुख्य कार्यालय',
+    contactName: 'Aurangabad head office',
+    contactNameHi: 'अउरंगाबाद मुख्य कार्यालय',
     contactPhone: '9175107214',
     answer: {
       en: (v) =>
@@ -400,8 +400,8 @@ const feederCityList: Location[] = [
         travelTime: 'In city',
       },
     ],
-    contactName: 'Jalna head office',
-    contactNameHi: 'जालना मुख्य कार्यालय',
+    contactName: 'Aurangabad head office',
+    contactNameHi: 'अउरंगाबाद मुख्य कार्यालय',
     contactPhone: '9175107214',
     answer: {
       en: (v) =>
@@ -426,8 +426,8 @@ const feederCityList: Location[] = [
         travelTime: 'In city',
       },
     ],
-    contactName: 'Jalna head office',
-    contactNameHi: 'जालना मुख्य कार्यालय',
+    contactName: 'Aurangabad head office',
+    contactNameHi: 'अउरंगाबाद मुख्य कार्यालय',
     contactPhone: '9175107214',
     answer: {
       en: (v) =>
@@ -452,8 +452,8 @@ const feederCityList: Location[] = [
         travelTime: 'In city',
       },
     ],
-    contactName: 'Jalna head office',
-    contactNameHi: 'जालना मुख्य कार्यालय',
+    contactName: 'Aurangabad head office',
+    contactNameHi: 'अउरंगाबाद मुख्य कार्यालय',
     contactPhone: '9175107214',
     answer: {
       en: (v) =>
@@ -478,8 +478,8 @@ const feederCityList: Location[] = [
         travelTime: 'In city',
       },
     ],
-    contactName: 'Jalna head office',
-    contactNameHi: 'जालना मुख्य कार्यालय',
+    contactName: 'Aurangabad head office',
+    contactNameHi: 'अउरंगाबाद मुख्य कार्यालय',
     contactPhone: '9175107214',
     answer: {
       en: (v) =>
@@ -500,8 +500,8 @@ export const marathwadaRegion = {
   districts: marathwada.map((l) => l.name),
   districtsHi: marathwada.map((l) => l.nameHi),
   description: {
-    en: 'Marathwada is the eight-district region of central Maharashtra around which Hi-Tech Haj Umrah Services operates, headquartered in Jalna with branch contacts across Chhatrapati Sambhajinagar.',
-    hi: 'मराठवाड़ा मध्य महाराष्ट्र का आठ जिलों का क्षेत्र है, जिसमें हज उमरा सर्विस काम करता है — मुख्यालय जालना में और छत्रपति संभाजीनगर में शाखा संपर्कों के साथ।',
+    en: 'Marathwada is the eight-district region of central Maharashtra around which Hi-Tech Haj Umrah Services operates, headquartered in Aurangabad with branch contacts across CSN (Aurangabad).',
+    hi: 'मराठवाड़ा मध्य महाराष्ट्र का आठ जिलों का क्षेत्र है, जिसमें हज उमरा सर्विस काम करता है — मुख्यालय अउरंगाबाद में और छत्रपति संभाजीनगर में शाखा संपर्कों के साथ।',
   },
 }
 
