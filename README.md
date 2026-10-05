@@ -221,7 +221,8 @@ a dual LTR/RTL progress rail is driven by real signals (`document.fonts.ready` +
 
 ## Deployment
 
-The build output is a plain folder — any static host works.
+The build output is a plain folder — any static host works. (Locally this
+also produces `out/`; on Vercel the Next.js builder handles it — see below.)
 
 ```bash
 npm run build
@@ -231,10 +232,14 @@ npm run build
 **Netlify / Cloudflare Pages** — build `npm run build`, publish `out`.
 `public/_redirects` is included and handles `/` → `/en/` and cache headers.
 
-**Vercel** — `vercel.json` is included (`outputDirectory: out`).
-Import the GitHub repo at <https://github.com/ALTU-17/HI-Tech-Tours>, leave the
-framework preset on **Next.js**, and the build command / output directory are
-picked up automatically from `vercel.json`.
+**Vercel** — `vercel.json` is included (build command, cache headers,
+redirects). Import the GitHub repo at <https://github.com/ALTU-17/HI-Tech-Tours>
+and leave the framework preset on **Next.js**. Do **not** set an Output
+Directory in the dashboard or in `vercel.json`: `output: 'export'` writes to
+`out/`, and Vercel's Next.js builder detects the export and serves that
+directory automatically. Pointing Output Directory at `out` breaks the deploy
+with `routes-manifest.json couldn't be found`, because the builder looks for
+Next.js server artifacts there and a static export has none.
 
 ### Vercel Web Analytics
 
