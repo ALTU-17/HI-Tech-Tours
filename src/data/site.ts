@@ -149,7 +149,7 @@ export const site = {
       personHi: 'शेख असगर',
       phone: '9303313313',
       locality: 'Masrit Chowk, CSN (Aurangabad)',
-      localityHi: 'मसरीत चौक, छत्रपती संभाजीनगर',
+      localityHi: 'मसरीत चौक, छत्रपती संभाजीनगर(अउरंगाबाद)',
       area: 'CSN (Aurangabad)',
     },
     {
@@ -158,7 +158,7 @@ export const site = {
       personHi: 'शेख इमरान',
       phone: '7276525242',
       locality: 'CSN (Aurangabad)',
-      localityHi: 'छत्रपती संभाजीनगर',
+      localityHi: 'छत्रपती संभाजीनगर(अउरंगाबाद)',
       area: 'CSN (Aurangabad)',
     },
     {
@@ -176,7 +176,7 @@ export const site = {
       personHi: 'यासीर पठाण',
       phone: '9921834080',
       locality: 'In front of Kalareshwar Holisell, Railway Chowk, CSN (Aurangabad)',
-      localityHi: 'केलारेश्वर हॉलिसेल के सामने, रेलवे चौक, छत्रपती संभाजीनगर',
+      localityHi: 'केलारेश्वर हॉलिसेल के सामने, रेलवे चौक, छत्रपती संभाजीनगर(अउरंगाबाद)',
       area: 'CSN (Aurangabad)',
     },
     {
@@ -189,14 +189,13 @@ export const site = {
       area: 'CSN (Aurangabad)',
     },
     {
-      id: 'riyaz',
-      person: 'Moulana Riyaz Sab',
-      personHi: 'मौलाना रियाज साब',
-      phone: '973029093',
-      locality: 'Kavam Che Wauwa, Talwadi, CSN (Aurangabad)',
-      localityHi: 'कवम चे वौपा, ताळेबडा, छत्रपति संभाजीनगर',
-      area: 'CSN (Aurangabad)',
-      note: 'banner prints 9 digits — confirm with office',
+      id: 'qari-akther',
+      person: 'Qari Akther',
+      personHi: 'कारी अख़्तर',
+      phone: '9730229093',
+      locality: 'Gevrai',
+      localityHi: 'गेवराई',
+      area: 'Beed district',
     },
     {
       id: 'waqatullah',
