@@ -54,7 +54,7 @@ export function Hero({ locale }: { locale: Locale }) {
             {d.hero.subtitle}
           </p>
 
-          <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a
               href={telHref(site.phone)}
               className="group inline-flex items-center justify-center gap-2.5 rounded-full bg-forest-800 px-7 py-4 text-[0.9375rem] font-semibold text-paper shadow-[0_16px_38px_-14px_rgb(6_46_34/0.65)] transition-all duration-300 hover:bg-forest-700 active:scale-[0.98]"
@@ -172,7 +172,7 @@ export function Hero({ locale }: { locale: Locale }) {
           <span aria-hidden="true" className="hidden h-3 w-px bg-sand sm:block" />
           <span className="flex items-center gap-2">
             <Icon name="pin" className="h-4 w-4 text-forest-600" />
-            {locale === 'hi' ? 'अउरंगाबाद मुख्य कार्यालय' : 'Aurangabad head office'}
+            {locale === 'hi' ? 'औरंगाबाद मुख्य कार्यालय' : 'Aurangabad head office'}
           </span>
           <span aria-hidden="true" className="hidden h-3 w-px bg-sand sm:block" />
           <span className="flex items-center gap-2">
