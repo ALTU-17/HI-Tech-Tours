@@ -21,8 +21,8 @@ export type Package = {
 
 export const packages: Package[] = [
   {
-    slug: 'economy-umrah',
-    badge: { en: 'Economy', hi: 'इकॉनॉमी' },
+    slug: 'silver-umrah',
+    badge: { en: 'Silver', hi: 'सिल्वर' },
     duration: { en: 'Standard duration', hi: 'सामान्य अवधि' },
     summary: {
       en: 'Our most accessible package — a straightforward first Umrah covering the essential rites, with hotels within a reasonable walking distance of the Haram.',
@@ -53,8 +53,8 @@ export const packages: Package[] = [
     order: 1,
   },
   {
-    slug: 'silver-umrah',
-    badge: { en: 'Silver', hi: 'सिल्वर' },
+    slug: 'deluxe-umrah',
+    badge: { en: 'Deluxe', hi: 'डीलक्स' },
     duration: { en: 'Standard duration', hi: 'सामान्य अवधि' },
     summary: {
       en: 'The balanced middle of our range — a better hotel category and smoother transfers for pilgrims who want more comfort without moving up a full tier.',
@@ -85,33 +85,33 @@ export const packages: Package[] = [
     order: 2,
   },
   {
-    slug: 'delhi-umrah',
-    badge: { en: 'Delhi', hi: 'दिल्ली' },
-    duration: { en: 'Delhi departures', hi: 'दिल्ली से रवाना' },
+    slug: 'diamond-umrah',
+    badge: { en: 'Diamond', hi: 'डायमंड' },
+    duration: { en: 'Standard duration', hi: 'सामान्य अवधि' },
     summary: {
-      en: 'Group departures from Delhi, with Makkah and Madinah hotels arranged together and a full pre-departure briefing for the whole group.',
-      hi: 'दिल्ली से समूह रवाना — मक्का और मदीना के होटल एक साथ तय, पूर्व-प्रस्थान ब्रीफिंग के साथ।',
+      en: 'Our premium tier — the closest hotel category to the Haram, upgraded seating on every transfer, and priority handling from the first document check to the final return pickup.',
+      hi: 'हमारी प्रीमियम श्रेणी — हरम के सबसे पास की होटल श्रेणी, हर सफ़र में बेहतर बैठक, और पहली दस्तावेज़ जाँच से लेकर आख़िरी वापसी पिकअप तक प्राथमिकता।',
     },
     idealFor: {
-      en: 'Pilgrims from outside Maharashtra, or anyone who prefers a Delhi departure over a Maharashtra connection.',
-      hi: 'महाराष्ट्र के बाहर के जायरीन, या जो महाराष्ट्र कनेक्शन की बजाय दिल्ली से रवाना पसंद करते हैं।',
+      en: 'Pilgrims who want the shortest walk to the Haram — seniors, anyone with mobility concerns, and families who prefer comfort over cost.',
+      hi: 'जो हरम तक सबसे कम पैदल दूरी चाहते हैं — बुज़ुर्ग, चलने-फिरने में दिक्कत वाले लोग, और कीमत से ज़्यादा आराम चाहने वाले परिवार।',
     },
     inclusions: [
-      'Delhi–Saudi return air ticket',
+      'Round-trip air ticket on a scheduled airline',
       'Umrah visa arranged through the authorised channel',
-      'Hotel in Makkah and Madinah',
-      'Delhi airport assistance and group briefing',
-      'Shared AC transport between cities',
+      'Premium hotel category in Makkah and Madinah, closest available to the Haram',
+      'AC transport with upgraded seating',
       'Indian food and Zamzam 5 litre',
-      'Ziyarat trip in Makkah and Madinah',
+      'Extended ziyarat with guide',
       'Unlimited laundry during the stay',
       'Luggage, shoes bag and document bag',
       'Umrah bag kit',
+      'Dedicated group leader and priority on-ground support',
     ],
     exclusions: [
-      'Travel to and from Delhi origin city',
       'Qurbani (sacrifice) charges unless quoted',
-      'Visa-on-arrival top-up for stay extensions',
+      'Personal shopping and excess luggage',
+      'Triple/quad room sharing differences',
     ],
     featured: true,
     order: 3,
@@ -144,12 +144,12 @@ export const packages: Package[] = [
     order: 4,
   },
   {
-    slug: 'umrah-30-days',
-    badge: { en: 'Umrah 30 Days', hi: 'उमरा 30 दिन' },
-    duration: { en: '30 days', hi: '30 दिन' },
+    slug: 'umrah-20-days',
+    badge: { en: 'Umrah 20 Days', hi: 'उमरा 20 दिन' },
+    duration: { en: '20 days', hi: '20 दिन' },
     summary: {
-      en: 'A month-long stay for those who prefer to learn the rites properly, travel at their own pace and spend real time in both cities.',
-      hi: 'पूरे महीने का ठहरना — जो अनुष्ठान ठीक से सीखना चाहते हैं, अपनी गति से घूमना चाहते हैं और दोनों शहरों में वक्त बिताना चाहते हैं।',
+      en: 'A 20-day stay for those who want to learn the rites properly, travel at an unhurried pace and spend real time in both cities — without a full month away from home.',
+      hi: '20 दिन का ठहरना — जो अनुष्ठान ठीक से सीखना चाहते हैं, बिना जल्दबाज़ी घूमना चाहते हैं और दोनों शहरों में अच्छा समय बिताना चाहते हैं — पूरे महीने घर से दूर रहे बिना।',
     },
     idealFor: {
       en: 'Retirees, families travelling together, and pilgrims preparing mentally for Hajj.',
@@ -165,7 +165,7 @@ export const packages: Package[] = [
       'Unlimited laundry during the stay',
       'Luggage, shoes bag and document bag',
       'Umrah bag kit',
-      'Extended on-ground support for a full month',
+      'Extended on-ground support throughout the stay',
     ],
     exclusions: ['Qurbani (sacrifice) charges unless quoted', 'Personal shopping'],
     featured: false,
@@ -173,7 +173,7 @@ export const packages: Package[] = [
   },
   {
     slug: 'ramadan-special',
-    badge: { en: 'Ramadan Special', hi: 'रमजान स्पेशल' },
+    badge: { en: 'Ramzan Special Umrah', hi: 'रमजान स्पेशल उमरा' },
     duration: { en: '32–40 days', hi: '32–40 दिन' },
     summary: {
       en: 'The flagship Ramadan departure of 32–40 days — built around Taraweeh, Qiyam and the closing ten nights, with a schedule that leaves room for rest.',

@@ -143,15 +143,15 @@ export default async function ServicePage({
             <Reveal className="mt-12">
               <h2 className="font-display text-xl font-semibold text-ink">{d.nav.umrah}</h2>
               <div className="mt-4 flex flex-wrap gap-2">
-                {['economy-umrah', 'silver-umrah', 'delhi-umrah', 'ramadan-special'].map((p) => (
+                {['silver-umrah', 'deluxe-umrah', 'diamond-umrah', 'ramadan-special'].map((p) => (
                   <Link
                     key={p}
                     href={`/${locale}/umrah-packages#${p}`}
                     className="rounded-full border border-sand bg-cream px-4 py-2 text-sm text-ink-soft transition-colors hover:border-forest-700/40 hover:text-forest-800"
                   >
                     {locale === 'hi'
-                      ? { 'economy-umrah': 'इकॉनॉमी', 'silver-umrah': 'सिल्वर', 'delhi-umrah': 'दिल्ली', 'ramadan-special': 'रमजान स्पेशल' }[p]
-                      : { 'economy-umrah': 'Economy', 'silver-umrah': 'Silver', 'delhi-umrah': 'Delhi', 'ramadan-special': 'Ramadan Special' }[p]}
+                      ? { 'silver-umrah': 'सिल्वर', 'deluxe-umrah': 'डीलक्स', 'diamond-umrah': 'डायमंड', 'ramadan-special': 'रमजान स्पेशल उमरा' }[p]
+                      : { 'silver-umrah': 'Silver', 'deluxe-umrah': 'Deluxe', 'diamond-umrah': 'Diamond', 'ramadan-special': 'Ramzan Special Umrah' }[p]}
                   </Link>
                 ))}
               </div>
@@ -165,7 +165,7 @@ export default async function ServicePage({
               </h2>
               <p className="mt-3 text-[0.9375rem] leading-relaxed text-ink-soft">
                 {locale === 'hi'
-                  ? 'जानकारी और मौजूदा दर के लिए अउरंगाबाद मुख्य कार्यालय को कॉल करें।'
+                  ? 'जानकारी और मौजूदा दर के लिए औरंगाबाद मुख्य कार्यालय को कॉल करें।'
                   : 'Call the Aurangabad head office for details and the current rate.'}
               </p>
               <div className="mt-5 flex flex-col gap-2.5">

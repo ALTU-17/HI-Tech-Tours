@@ -83,7 +83,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       breadcrumbNode([{ name: d.nav.home, path: `/${locale}` }]),
       offerCatalogNode(
         // Prices are intentionally absent — see lib/schema.ts.
-        ['economy-umrah', 'silver-umrah', 'delhi-umrah', 'ramadan-special'].map((slug) => ({
+        ['silver-umrah', 'deluxe-umrah', 'diamond-umrah', 'ramadan-special'].map((slug) => ({
           name: `Umrah package: ${slug.replace(/-/g, ' ')}`,
           description: site.shortDescription,
           url: absoluteUrl(`/${locale}/umrah-packages#${slug}`),
@@ -92,10 +92,10 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       itemListNode(
         d.sections.packages.title,
         [
-          { name: 'Economy Umrah', url: absoluteUrl(`/${locale}/umrah-packages#economy-umrah`) },
           { name: 'Silver Umrah', url: absoluteUrl(`/${locale}/umrah-packages#silver-umrah`) },
-          { name: 'Delhi Umrah', url: absoluteUrl(`/${locale}/umrah-packages#delhi-umrah`) },
-          { name: 'Ramadan Umrah Special', url: absoluteUrl(`/${locale}/umrah-packages#ramadan-special`) },
+          { name: 'Deluxe Umrah', url: absoluteUrl(`/${locale}/umrah-packages#deluxe-umrah`) },
+          { name: 'Diamond Umrah', url: absoluteUrl(`/${locale}/umrah-packages#diamond-umrah`) },
+          { name: 'Ramzan Special Umrah', url: absoluteUrl(`/${locale}/umrah-packages#ramadan-special`) },
         ],
       ),
       serviceNode({

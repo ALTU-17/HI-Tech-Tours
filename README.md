@@ -113,8 +113,8 @@ rather than plausible-looking guesses. Search the codebase for `TODO(owner)`:
 - [x] **Aurangabad head-office street address and map pin** — Jinsi
       Chowk, in front of Kelgaonkar Hospital, Jinsi Police Station Road
       (see `site.street`, `site.geo`, `site.offices[0].mapUrl`)
-- [ ] **Dedicated business phone and WhatsApp number** — the site currently uses
-      the first branch number printed on the banner
+- [x] **Dedicated business phone and WhatsApp number** — confirmed as
+      +91 9303313313, used for both calls and WhatsApp
 - [ ] **Real customer reviews** — see below
 - [ ] **Google Business Profile URL** — paste into `googleUrl` in
       `src/data/reviews.ts`

@@ -146,7 +146,7 @@ export const en = {
   packagesPage: {
     title: 'Umrah packages',
     description:
-      'Economy, Silver and Delhi Umrah tiers plus 15-day, 30-day and Ramadan special departures, with the full inclusion list published for each.',
+      'Silver, Deluxe and Diamond Umrah tiers plus 15-day, 20-day and Ramzan Special departures, with the full inclusion list published for each.',
     lede: 'Six Umrah options and Hajj guidance, with every inclusion and exclusion listed in full. Rates are quoted per departure because the month you travel changes the price.',
     compareTitle: 'Which package should you pick?',
     noteTitle: 'On pricing',

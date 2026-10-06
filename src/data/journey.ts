@@ -68,7 +68,7 @@ export const journey: JourneyStep[] = [
 export const standardInclusions: string[] = [
   'Air ticket from Mumbai, Nagpur, Hyderabad or Delhi',
   'Hotel in Makkah and Madinah',
-  'Three tiers available: Economy, Silver and Delhi',
+  'Three tiers available: Silver, Deluxe and Diamond',
   'AC bus transport and all three Ziyarat trips',
   'A guide with every Ziyarat trip',
   'Full guidance throughout the stay',
@@ -83,7 +83,7 @@ export const standardInclusions: string[] = [
 export const standardInclusionsHi: string[] = [
   'मुंबई, नागपुर, हैदराबाद या दिल्ली से एयर टिकट',
   'मक्का और मदीना में होटल',
-  'तीन श्रेणियाँ उपलब्ध: इकॉनॉमी, सिल्वर और दिल्ली',
+  'तीन श्रेणियाँ उपलब्ध: सिल्वर, डीलक्स और डायमंड',
   'एसी बस परिवहन और तीनों ज़ियारत यात्राएँ',
   'हर ज़ियारत यात्रा के साथ गाइड',
   'पूरे ठहरने के दौरान पूर्ण मार्गदर्शन',

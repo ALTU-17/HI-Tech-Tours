@@ -50,8 +50,8 @@ export const faqs: FaqItem[] = [
       hi: 'पहली बार जाने वाले जायरीन को कौन सा उमरा पैकेज चुनना चाहिए?',
     },
     a: {
-      en: 'First-time pilgrims usually start with our Economy package: the core rites, a hotel within a reasonable walking distance of the Haram, and the standard inclusions. If comfort matters more than cost, Silver is the better step up. Either way, we tell you the walking distance to the hotel before you pay, not afterwards.',
-      hi: 'पहली बार जाने वाले जायरीन आमतौर पर हमारा इकॉनॉमी पैकेज चुनते हैं: मुख्य अनुष्ठान, हरम से ठीक दूरी का होटल, और मानक सुविधाएँ। अगर आराम कीमत से आगे है, तो सिल्वर बेहतर अपग्रेड है। दोनों हालतों में हम पैसे देने से पहले ही होटल तक की पैदल दूरी बता देते हैं, बाद में नहीं।',
+      en: 'First-time pilgrims usually start with our Silver package: the core rites, a hotel within a reasonable walking distance of the Haram, and the standard inclusions. If comfort matters more than cost, Deluxe is the better step up. Either way, we tell you the walking distance to the hotel before you pay, not afterwards.',
+      hi: 'पहली बार जाने वाले जायरीन आमतौर पर हमारा सिल्वर पैकेज चुनते हैं: मुख्य अनुष्ठान, हरम से ठीक दूरी का होटल, और मानक सुविधाएँ। अगर आराम कीमत से आगे है, तो डीलक्स बेहतर अपग्रेड है। दोनों हालतों में हम पैसे देने से पहले ही होटल तक की पैदल दूरी बता देते हैं, बाद में नहीं।',
     },
   },
   {
@@ -101,7 +101,7 @@ export const faqs: FaqItem[] = [
     },
     a: {
       en: 'The rate depends on the package tier, the departure month, the number of pilgrims and current airline pricing, so we do not publish a fixed number that could be wrong by the time you read it. Call the Aurangabad head office for the current rate for your dates — we can quote an exact price in a few minutes once the group size is known.',
-      hi: 'दर पैकेज श्रेणी, रवाने के महीने, जायरीनों की संख्या और उस समय की एयरलाइंस कीमत पर निर्भर करती है, इसलिए हम कोई तय नंबर प्रकाशित नहीं करते जो पढ़ते समय ग़लत हो सके। अपनी तारीख़ों की मौजूदा दर के लिए अउरंगाबाद मुख्य कार्यालय को कॉल करें — समूह का आकार पता होते ही हम कुछ ही मिनटों में सही दाम बता सकते हैं।',
+      hi: 'दर पैकेज श्रेणी, रवाने के महीने, जायरीनों की संख्या और उस समय की एयरलाइंस कीमत पर निर्भर करती है, इसलिए हम कोई तय नंबर प्रकाशित नहीं करते जो पढ़ते समय ग़लत हो सके। अपनी तारीख़ों की मौजूदा दर के लिए औरंगाबाद मुख्य कार्यालय को कॉल करें — समूह का आकार पता होते ही हम कुछ ही मिनटों में सही दाम बता सकते हैं।',
     },
   },
   {

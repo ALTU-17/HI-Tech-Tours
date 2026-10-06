@@ -60,8 +60,8 @@ export const reviews: Review[] = [
     cityHi: 'छत्रपति संभाजीनगर',
     verified: false,
     quote: {
-      en: 'Sample text — the ziyarat trip and Indian food were included exactly as written, and the laundry being unlimited genuinely made a thirty-day stay bearable.',
-      hi: 'नमूना पाठ — ज़ियारत यात्रा और भारतीय भोजन जैसा लिखा था वैसा ही मिला, और असीमित लॉन्ड्री ने तीस दिन का ठहरना सहनीय बना दिया।',
+      en: 'Sample text — the ziyarat trip and Indian food were included exactly as written, and the laundry being unlimited genuinely made a twenty-day stay bearable.',
+      hi: 'नमूना पाठ — ज़ियारत यात्रा और भारतीय भोजन जैसा लिखा था वैसा ही मिला, और असीमित लॉन्ड्री ने बीस दिन का ठहरना सहनीय बना दिया।',
     },
   },
   {

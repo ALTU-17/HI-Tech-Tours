@@ -12,7 +12,12 @@ export function telHref(phone: string) {
  * Hindi enquiry in English is a small thing that costs trust.
  */
 export function whatsappHref(message: string, phone: string = site.whatsapp) {
-  return `https://wa.me/${phone.replace(/\D/g, '')}?text=${encodeURIComponent(message)}`
+  const digits = phone.replace(/\D/g, '')
+  // wa.me requires the full international number. A local 10-digit number
+  // is qualified with India's country code so the link always resolves to
+  // +91 (e.g. 9303313313 → wa.me/919303313313).
+  const international = digits.length === 10 ? `91${digits}` : digits.replace(/^0/, '')
+  return `https://wa.me/${international}?text=${encodeURIComponent(message)}`
 }
 
 export type EnquiryTopic = 'package' | 'hajj' | 'visa' | 'general' | 'pickup'

@@ -53,12 +53,12 @@ export const site = {
   shortDescription:
     'Haj and Umrah travel services from Aurangabad, serving pilgrims across Marathwada with Umrah packages, visa assistance, air tickets, hotels, ziyarat and complete on-ground support in Makkah and Madinah.',
   shortDescriptionHi:
-    'अउरंगाबाद से हज व उमरा सेवाएँ — मराठवाड़े भर के जायरीनों के लिए उमरा पैकेज, वीज़ा सहायता, एयर टिकट, होटल, ज़ियारत और मक्का-मदीना में पूरी सहायता।',
+    'औरंगाबाद से हज व उमरा सेवाएँ — मराठवाड़े भर के जायरीनों के लिए उमरा पैकेज, वीज़ा सहायता, एयर टिकट, होटल, ज़ियारत और मक्का-मदीना में पूरी सहायता।',
 
   street: 'Jinsi Chowk, in front of Kelgaonkar Hospital, Jinsi Police Station Road',
   streetHi: 'जिन्सी चौक, केलगावकर हॉस्पिटल के सामने, जिन्सी पुलिस स्टेशन रोड',
   locality: 'Aurangabad',
-  localityHi: 'अउरंगाबाद',
+  localityHi: 'औरंगाबाद',
   region: 'Maharashtra',
   regionHi: 'महाराष्ट्र',
   postalCode: '431203',
@@ -68,11 +68,11 @@ export const site = {
   geo: { lat: 19.885166, lng: 75.340079 },
 
   /**
-   * TODO(owner): the banner does not publish a dedicated business number.
-   * Replace with the number pilgrims should call/WhatsApp.
+   * Confirmed by the owner (October 2026): +91 9303313313 is the single
+   * business number printed on the banner, used for calls and WhatsApp.
    */
   phone: '9303313313',
-  /** TODO(owner): dedicated WhatsApp business number (may differ from phone). */
+  /** Confirmed same as `phone` — WhatsApp links open wa.me/919303313313. */
   whatsapp: '9303313313',
   email: 'info@hitech-haj-umrah.in', // TODO(owner)
 
@@ -93,10 +93,22 @@ export const site = {
    */
   groups: [
     {
-      name: 'Ramadan Umrah Special',
-      nameHi: 'रमजान उमरा स्पेशल',
-      duration: '32–40 days',
-      blurb: 'Extended stay across Ramadan for Taraweeh, Qiyam and the last ten nights.',
+      name: 'Silver Umrah',
+      nameHi: 'सिल्वर उमरा',
+      duration: 'Standard duration',
+      blurb: 'The entry tier — essential rites with hotels within a reasonable walking distance of the Haram.',
+    },
+    {
+      name: 'Deluxe Umrah',
+      nameHi: 'डीलक्स उमरा',
+      duration: 'Standard duration',
+      blurb: 'The balanced middle — upgraded hotel category and smoother transfers.',
+    },
+    {
+      name: 'Diamond Umrah',
+      nameHi: 'डायमंड उमरा',
+      duration: 'Standard duration',
+      blurb: 'The premium tier — closest hotel category to the Haram and priority handling.',
     },
     {
       name: 'Umrah 15 Days',
@@ -105,16 +117,16 @@ export const site = {
       blurb: 'A compact first-Umrah package built around the core rites and essential ziyarat.',
     },
     {
-      name: 'Umrah 30 Days',
-      nameHi: 'उमरा 30 दिन',
-      duration: '30 days',
-      blurb: 'A month-long stay for families and pilgrims who prefer a slower, unhurried schedule.',
+      name: 'Umrah 20 Days',
+      nameHi: 'उमरा 20 दिन',
+      duration: '20 days',
+      blurb: 'Twenty unhurried days for the core rites, ziyarat and real time in both cities.',
     },
     {
-      name: 'Delhi Umrah',
-      nameHi: 'दिल्ली उमरा',
-      duration: 'Delhi departures',
-      blurb: 'Group departures from Delhi with Makkah and Madinah hotels arranged together.',
+      name: 'Ramzan Special Umrah',
+      nameHi: 'रमजान स्पेशल उमरा',
+      duration: '32–40 days',
+      blurb: 'Extended stay across Ramadan for Taraweeh, Qiyam and the last ten nights.',
     },
   ],
 
@@ -122,13 +134,13 @@ export const site = {
     {
       id: 'aurangabad-head-office',
       name: 'Aurangabad Head Office',
-      nameHi: 'अउरंगाबाद मुख्य कार्यालय',
+      nameHi: 'औरंगाबाद मुख्य कार्यालय',
       type: 'head',
       person: 'Mohan Pathan',
       personHi: 'मोहन पठाण',
       phone: '9175107214',
       locality: 'Aurangabad, Maharashtra',
-      localityHi: 'अउरंगाबाद, महाराष्ट्र',
+      localityHi: 'औरंगाबाद, महाराष्ट्र',
       street: 'Jinsi Chowk, in front of Kelgaonkar Hospital, Jinsi Police Station Road',
       streetHi: 'जिन्सी चौक, केलगावकर हॉस्पिटल के सामने, जिन्सी पुलिस स्टेशन रोड',
       hours: 'Sat–Thu, 9:30 am – 8:30 pm',
@@ -158,7 +170,7 @@ export const site = {
       personHi: 'शेख इमरान',
       phone: '7276525242',
       locality: 'CSN (Aurangabad)',
-      localityHi: 'छत्रपती संभाजीनगर(अउरंगाबाद)',
+      localityHi: 'छत्रपती संभाजीनगर(औरंगाबाद)',
       area: 'CSN (Aurangabad)',
     },
     {
@@ -176,7 +188,7 @@ export const site = {
       personHi: 'यासीर पठाण',
       phone: '9921834080',
       locality: 'In front of Kalareshwar Holisell, Railway Chowk, CSN (Aurangabad)',
-      localityHi: 'केलारेश्वर हॉलिसेल के सामने, रेलवे चौक, छत्रपती संभाजीनगर(अउरंगाबाद)',
+      localityHi: 'केलारेश्वर हॉलिसेल के सामने, रेलवे चौक, छत्रपती संभाजीनगर(औरंगाबाद)',
       area: 'CSN (Aurangabad)',
     },
     {
@@ -241,7 +253,7 @@ export const site = {
     /** Multilingual bio rendered on /about and as the guide answer. */
     description: {
       en: 'Ashfaq Shaikh has led Umrah and Hajj groups from Aurangabad to Saudi Arabia for over a decade. He is hardworking from the first document check to the last return pickup, listing every detail so families never miss a step. He takes each and every pilgrim along with him — sab ku sath leke chalte hai — making sure no one is left to sort things out alone in a foreign country.',
-      hi: 'अशफ़ाक शेख़ दशकों से अउरंगाबाद से सऊदी अरब जाने वाले हज-उमरा समूहों का नेतृत्व करते हैं। वह पहली दस्तावेज़ जाँच से लेकर आखिरी वापसी पिकअप तक मेहनती रहते हैं, हर चीज़ को ध्यान में रखते हैं जिससे कोई परिवार कदम छोड़ न सके। वह हर एक जायरीन को साथ ले जाते हैं — सबकुछ साथ लेकर चलते हैं — यह सुनिश्चित करते हैं कि कोई विदेश में अकेला न रहे।',
+      hi: 'अशफ़ाक शेख़ दशकों से औरंगाबाद से सऊदी अरब जाने वाले हज-उमरा समूहों का नेतृत्व करते हैं। वह पहली दस्तावेज़ जाँच से लेकर आखिरी वापसी पिकअप तक मेहनती रहते हैं, हर चीज़ को ध्यान में रखते हैं जिससे कोई परिवार कदम छोड़ न सके। वह हर एक जायरीन को साथ ले जाते हैं — सबकुछ साथ लेकर चलते हैं — यह सुनिश्चित करते हैं कि कोई विदेश में अकेला न रहे।',
     },
   },
 
@@ -268,7 +280,6 @@ export const site = {
 
   /** Values the owner must supply; surfaced on /contact as a transparency note. */
   pendingFacts: [
-    'Dedicated business phone and WhatsApp number',
     'Years in operation and total pilgrims served',
     'IATA / Ministry of Tourism registration numbers, if held',
     'Google Business Profile URL for verified customer reviews',

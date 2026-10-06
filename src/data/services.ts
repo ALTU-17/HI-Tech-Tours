@@ -74,12 +74,12 @@ export const services: Service[] = [
       hi: 'मक्का और मदीना के होटल तीन श्रेणियों में, हरम से दूरी शुरू में ही साफ़ बताई जाती है।',
     },
     detail: {
-      en: 'Our three tiers — Economy, Silver and Delhi — differ mainly in hotel category and distance from the Haram. We tell you the walking distance before you book, not after you land.',
-      hi: 'हमारी तीन श्रेणियाँ — इकॉनॉमी, सिल्वर और दिल्ली — मुख्यतः होटल श्रेणी और हरम से दूरी में अलग हैं। बुकिंग से पहले ही हम पैदल दूरी बता देते हैं, लौटने के बाद नहीं।',
+      en: 'Our three tiers — Silver, Deluxe and Diamond — differ mainly in hotel category and distance from the Haram. We tell you the walking distance before you book, not after you land.',
+      hi: 'हमारी तीन श्रेणियाँ — सिल्वर, डीलक्स और डायमंड — मुख्यतः होटल श्रेणी और हरम से दूरी में अलग हैं। बुकिंग से पहले ही हम पैदल दूरी बता देते हैं, लौटने के बाद नहीं।',
     },
     points: [
       { en: 'Walking distance quoted before booking', hi: 'बुकिंग से पहले पैदल दूरी बताई जाती है' },
-      { en: 'Three tiers: Economy, Silver, Delhi', hi: 'तीन श्रेणियाँ: इकॉनॉमी, सिल्वर, दिल्ली' },
+      { en: 'Three tiers: Silver, Deluxe, Diamond', hi: 'तीन श्रेणियाँ: सिल्वर, डीलक्स, डायमंड' },
       { en: 'Double / triple / quad sharing options', hi: 'डबल / ट्रिपल / क्वाड शेयरिंग विकल्प' },
       { en: 'On-ground help during the stay', hi: 'ठहरने के दौरान मौके पर मदद' },
     ],
@@ -184,8 +184,8 @@ export const services: Service[] = [
       hi: 'ठहरने के दौरान असीमित लॉन्ड्री, बिना किसी अतिरिक्त शुल्क के।',
     },
     detail: {
-      en: 'The banner lists laundry as complimentary, and we honour that. A 30-day or Ramadan stay would be unmanageable without it.',
-      hi: 'बैनर पर लॉन्ड्री निःशुल्क लिखी है, और हम वही देते हैं। 30 दिन या रमजान का ठहरना इसके बिना असंभव होता।',
+      en: 'The banner lists laundry as complimentary, and we honour that. A 20-day or Ramadan stay would be unmanageable without it.',
+      hi: 'बैनर पर लॉन्ड्री निःशुल्क लिखी है, और हम वही देते हैं। 20 दिन या रमजान का ठहरना इसके बिना असंभव होता।',
     },
     points: [
       { en: 'No per-piece charge', hi: 'प्रति वस्तु शुल्क नहीं' },

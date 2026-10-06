@@ -38,7 +38,7 @@ export async function generateMetadata({
   const name = t_({ en: city.name, hi: city.nameHi }, locale)
   const title =
     locale === 'hi'
-      ? `${name} से उमरा व हज सेवाएँ — हज उमरा सर्विस, अउरंगाबाद`
+      ? `${name} से उमरा व हज सेवाएँ — हज उमरा सर्विस, औरंगाबाद`
       : `Umrah & Hajj from ${name} — Hi-Tech Haj Umrah Services, Aurangabad`
 
   const description =
@@ -236,15 +236,15 @@ export default async function LocationPage({
                 {d.sections.packages.eyebrow}
               </h2>
               <ul className="mt-4 space-y-2.5">
-                {['economy-umrah', 'silver-umrah', 'delhi-umrah', 'ramadan-special'].map((slug) => (
+                {['silver-umrah', 'deluxe-umrah', 'diamond-umrah', 'ramadan-special'].map((slug) => (
                   <li key={slug}>
                     <Link
                       href={`/${locale}/umrah-packages#${slug}`}
                       className="flex items-center justify-between gap-3 text-sm text-ink-soft transition-colors hover:text-forest-700"
                     >
                       {locale === 'hi'
-                        ? { 'economy-umrah': 'इकॉनॉमी उमरा', 'silver-umrah': 'सिल्वर उमरा', 'delhi-umrah': 'दिल्ली उमरा', 'ramadan-special': 'रमजान स्पेशल' }[slug]
-                        : { 'economy-umrah': 'Economy Umrah', 'silver-umrah': 'Silver Umrah', 'delhi-umrah': 'Delhi Umrah', 'ramadan-special': 'Ramadan Special' }[slug]}
+                        ? { 'silver-umrah': 'सिल्वर उमरा', 'deluxe-umrah': 'डीलक्स उमरा', 'diamond-umrah': 'डायमंड उमरा', 'ramadan-special': 'रमजान स्पेशल उमरा' }[slug]
+                        : { 'silver-umrah': 'Silver Umrah', 'deluxe-umrah': 'Deluxe Umrah', 'diamond-umrah': 'Diamond Umrah', 'ramadan-special': 'Ramzan Special Umrah' }[slug]}
                       <Icon name="arrow" className="h-4 w-4 shrink-0 text-forest-600 rtl:-scale-x-100" />
                     </Link>
                   </li>
