@@ -363,11 +363,11 @@ export const guides: Guide[] = [
         body: {
           en: [
             'A thorough guide lists every detail — hotel distances, meal plans, prayer timings, emergency contacts — instead of assuming you will figure it out on the spot. They work hard at every stage: document checks, pickup coordination, hotel handovers, and daily check-ins with the group. They answer every question in full, and they make sure each pilgrim is looked after.',
-            'At Hi-Tech Haj Umrah Services, the founder Ashfaq Shaikh leads every departure himself. He is hardworking and listing from the first document check to the last return pickup, and he takes each and every pilgrim along with him — sab ku sath leke chalte hai — because no family should have to sort things out alone in a foreign country.',
+            'At Hi-Tech Haj Umrah Services, the founder Shaikh Ashfaq leads every departure himself. He is hardworking and listing from the first document check to the last return pickup, and he takes each and every pilgrim along with him — sab ku sath leke chalte hai — because no family should have to sort things out alone in a foreign country.',
           ],
           hi: [
             'एक समझदार मार्गदर्शक हर चीज़ की सूची बनाता है — होटल की दूरी, भोजन योजना, प्रार्थना समय, आपात संपर्क — बजाय इसके कि वह मान लेगा कि आप ठहर पर ठीक से ढूँढ़ लेंगे। वह हर चरण पर मेहनत करता है: दस्तावेज़ जाँच, पिकअप का समन्वय, होटल हाथाहाथ, और समूह के साथ दैनिक जाँच। वह हर सवाल का पूरा जवाब देता है, और यह सुनिश्चित करता है कि प्रत्येक जायरीन का ध्यान रहे।',
-            'हाइ-टेक हज उमरा सर्विसेज में, संस्थापक अशफ़ाक शेख़ हर रवाने का नेतृत्व स्वयं करते हैं। वह मेहनती और सूचीबद्ध हैं — पहली दस्तावेज़ जाँच से लेकर आखिरी वापसी पिकअप तक — और वह हर एक जायरीन को साथ ले जाते हैं — सबकुछ साथ लेकर चलते हैं — क्योंकि किसी परिवार को विदेश में अकेला चीज़ों को सुलझाने की ज़रूरत नहीं है।',
+            'हाइ-टेक हज उमरा सर्विसेज में, संस्थापक शेख़ अशफ़ाक हर रवाने का नेतृत्व स्वयं करते हैं। वह मेहनती और सूचीबद्ध हैं — पहली दस्तावेज़ जाँच से लेकर आखिरी वापसी पिकअप तक — और वह हर एक जायरीन को साथ ले जाते हैं — सबकुछ साथ लेकर चलते हैं — क्योंकि किसी परिवार को विदेश में अकेला चीज़ों को सुलझाने की ज़रूरत नहीं है।',
           ],
         },
       },

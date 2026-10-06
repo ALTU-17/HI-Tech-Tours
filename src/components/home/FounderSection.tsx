@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 import { Icon } from '@/components/Icon'
@@ -33,9 +34,16 @@ export function FounderSection({ locale }: { locale: Locale }) {
           <div className="card-surface card-surface-hover relative overflow-hidden p-8 sm:p-12">
             <div className="grid gap-8 lg:grid-cols-[1fr_1.5fr] lg:items-start">
               <div className="flex justify-center lg:justify-start">
-                <span className="flex h-36 w-36 items-center justify-center rounded-full bg-forest-100 text-forest-700">
-                  <Icon name="shield" className="h-16 w-16" />
-                </span>
+                <Image
+                  src="/images/founder-480.webp"
+                  alt={t_({
+                    en: `${founder.name}, ${founder.title}`,
+                    hi: `${founder.nameHi}, ${founder.titleHi}`,
+                  }, locale)}
+                  width={480}
+                  height={638}
+                  className="w-44 rounded-2xl border border-sand shadow-sm sm:w-52 lg:w-60"
+                />
               </div>
 
               <div className="flex flex-col">

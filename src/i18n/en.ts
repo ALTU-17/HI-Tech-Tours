@@ -140,7 +140,7 @@ export const en = {
     founderEyebrow: 'From the founder',
     founderTitle: 'The person at the other end of the line',
     founderLede:
-      'Ashfaq Shaikh — Founder and Expedition Guide — leads every Aurangabad departure himself and carries the number you call when something needs sorting in Saudi Arabia.',
+      'Shaikh Ashfaq — Founder and Expedition Guide — leads every Aurangabad departure himself and carries the number you call when something needs sorting in Saudi Arabia.',
   },
 
   packagesPage: {

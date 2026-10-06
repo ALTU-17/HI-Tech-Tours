@@ -156,8 +156,8 @@ export const site = {
    */
   branches: [
     {
-      id: 'asgar',
-      person: 'Sheikh Asfak',
+      id: 'Ashfaq',
+      person: 'S Ashfaq',
       personHi: 'शेख अशफाक',
       phone: '9303313313',
       locality: 'Mahavir Chowk, Ambad',
@@ -166,7 +166,7 @@ export const site = {
     },
     {
       id: 'imran',
-      person: 'Sheikh Imran',
+      person: 'Shaikh Imran',
       personHi: 'शेख इमरान',
       phone: '7276525242',
       locality: 'CSN (Aurangabad)',
@@ -241,19 +241,19 @@ export const site = {
 
   /**
    * Founder profile — surfaced on the home page, About page, and in
-   * the expedition guide article. Ashfaq Shaikh leads every Aurangabad
+   * the expedition guide article. Shaikh Ashfaq leads every Aurangabad
    * departure himself and carries the local number for the whole group.
    */
   founder: {
-    name: 'Ashfaq Shaikh',
-    nameHi: 'अशफ़ाक शेख़',
+    name: 'Shaikh Ashfaq',
+    nameHi: 'शेख़ अशफ़ाक',
     title: 'Founder & Expedition Guide',
     titleHi: 'संस्थापक एवं प्रतिदिन मार्गदर्शक',
     phone: '9303313313',
     /** Multilingual bio rendered on /about and as the guide answer. */
     description: {
-      en: 'Ashfaq Shaikh has led Umrah and Hajj groups from Aurangabad to Saudi Arabia for over a decade. He is hardworking from the first document check to the last return pickup, listing every detail so families never miss a step. He takes each and every pilgrim along with him — sab ku sath leke chalte hai — making sure no one is left to sort things out alone in a foreign country.',
-      hi: 'अशफ़ाक शेख़ दशकों से औरंगाबाद से सऊदी अरब जाने वाले हज-उमरा समूहों का नेतृत्व करते हैं। वह पहली दस्तावेज़ जाँच से लेकर आखिरी वापसी पिकअप तक मेहनती रहते हैं, हर चीज़ को ध्यान में रखते हैं जिससे कोई परिवार कदम छोड़ न सके। वह हर एक जायरीन को साथ ले जाते हैं — सबकुछ साथ लेकर चलते हैं — यह सुनिश्चित करते हैं कि कोई विदेश में अकेला न रहे।',
+      en: 'Shaikh Ashfaq, the founder of Hi-Tech Haj Umrah Services, is an experienced Haj and Umrah guide dedicated to helping pilgrims complete their sacred journey with comfort, confidence, and peace of mind. With practical experience in guiding pilgrims and a deep understanding of the important rituals, ziyarat, travel arrangements, and essential requirements, he personally focuses on providing reliable guidance throughout the journey. His vision is to make every pilgrim’s experience well-organized, spiritually fulfilling, and hassle-free, while ensuring that pilgrims receive proper assistance from departure until their return.',
+      hi: 'शेख़ अशफ़ाक, हज उमरा सर्विस के संस्थापक, अनुभवी हज व उमरा मार्गदर्शक हैं और जायरीनों को अपनी पाक यात्रा आराम, आत्मविश्वास और सुकून के साथ पूरी करने में मदद देने के लिए समर्पित हैं। जायरीनों का मार्गदर्शन करने के व्यावहारिक अनुभव और ज़रूरी अनुष्ठानों, ज़ियारत, यात्रा व्यवस्था तथा आवश्यक औपचारिकताओं की गहरी समझ के साथ वे यात्रा भर भरोसेमंद मार्गदर्शन स्वयं उपलब्ध कराते हैं। उनका उद्देश्य है कि हर जायरीन का अनुभव व्यवस्थित, आध्यात्मिक रूप से सार्थक और बिना झंझट का हो और जायरीनों को रवानगी से लेकर वापसी तक हर कदम पर उचित सहायता मिलती रहे।',
     },
   },
 

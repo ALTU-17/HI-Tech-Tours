@@ -116,8 +116,8 @@ const marathwadaDistricts: Location[] = [
         travelTime: '5h 30m',
       },
     ],
-    contactName: 'Sheikh Asgar',
-    contactNameHi: 'शेख असगर',
+    contactName: 'Shaikh Ashfaq',
+    contactNameHi: 'शेख अशफ़ाक',
     contactPhone: '9303313313',
     answer: {
       en: (v) =>
