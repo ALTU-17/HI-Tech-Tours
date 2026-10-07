@@ -24,8 +24,8 @@ import { LogoBadge } from './Logo'
  */
 
 const STORAGE_KEY = 'hitech.preloader.seen'
-const MIN_MS = 1600
-const MAX_MS = 2400
+const MIN_MS = 2500
+const MAX_MS = 3500
 
 type Stage = 'fonts' | 'content' | 'images' | 'ready'
 
