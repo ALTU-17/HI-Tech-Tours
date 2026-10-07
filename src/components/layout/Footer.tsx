@@ -133,68 +133,41 @@ export function Footer({ locale }: { locale: Locale }) {
         </div>
 
         {/* ===== Developer Info Bar ===== */}
-        <div className="border-t border-paper/10">
-          <div className="mx-auto max-w-7xl px-5 py-5 sm:px-8 lg:px-10">
-            <div className="flex flex-wrap items-center justify-center gap-3 text-[12px] text-paper sm:text-[13px]">
+        <div className="border-t border-paper/10 md:border-t-0 md:border-l border-paper/10">
+          <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
+            <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-paper/60">
               {/* Portfolio */}
               <a
                 href="https://altamash-shaikh-portfolio.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="
-                  flex
-                  items-center
-                  gap-1.5
-                  text-paper
-                  no-underline
-                  transition-colors
-                  duration-300
-                  hover:text-forest-300
-                "
+                className="inline-flex items-center gap-1.5 text-paper/60 no-underline transition-colors duration-300 hover:text-gold-300"
                 aria-label="Visit developer portfolio"
               >
-                <Icon name="code" className="h-4 w-4 text-forest-500" />
+                <Icon name="code" className="h-3.5 w-3.5 text-forest-500" />
                 <span>Developed by: ALTAMASH SHAIKH</span>
               </a>
 
               {/* Divider */}
-              <span className="h-3 w-px bg-forest-500/40" />
+              <span className="hidden sm:inline h-3 w-px bg-forest-500/40" />
 
               {/* Phone */}
               <a
                 href="tel:+919766220055"
-                className="
-                  flex
-                  items-center
-                  gap-1.5
-                  text-paper
-                  no-underline
-                  transition-colors
-                  duration-300
-                  hover:text-forest-300
-                "
+                className="inline-flex items-center gap-1.5 text-paper/60 no-underline transition-colors duration-300 hover:text-gold-300"
                 aria-label="Call developer"
               >
                 <Icon name="phone" className="h-3.5 w-3.5 text-forest-500" />
                 <span>+91 9766220055</span>
               </a>
 
-              {/* Divider */}
-              <span className="h-3 w-px bg-forest-500/40" />
+              {/* Divider — only between phone and email on mobile */}
+              <span className="hidden sm:inline h-3 w-px bg-forest-500/40" />
 
               {/* Email */}
               <a
                 href="mailto:skaltamsh789@gmail.com"
-                className="
-                  flex
-                  items-center
-                  gap-1.5
-                  text-paper
-                  no-underline
-                  transition-colors
-                  duration-300
-                  hover:text-forest-300
-                "
+                className="inline-flex items-center gap-1.5 text-paper/60 no-underline transition-colors duration-300 hover:text-gold-300"
                 aria-label="Email developer"
               >
                 <Icon name="mail" className="h-3.5 w-3.5 text-forest-500" />

@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 
 import { BranchesSection, CtaBand } from '@/components/home/Branches'
 import { CoverageSection, PillarsSection } from '@/components/home/Coverage'
+import { OfficeSection } from '@/components/home/OfficeSection'
 import { FounderSection } from '@/components/home/FounderSection'
 import { Hero } from '@/components/home/Hero'
 import { InclusionsSection, JourneySection } from '@/components/home/Inclusions'
@@ -128,6 +129,8 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <FounderSection locale={locale} />
       <CoverageSection locale={locale} />
       <ReviewsSection locale={locale} />
+
+      <OfficeSection locale={locale} />
 
       <section className="py-20 sm:py-24">
         <div className="container-page">

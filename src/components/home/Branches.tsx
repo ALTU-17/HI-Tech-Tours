@@ -9,7 +9,8 @@ import { getDictionary, t_, type Locale } from '@/i18n'
 
 export function BranchesSection({ locale }: { locale: Locale }) {
   const d = getDictionary(locale)
-  const office = site.offices[0]
+  // Find the head office (type: 'head') instead of assuming index 0
+  const office = site.offices.find((o) => o.type === 'head') ?? site.offices[0]
 
   return (
     <section className="py-20 sm:py-24">

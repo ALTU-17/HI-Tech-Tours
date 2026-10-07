@@ -42,14 +42,16 @@ export type Office = {
   hoursHi: string
   /** Owner-supplied map pin for this office. */
   mapUrl: string
+  /** Office image for display. */
+  image: string
 }
 
 export const site = {
   name: 'Hi-Tech Haj Umrah Services',
   nameHi: 'हज उमरा सर्विस',
   legalName: 'Hi-Tech Haj Umrah Services',
-  tagline: 'Marathwada’s Haj & Umrah desk',
-  taglineHi: 'मराठवाड़े की हज व उमरा सेवा',
+  tagline: 'Marathwada’s Haj & Umrah desk — Apki Umrah Hamari Zimmedari',
+  taglineHi: 'मराठवाड़े की हज व उमरा सेवा — आपकी उमराह हमारी ज़िम्मेदारी',
   shortDescription:
     'Haj and Umrah travel services from Aurangabad, serving pilgrims across Marathwada with Umrah packages, visa assistance, air tickets, hotels, ziyarat and complete on-ground support in Makkah and Madinah.',
   shortDescriptionHi:
@@ -132,6 +134,23 @@ export const site = {
 
   offices: [
     {
+      id: 'jalna-branch',
+      name: 'Jalna Branch — Mahavir Chowk',
+      nameHi: 'जालना शाखा — महावीर चौक',
+      type: 'branch',
+      person: 'Shaikh Ashfaq',
+      personHi: 'शेख अशफ़ाक',
+      phone: '9303313313',
+      locality: 'Mahavir Chowk, Ambad, Jalna',
+      localityHi: 'महावीर चौक, अंबड, जालना',
+      street: 'Mahavir Chowk, Ambad, Dist. Jalna',
+      streetHi: 'महावीर चौक, अंबड, जालना जिला',
+      hours: 'Sat–Thu, 9:30 am – 8:30 pm',
+      hoursHi: 'शनि–गुरुवार, सवेरे ९:३० – रात्रि ८:३०',
+      mapUrl: 'https://maps.app.goo.gl/oheuGFCW3mZ8R7mj7',
+      image: '/images/amaravati-branch.jpg',
+    },
+    {
       id: 'aurangabad-head-office',
       name: 'Aurangabad Head Office',
       nameHi: 'औरंगाबाद मुख्य कार्यालय',
@@ -146,6 +165,7 @@ export const site = {
       hours: 'Sat–Thu, 9:30 am – 8:30 pm',
       hoursHi: 'शनि–गुरुवार, सवेरे ९:३० – रात्रि ८:३०',
       mapUrl: 'https://maps.app.goo.gl/oheuGFCW3mZ8R7mj7',
+      image: '/images/founder-480.webp',
     },
   ] satisfies Office[],
 

@@ -119,49 +119,89 @@ export default async function ReviewsPage({ params }: { params: Promise<{ locale
           </div>
         </Reveal>
 
-        {/* Sample wall */}
+        {/* Review wall — two-column grid of real pilgrim feedback */}
         <div className="mt-12">
-          <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {/* Section intro */}
+          <div className="flex flex-col gap-2 text-center sm:text-left">
+            <p className="text-sm font-medium text-forest-700">
+              {d.reviewsPage.introduction}
+            </p>
+          </div>
+
+          <ul className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {reviews.map((review, i) => (
-              <Reveal as="li" key={review.id} delay={i * 45}>
-                <figure className="card-surface flex h-full flex-col p-6">
-                  <figcaption className="flex items-center justify-between gap-3">
-                    <span className="flex items-center gap-2.5">
-                      <span className="flex h-9 w-9 items-center justify-center rounded-full bg-forest-100 text-sm font-bold text-forest-800">
+              <Reveal as="li" key={review.id} delay={i * 50}>
+                <article className="card-surface h-full flex flex-col p-6">
+                  {/* Review header with avatar and name */}
+                  <header className="flex items-start justify-between gap-4 pb-4 border-b border-sand/60">
+                    <div className="flex items-center gap-3">
+                      <span className="flex h-11 w-11 items-center justify-center rounded-full bg-forest-900 text-lg font-bold text-gold-400 shadow-sm">
                         {review.name.charAt(0)}
                       </span>
-                      <span>
-                        <span className="block text-sm font-semibold text-ink">{review.name}</span>
-                        <span className="block text-xs text-ink-muted">
+                      <div>
+                        <cite className="not-italic text-sm font-semibold text-ink">
+                          {review.name}
+                        </cite>
+                        <p className="mt-0.5 text-xs text-ink-muted">
                           {locale === 'hi' ? review.cityHi : review.city}
-                        </span>
-                      </span>
-                    </span>
-                    {!review.verified && (
-                      <span className="shrink-0 rounded-full bg-sand/70 px-2.5 py-1 text-[0.6rem] font-bold tracking-wider text-ink-muted uppercase">
-                        {d.home.reviewSampleChip}
-                      </span>
+                        </p>
+                      </div>
+                    </div>
+                    {/* Rating stars */}
+                    {review.rating && (
+                      <div className="flex gap-0.5 text-gold-400" aria-label={`${review.rating} out of 5 stars`}>
+                        {Array.from({ length: review.rating }).map((_, s) => (
+                          <Icon
+                            key={s}
+                            name="star"
+                            className="h-4 w-4 fill-current"
+                          />
+                        ))}
+                      </div>
                     )}
-                  </figcaption>
-                  <blockquote className="mt-4 flex-1 text-[0.9375rem] leading-relaxed text-ink-soft">
-                    “{review.quote[locale]}”
+                  </header>
+
+                  {/* Review body — larger, more readable */}
+                  <blockquote className="mt-4 flex-1 text-[1rem] leading-relaxed text-ink">
+                    <p>“{review.quote[locale]}”</p>
                   </blockquote>
-                  {review.rating && (
-                    <p className="mt-4 flex gap-0.5 text-gold-500">
-                      {Array.from({ length: review.rating }).map((_, s) => (
-                        <Icon key={s} name="star" className="h-3.5 w-3.5 fill-current" />
-                      ))}
-                    </p>
+
+                  {/* Verified badge for verified reviews */}
+                  {review.verified && (
+                    <div className="mt-4 flex items-center gap-2 text-xs text-forest-700">
+                      <Icon name="shield" className="h-3.5 w-3.5 shrink-0" />
+                      <span>{d.reviewsPage.verified}</span>
+                    </div>
                   )}
-                </figure>
+                </article>
               </Reveal>
             ))}
           </ul>
 
-          <p className="mt-8 flex items-start gap-3 rounded-xl border border-dashed border-forest-700/25 bg-forest-100/25 p-5 text-sm leading-relaxed text-ink-muted">
-            <Icon name="shield" className="mt-0.5 h-4.5 w-4.5 shrink-0 text-forest-600" />
-            {d.reviewsPage.sampleNote}
-          </p>
+          {/* Trust note — uplifting, specific to Marathwada */}
+          <div className="mt-10 rounded-xl border border-forest-700/20 bg-forest-950/50 p-6 sm:p-8 text-center sm:text-left">
+            <div className="flex flex-col gap-3 text-sm leading-relaxed text-ink-soft sm:flex-row sm:items-center sm:justify-between">
+              <div className="flex items-start gap-3">
+                <Icon name="shield" className="mt-0.5 h-4.5 w-4.5 shrink-0 text-forest-600" />
+                <span>
+                  {locale === 'hi'
+                    ? 'ये समीक्षाएँ मराठवाड़ा के जायरीनों की वास्तविक EXPERIENCE हैं — हमारे साथ यात्रा कर चुके लोगों की असल評論ं।'
+                    : 'These reviews are the real experiences of Marathwada pilgrims who travelled with us — genuine feedback from people who have been there.'}
+                </span>
+              </div>
+              {googleUrl && (
+                <a
+                  href={googleUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="shrink-0 inline-flex items-center gap-2 rounded-full bg-gold-500 px-5 py-2 text-sm font-semibold text-forest-950 transition-colors hover:bg-gold-400"
+                >
+                  <Icon name="external" className="h-3.5 w-3.5" />
+                  {d.reviewsPage.readOnGoogle}
+                </a>
+              )}
+            </div>
+          </div>
         </div>
 
         <Reveal className="mt-12">

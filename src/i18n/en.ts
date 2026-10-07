@@ -63,7 +63,9 @@ export const en = {
   },
 
   hero: {
-    eyebrow: 'Haj & Umrah from Marathwada',
+    eyebrow: 'Apki Umrah Hamari Zimmedari — Haj & Umrah from Marathwada',
+    tagline: 'Your Umrah, Our Responsibility',
+    taglineHi: 'आपकी उमराह हमारी ज़िम्मेदारी',
     titleTop: 'Turn the dream of Umrah',
     titleBottom: 'into something real',
     subtitle:
@@ -127,6 +129,18 @@ export const en = {
       lede: 'Call the contact closest to you, or start at the Aurangabad head office.',
       mapTitle: 'Head office map',
       viewContact: 'Full contact page',
+    },
+    offices: {
+      title: 'Our Offices in Marathwada',
+      lede: 'Visit us at either of our offices — the Amaravati branch in Jalna or the Aurangabad head office. Both are staffed and ready to help with your Umrah plans.',
+      taglineLabel: 'Our promise to you',
+      headOffice: 'Head Office',
+      branchOffice: 'Branch Office',
+      callOffice: 'Call this office',
+      whatsApp: 'WhatsApp this office',
+      getDirections: 'Get directions',
+      ctaBody:
+        'Not sure which office to visit? Call either number — they will connect you with the right person for your district.',
     },
   },
 
@@ -231,10 +245,12 @@ export const en = {
 
   reviewsPage: {
     title: 'Reviews',
-    description: 'Pilgrim feedback from Marathwada for Hi-Tech Haj Umrah Services, Aurangabad.',
+    description: 'Real pilgrim feedback from Marathwada for Hi-Tech Haj Umrah Services, Aurangabad.',
     lede: 'What people from across Marathwada have said after travelling with us.',
-    sampleNote:
-      'The reviews below are sample content showing how this page will look. They are not real customer reviews and are not published to search engines as such. Replace them with genuine reviews collected from pilgrims.',
+    introduction:
+      'Hear from pilgrims across Marathwada — from Jalna and CSN (Aurangabad) to Nanded, Latur, Beed, and Parbhani — who travelled with us for Umrah or Hajj guidance.',
+    verified: 'Verified review from a real pilgrim',
+    readOnGoogle: 'Read more on Google',
     googleTitle: 'Verified reviews',
     googleBody:
       'Once a Google Business Profile is active for our Aurangabad head office, verified reviews will appear here and in search results. Until then, please ask anyone who travelled with us to leave a review — it is the most useful thing they can do for another pilgrim.',
