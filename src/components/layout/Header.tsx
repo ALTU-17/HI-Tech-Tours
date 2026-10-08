@@ -18,7 +18,9 @@ function navItems(locale: Locale, d: ReturnType<typeof getDictionary>): NavItem[
     { href: `/${locale}/umrah-packages`, label: d.nav.umrah },
     { href: `/${locale}/hajj`, label: d.nav.hajj },
     { href: `/${locale}/services`, label: d.nav.services },
-    { href: `/${locale}/locations`, label: d.nav.locations },
+    // Marathwada (/locations) is hidden from the nav at the owner's request.
+    // The page itself is untouched — restore this line to show it again.
+    // { href: `/${locale}/locations`, label: d.nav.locations },
     { href: `/${locale}/guides`, label: d.nav.guides },
     { href: `/${locale}/faq`, label: d.nav.faq },
   ]

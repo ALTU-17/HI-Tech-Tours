@@ -26,14 +26,23 @@ export type Branch = {
   note?: string
 }
 
+/** A named contact for an office, with their own direct line. */
+export type OfficeContact = {
+  person: string
+  personHi: string
+  phone: string
+}
+
 export type Office = {
   id: string
   name: string
   nameHi: string
   type: string
-  person: string
-  personHi: string
-  phone: string
+  /**
+   * Named contacts for this office. The first entry is the office's primary
+   * number — the one the Call / WhatsApp buttons on the card dial.
+   */
+  contacts: OfficeContact[]
   locality: string
   localityHi: string
   street: string
@@ -138,9 +147,9 @@ export const site = {
       name: 'Jalna Branch — Mahavir Chowk',
       nameHi: 'जालना शाखा — महावीर चौक',
       type: 'branch',
-      person: 'Shaikh Ashfaq',
-      personHi: 'शेख अशफ़ाक',
-      phone: '9303313313',
+      contacts: [
+        { person: 'Shaikh Ashfaq', personHi: 'शेख अशफ़ाक', phone: '9303313313' },
+      ],
       locality: 'Mahavir Chowk, Ambad, Jalna',
       localityHi: 'महावीर चौक, अंबड, जालना',
       street: 'Mahavir Chowk, Ambad, Dist. Jalna',
@@ -155,9 +164,10 @@ export const site = {
       name: 'Aurangabad Head Office',
       nameHi: 'औरंगाबाद मुख्य कार्यालय',
       type: 'head',
-      person: 'Mohan Pathan',
-      personHi: 'मोहन पठाण',
-      phone: '9175107214',
+      contacts: [
+        { person: 'Shaikh Usman', personHi: 'शेख उसमान', phone: '7276525242' },
+        { person: 'Mufti Umar', personHi: 'मुफ़्ती उमर', phone: '9627751111' },
+      ],
       locality: 'Aurangabad, Maharashtra',
       localityHi: 'औरंगाबाद, महाराष्ट्र',
       street: 'Jinsi Chowk, in front of Kelgaonkar Hospital, Jinsi Police Station Road',
@@ -216,24 +226,24 @@ export const site = {
       person: 'Mohd Mujahid',
       personHi: 'मुहम्मद मुजाहिद',
       phone: '9028543538',
-      locality: 'Near M.N. Bhavit, Manjeur, CSN (Aurangabad)',
-      localityHi: 'एम.एन. भवित के पास, मंजूर, छत्रपति संभाजीनगर',
-      area: 'CSN (Aurangabad)',
+      locality: 'Partur',
+      localityHi: 'परतूर',
+      area: 'Jalna district',
     },
     {
       id: 'riyaz',
       person: 'Maulana Riyaz Sahab',
       personHi: 'मौलाना रियाज साहब',
       phone: '9730229093',
-      locality: 'Devgaon Kannad (Aurangabad)',
-      localityHi: 'डेवगाँव कन्नड, औरंगाबाद',
-      area: 'Devgaon Kannad (Aurangabad)',
+      locality: 'Devgaon Rangari, Kannad (Aurangabad)',
+      localityHi: 'डेवगाँव रंगारी, कन्नड, औरंगाबाद',
+      area: 'Devgaon Rangari, Kannad (Aurangabad)',
     },
     {
-      id: 'qari-akther',
-      person: 'Qari Akther',
-      personHi: 'कारी अख़्तर',
-      phone: '8182828080',
+      id: 'mufti-umar',
+      person: 'Mufti Umar',
+      personHi: 'मुफ़्ती उमर',
+      phone: '9627751111',
       locality: 'Gevrai',
       localityHi: 'गेवराई',
       area: 'Beed district',
@@ -319,7 +329,21 @@ export function postalAddress(locale: 'en' | 'hi') {
   }
 }
 
+/**
+ * Every reachable contact, flattened for the machine-readable feed.
+ *
+ * An office can list more than one named contact, so each of them becomes its
+ * own entry and carries the office's address fields along with it.
+ */
 export const allContacts = [
-  ...site.offices.map((o) => ({ ...o, isOffice: true as const })),
+  ...site.offices.flatMap((o) =>
+    o.contacts.map((c) => ({
+      ...o,
+      person: c.person,
+      personHi: c.personHi,
+      phone: c.phone,
+      isOffice: true as const,
+    })),
+  ),
   ...site.branches.map((b) => ({ ...b, isOffice: false as const })),
 ]

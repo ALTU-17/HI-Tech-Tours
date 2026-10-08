@@ -14,7 +14,9 @@ export function Footer({ locale }: { locale: Locale }) {
     { href: `/${locale}/umrah-packages`, label: d.nav.umrah },
     { href: `/${locale}/hajj`, label: d.nav.hajj },
     { href: `/${locale}/services`, label: d.nav.services },
-    { href: `/${locale}/locations`, label: d.nav.locations },
+    // Marathwada (/locations) is hidden here too, to match the header nav.
+    // The page and the district links below are untouched — restore to re-add.
+    // { href: `/${locale}/locations`, label: d.nav.locations },
     { href: `/${locale}/guides`, label: d.nav.guides },
     { href: `/${locale}/about`, label: d.nav.about },
     { href: `/${locale}/reviews`, label: d.nav.reviews },

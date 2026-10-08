@@ -47,8 +47,8 @@ export const journey: JourneyStep[] = [
     step: 5,
     title: { en: 'Makkah and Madinah', hi: 'मक्का और मदीना' },
     body: {
-      en: 'Hotel, AC bus transport between cities, Indian food, unlimited laundry, and the ziyarat trips — with a group leader reachable throughout.',
-      hi: 'होटल, शहरों के बीच एसी बस, भारतीय भोजन, असीमित लॉन्ड्री और ज़ियारत यात्राएँ — पूरे समय तक समूह नेता उपलब्ध।',
+      en: 'Hotel, transfers between cities, Indian food, unlimited laundry, and the ziyarat trips — with a group leader reachable throughout.',
+      hi: 'होटल, शहरों के बीच ट्रांसफर, भारतीय भोजन, असीमित लॉन्ड्री और ज़ियारत यात्राएँ — पूरे समय तक समूह नेता उपलब्ध।',
     },
   },
   {
@@ -69,7 +69,7 @@ export const standardInclusions: string[] = [
   'Air ticket from Mumbai, Nagpur, Hyderabad or Delhi',
   'Hotel in Makkah and Madinah',
   'Three tiers available: Silver, Deluxe and Diamond',
-  'AC bus transport and all three Ziyarat trips',
+  'Transfers between cities and all three Ziyarat trips',
   'A guide with every Ziyarat trip',
   'Full guidance throughout the stay',
   'Zohrana ziyarat arranged on request',
@@ -84,7 +84,7 @@ export const standardInclusionsHi: string[] = [
   'मुंबई, नागपुर, हैदराबाद या दिल्ली से एयर टिकट',
   'मक्का और मदीना में होटल',
   'तीन श्रेणियाँ उपलब्ध: सिल्वर, डीलक्स और डायमंड',
-  'एसी बस परिवहन और तीनों ज़ियारत यात्राएँ',
+  'शहरों के बीच ट्रांसफर और तीनों ज़ियारत यात्राएँ',
   'हर ज़ियारत यात्रा के साथ गाइड',
   'पूरे ठहरने के दौरान पूर्ण मार्गदर्शन',
   'अनुरोध पर ज़ोहरा ज़ियारत की व्यवस्था',

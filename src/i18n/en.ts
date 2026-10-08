@@ -181,7 +181,7 @@ export const en = {
   servicesPage: {
     title: 'Services',
     description:
-      'Umrah visa, air ticket, hotel, ziyarat, Indian food, AC bus transport, laundry, Zamzam, bag kit and Hajj application help.',
+      'Umrah visa, air ticket, hotel, ziyarat, Indian food, transfers, laundry, Zamzam, bag kit and Hajj application help.',
     lede: 'Twelve services, each with what it actually covers — and what it does not.',
   },
 

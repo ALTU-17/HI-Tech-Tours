@@ -96,28 +96,46 @@ export function OfficeSection({ locale }: { locale: Locale }) {
                       </span>
                     </p>
 
-                    <p className="flex items-center gap-3">
-                      <Icon name="phone" className="h-4 w-4 shrink-0 text-forest-600" />
-                      <a
-                        href={telHref(office.phone)}
-                        className="font-semibold tabular text-forest-800 link-underline"
-                      >
-                        {office.phone}
-                      </a>
-                    </p>
+                    {/* Named contacts — each with their own direct line and
+                        WhatsApp, so a pilgrim reaches a person, not a desk. */}
+                    {office.contacts.map((contact) => (
+                      <div key={contact.phone} className="flex items-center gap-3">
+                        <Icon name="phone" className="h-4 w-4 shrink-0 text-forest-600" />
+                        <span className="min-w-0 flex-1">
+                          <span className="block font-medium text-ink">
+                            {locale === 'hi' ? contact.personHi : contact.person}
+                          </span>
+                          <a
+                            href={telHref(contact.phone)}
+                            className="font-semibold tabular text-forest-800 link-underline"
+                          >
+                            {contact.phone}
+                          </a>
+                        </span>
+                        <a
+                          href={whatsappHref(enquiryMessage(locale, 'general'), contact.phone)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`WhatsApp ${contact.person} — ${contact.phone}`}
+                          className="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-forest-700/20 text-forest-700 transition-colors hover:border-forest-700 hover:bg-forest-800 hover:text-paper"
+                        >
+                          <Icon name="whatsapp" className="h-4 w-4" />
+                        </a>
+                      </div>
+                    ))}
                   </div>
                 </div>
 
                 <div className="mt-6 flex flex-col gap-3">
                   <a
-                    href={telHref(office.phone)}
+                    href={telHref(office.contacts[0].phone)}
                     className="inline-flex items-center justify-center gap-2 rounded-full bg-forest-800 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-forest-700"
                   >
                     <Icon name="phone" className="h-4 w-4" />
                     {locale === 'hi' ? d.sections.offices.callOffice : d.sections.offices.callOffice}
                   </a>
                   <a
-                    href={whatsappHref(enquiryMessage(locale, 'general'), office.phone)}
+                    href={whatsappHref(enquiryMessage(locale, 'general'), office.contacts[0].phone)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-2 rounded-full border border-sand/60 px-5 py-3 text-sm font-semibold text-forest-800 transition-colors hover:bg-forest-100/60"

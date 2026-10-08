@@ -137,12 +137,19 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
                     {t_({ en: office.hours, hi: office.hoursHi }, locale)}
                   </span>
                 </p>
-                <p className="flex items-center gap-3">
-                  <Icon name="phone" className="h-4.5 w-4.5 shrink-0 text-forest-600" />
-                  <a href={telHref(office.phone)} className="font-semibold text-forest-800 tabular link-underline">
-                    {office.phone}
-                  </a>
-                </p>
+                {office.contacts.map((contact) => (
+                  <p key={contact.phone} className="flex items-start gap-3">
+                    <Icon name="phone" className="mt-0.5 h-4.5 w-4.5 shrink-0 text-forest-600" />
+                    <span>
+                      <span className="block font-medium text-ink">
+                        {t_({ en: contact.person, hi: contact.personHi }, locale)}
+                      </span>
+                      <a href={telHref(contact.phone)} className="font-semibold text-forest-800 tabular link-underline">
+                        {contact.phone}
+                      </a>
+                    </span>
+                  </p>
+                ))}
                 <p className="flex items-center gap-3">
                   <Icon name="external" className="h-4.5 w-4.5 shrink-0 text-forest-600" />
                   <a

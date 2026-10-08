@@ -2,7 +2,9 @@ import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 
 import { BranchesSection, CtaBand } from '@/components/home/Branches'
-import { CoverageSection, PillarsSection } from '@/components/home/Coverage'
+// CoverageSection (the Marathwada eight-district grid) is disabled at the
+// owner's request. Restore the import here and the <CoverageSection /> below.
+import { PillarsSection } from '@/components/home/Coverage'
 import { OfficeSection } from '@/components/home/OfficeSection'
 import { FounderSection } from '@/components/home/FounderSection'
 import { Hero } from '@/components/home/Hero'
@@ -127,7 +129,10 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <JourneySection locale={locale} />
       <PillarsSection locale={locale} />
       <FounderSection locale={locale} />
+      {/* Marathwada coverage grid — commented out at the owner's request.
+          Re-enable by restoring the CoverageSection import at the top of this file.
       <CoverageSection locale={locale} />
+      */}
       <ReviewsSection locale={locale} />
 
       <OfficeSection locale={locale} />
