@@ -46,6 +46,9 @@ export function buildFeed() {
       },
       coordinates: site.geo,
       openingHours: 'Sa-Th 09:30-20:30',
+      social: Object.fromEntries(
+        Object.entries(site.social).filter(([, url]) => Boolean(url)),
+      ),
       pricePolicy:
         'Packages are quoted per departure. No fixed price is published because the rate depends on travel month, group size and airline pricing.',
       compliance: {
@@ -151,6 +154,10 @@ export function buildLlmsTxt() {
   lines.push(`- Phone: +91-${site.phone}`)
   lines.push(`- WhatsApp: +91-${site.whatsapp}`)
   lines.push(`- Languages: English, Hindi`)
+  for (const [network, url] of Object.entries(site.social)) {
+    if (!url) continue
+    lines.push(`- ${network}: ${url}`)
+  }
   lines.push(`- Service area: ${marathwadaRegion.name} (${marathwadaRegion.districts.join(', ')})`)
   lines.push(`- Umrah package tiers: ${packages.length} listed`)
   lines.push('- Pricing: quoted per departure; no fixed prices are published')

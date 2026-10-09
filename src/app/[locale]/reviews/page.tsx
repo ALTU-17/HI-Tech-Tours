@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation'
 
 import { Icon } from '@/components/Icon'
 import { Reveal } from '@/components/Reveal'
+import { ReelWall } from '@/components/reviews/ReelWall'
 import { JsonLd } from '@/components/seo/JsonLd'
 import { Breadcrumbs, SectionHeading } from '@/components/ui/SectionHeading'
 import { googleUrl, reviews, verifiedReviews } from '@/data/reviews'
@@ -117,6 +118,11 @@ export default async function ReviewsPage({ params }: { params: Promise<{ locale
               </span>
             )}
           </div>
+        </Reveal>
+
+        {/* Reel wall — the same pilgrims, in their own voices */}
+        <Reveal className="mt-10">
+          <ReelWall copy={d.reviewsPage.reels} instagramHref={site.social.instagram} />
         </Reveal>
 
         {/* Review wall — two-column grid of real pilgrim feedback */}

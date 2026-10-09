@@ -293,7 +293,7 @@ export const site = {
    */
   social: {
     facebook: 'https://www.facebook.com/hitech-haj-umrah-jalna',
-    instagram: 'https://www.instagram.com/hitech.haj.umrah/',
+    instagram: 'https://www.instagram.com/hitechuumrah?utm_source=qr&obrf=NGJjeWpvMTdoc3Q=',
     youtube: '',
   },
 

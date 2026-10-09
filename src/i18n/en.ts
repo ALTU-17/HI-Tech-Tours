@@ -36,6 +36,7 @@ export const en = {
     languageLabel: 'Language',
     callNow: 'Call now',
     whatsapp: 'WhatsApp',
+    instagram: 'Instagram',
   },
 
   common: {
@@ -254,6 +255,22 @@ export const en = {
     googleTitle: 'Verified reviews',
     googleBody:
       'Once a Google Business Profile is active for our Aurangabad head office, verified reviews will appear here and in search results. Until then, please ask anyone who travelled with us to leave a review — it is the most useful thing they can do for another pilgrim.',
+    reels: {
+      eyebrow: 'Pilgrim voices',
+      title: 'Hear it in their own words',
+      lede: 'Pilgrims from Marathwada filmed these themselves — on the journey and after getting home. Tap any reel to play it and the pilgrim’s own voice comes on with the tap.',
+      play: 'Play this reel',
+      pause: 'Pause this reel',
+      replay: 'Play this reel again',
+      soundOn: 'Turn the sound on',
+      soundOff: 'Turn the sound off',
+      mutedHint: 'Tap the speaker for sound',
+      reel: 'Reel',
+      swipeHint: 'Swipe for the next reel',
+      note: 'Unedited clips, filmed on the pilgrims’ own phones, in their own voices. One plays at a time, and it stops when you scroll away.',
+      instagram: 'More on Instagram',
+      all: 'See all reviews',
+    },
   },
 
   faqPage: {

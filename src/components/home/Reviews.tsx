@@ -2,9 +2,11 @@ import Link from 'next/link'
 
 import { Icon } from '@/components/Icon'
 import { Reveal } from '@/components/Reveal'
+import { ReelWall } from '@/components/reviews/ReelWall'
 import { SectionHeading } from '@/components/ui/SectionHeading'
 import { googleUrl, reviews } from '@/data/reviews'
 import { cn } from '@/lib/cn'
+import { site } from '@/data/site'
 import { getDictionary, type Locale } from '@/i18n'
 
 /**
@@ -13,6 +15,9 @@ import { getDictionary, type Locale } from '@/i18n'
  * The reviews in src/data/reviews.ts are now verified real feedback from
  * pilgrims. All reviews have `verified: true` and show rating stars.
  * The sample-content notice has been removed.
+ *
+ * Below the written wall sits the same reel band used on /reviews — one
+ * component, one data file, so a sixth clip appears on both pages at once.
  */
 export function ReviewsSection({ locale }: { locale: Locale }) {
   const d = getDictionary(locale)
@@ -94,15 +99,36 @@ export function ReviewsSection({ locale }: { locale: Locale }) {
               ))}
             </ul>
 
-            <Link
-              href={`/${locale}/reviews`}
-              className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-forest-700 link-underline"
-            >
-              {d.sections.reviews.googleCta}
-              <Icon name="arrow" className="h-4 w-4 rtl:-scale-x-100" />
-            </Link>
+            <div className="mt-5 flex items-center gap-3">
+              <Link
+                href={`/${locale}/reviews`}
+                className="inline-flex items-center gap-2 text-sm font-semibold text-forest-700 link-underline"
+              >
+                {d.sections.reviews.googleCta}
+                <Icon name="arrow" className="h-4 w-4 rtl:-scale-x-100" />
+              </Link>
+              <a
+                href={site.social.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-forest-700 link-underline"
+              >
+                <Icon name="instagram" className="h-4 w-4" />
+                {d.nav.instagram}
+              </a>
+            </div>
           </div>
         </div>
+
+        {/* Pilgrim reels — the same voices as the reviews above, on video. */}
+        <Reveal className="mt-14">
+          <ReelWall
+            copy={d.reviewsPage.reels}
+            instagramHref={site.social.instagram}
+            link={{ href: `/${locale}/reviews`, label: d.reviewsPage.reels.all }}
+          />
+        </Reveal>
       </div>
     </section>
   )

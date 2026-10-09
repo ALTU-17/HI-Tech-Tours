@@ -10,7 +10,7 @@ import { cn } from '@/lib/cn'
  * unrelated styles.
  */
 
-const paths: Record<ServiceIcon | 'phone' | 'whatsapp' | 'pin' | 'clock' | 'check' | 'arrow' | 'star' | 'plus' | 'minus' | 'external' | 'shield' | 'plane2' | 'code' | 'mail', string> = {
+const paths: Record<ServiceIcon | 'phone' | 'whatsapp' | 'pin' | 'clock' | 'check' | 'arrow' | 'star' | 'plus' | 'minus' | 'external' | 'shield' | 'plane2' | 'code' | 'mail' | 'instagram' | 'play' | 'pause' | 'replay' | 'sound' | 'soundOff', string> = {
   plane: 'M2.5 13.5 L21 4 L15.5 11.5 M14 12 L21 4 L11.5 14 L9 20 L7 16 L2.5 13.5 Z',
   hotel: 'M3 19V6.5h18V19M3 19h18M7.5 10h3M13.5 10h3M7.5 14h9M6.5 19v-2h3v2M14.5 19v-2h3v2',
   visa: 'M3.5 7.5h17v12h-17zM6.5 4.5h11v3h-11zM7.5 12.5h4M7.5 15.5h7M14.5 12.5h2.5v3h-2.5z',
@@ -37,6 +37,16 @@ const paths: Record<ServiceIcon | 'phone' | 'whatsapp' | 'pin' | 'clock' | 'chec
   plane2: 'M3 12h7l3-2 3 2h5M12 5v7M12 12v7',
   code: 'M9 7.5 L4.5 12 L9 16.5M15 7.5 L19.5 12 L15 16.5M11.5 19 L13.5 5',
   mail: 'M3 5.5h18v13H3zM3.5 6.5L12 13l8.5-6.5',
+  // Rounded square + lens + flash dot, drawn as one continuous stroke so it
+  // stays in the same hand-drawn family as the rest of the set.
+  instagram:
+    'M7.4 2.8h9.2a4.6 4.6 0 0 1 4.6 4.6v9.2a4.6 4.6 0 0 1-4.6 4.6H7.4a4.6 4.6 0 0 1-4.6-4.6V7.4a4.6 4.6 0 0 1 4.6-4.6M12 8.3a3.7 3.7 0 1 0 0 7.4 3.7 3.7 0 0 0 0-7.4M17.5 6.6h.01',
+  // Player glyphs for the reel wall. Same 24×24 stroke grid as the rest.
+  play: 'M8.4 5.4 L18.6 12 L8.4 18.6 Z',
+  pause: 'M9.6 5.6v12.8M14.4 5.6v12.8',
+  replay: 'M19.6 12a7.6 7.6 0 1 1-2.2-5.4M19.6 4.6V9.4h-4.8',
+  sound: 'M4 9.6h3.6L12 5.4v13.2L7.6 14.4H4zM15.6 9.4a3.8 3.8 0 0 1 0 5.2M18.2 6.9a7.4 7.4 0 0 1 0 10.2',
+  soundOff: 'M4 9.6h3.6L12 5.4v13.2L7.6 14.4H4zM16.2 9.9l4.2 4.2M20.4 9.9l-4.2 4.2',
 }
 
 export type IconName = keyof typeof paths

@@ -22,6 +22,9 @@ function navItems(locale: Locale, d: ReturnType<typeof getDictionary>): NavItem[
     // The page itself is untouched — restore this line to show it again.
     // { href: `/${locale}/locations`, label: d.nav.locations },
     { href: `/${locale}/guides`, label: d.nav.guides },
+    // Reviews sits in the main row, not only behind the hamburger: the pilgrim
+    // videos on that page are the strongest thing a visitor can look at.
+    { href: `/${locale}/reviews`, label: d.nav.reviews },
     { href: `/${locale}/faq`, label: d.nav.faq },
   ]
 }
@@ -74,7 +77,9 @@ export function Header({ locale }: { locale: Locale }) {
         </Link>
 
         {/* Desktop nav */}
-        <nav aria-label="Main" className="hidden items-center gap-1 lg:flex">
+        {/* Six items have to fit the 1024px row without crowding the call and
+            Instagram pills, so the padding is roomier from 1280px up. */}
+        <nav aria-label="Main" className="hidden items-center gap-0.5 lg:flex xl:gap-1">
           {items.map((item) => {
             const active = pathname === item.href || pathname?.startsWith(item.href + '/')
             return (
@@ -83,7 +88,7 @@ export function Header({ locale }: { locale: Locale }) {
                 href={item.href}
                 aria-current={active ? 'page' : undefined}
                 className={cn(
-                  'relative rounded-full px-3.5 py-2 text-sm font-medium transition-colors',
+                  'relative rounded-full px-2.5 py-2 text-sm font-medium transition-colors xl:px-3.5',
                   active
                     ? 'text-forest-800'
                     : 'text-ink-soft hover:bg-forest-100/60 hover:text-forest-800',
@@ -91,7 +96,7 @@ export function Header({ locale }: { locale: Locale }) {
               >
                 {item.label}
                 {active && (
-                  <span className="absolute inset-x-3.5 -bottom-0.5 h-0.5 rounded-full bg-gold-500" />
+                  <span className="absolute inset-x-2.5 -bottom-0.5 h-0.5 rounded-full bg-gold-500 xl:inset-x-3.5" />
                 )}
               </Link>
             )
@@ -117,6 +122,17 @@ export function Header({ locale }: { locale: Locale }) {
           >
             <Icon name="phone" className="h-4 w-4" />
             <span className="hidden sm:inline">{d.nav.callNow}</span>
+          </a>
+
+          <a
+            href={site.social.instagram}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+            className="hidden rounded-full border border-forest-700/25 px-3 py-1.5 text-xs font-semibold text-forest-800 transition-colors hover:border-forest-700/60 hover:bg-forest-100/60 sm:inline-flex items-center gap-1.5"
+          >
+            <Icon name="instagram" className="h-4 w-4" />
+            <span className="hidden sm:inline">{d.nav.instagram}</span>
           </a>
 
           <button
@@ -172,9 +188,9 @@ export function Header({ locale }: { locale: Locale }) {
 
           <div className="my-2 h-px bg-sand/70" />
 
+          {/* Reviews is in the main group above, so it is not repeated here. */}
           {[
             { href: `/${locale}/about`, label: d.nav.about },
-            { href: `/${locale}/reviews`, label: d.nav.reviews },
             { href: `/${locale}/contact`, label: d.nav.contact },
           ].map((item) => (
             <Link
@@ -202,6 +218,16 @@ export function Header({ locale }: { locale: Locale }) {
             >
               <Icon name="whatsapp" className="h-4 w-4" />
               {d.nav.whatsapp}
+            </a>
+            <a
+              href={site.social.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="inline-flex flex-1 items-center justify-center gap-2 rounded-xl border border-forest-700/30 px-4 py-3 text-sm font-semibold text-forest-800"
+            >
+              <Icon name="instagram" className="h-4 w-4" />
+              {d.nav.instagram}
             </a>
           </div>
         </nav>
