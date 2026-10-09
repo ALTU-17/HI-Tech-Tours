@@ -140,24 +140,24 @@ export const services: Service[] = [
     ],
     order: 6,
   },
-  {
-    slug: 'ac-bus',
-    icon: 'bus',
-    summary: {
-      en: 'AC bus transport between Makkah and Madinah and for all ziyarat trips.',
-      hi: 'मक्का और मदीना के बीच तथा सभी ज़ियारत यात्राओं के लिए एसी बस परिवहन।',
-    },
-    detail: {
-      en: 'Intercity movement is by AC bus. Buses are booked per group, so pilgrims are not split across random vehicles at an unknown stop.',
-      hi: 'शहरों के बीच आवागमन एसी बस से होता है। बसें समूह के हिसाब से बुक होती हैं, इसलिए जायरीन किसी अज्ञात स्टॉप पर अलग-अलग नहीं होते।',
-    },
-    points: [
-      { en: 'Group-booked buses', hi: 'समूह के लिए बुक बसें' },
-      { en: 'Makkah–Madinah intercity transfer', hi: 'मक्का–मदीना अंतर-शहर स्थानांतरण' },
-      { en: 'Included in all ziyarat trips', hi: 'सभी ज़ियारत यात्राओं में शामिल' },
-    ],
-    order: 7,
+{
+  slug: '4-umrah',
+  icon: 'bus',
+  summary: {
+    en: '4 Umrah transport between Makkah and Madinah and for all ziyarat trips.',
+    hi: 'मक्का और मदीना के बीच तथा सभी ज़ियारत यात्राओं के लिए 4 उमरा परिवहन।',
   },
+  detail: {
+    en: 'Intercity movement is by 4 Umrah. Buses are booked per group, so pilgrims are not split across random vehicles at an unknown stop.',
+    hi: 'शहरों के बीच आवागमन 4 उमरा से होता है। बसें समूह के हिसाब से बुक होती हैं, इसलिए जायरीन किसी अज्ञात स्टॉप पर अलग-अलग नहीं होते।',
+  },
+  points: [
+    { en: 'Group-booked buses', hi: 'समूह के लिए बुक बसें' },
+    { en: 'Makkah–Madinah intercity transfer', hi: 'मक्का–मदीना अंतर-शहर स्थानांतरण' },
+    { en: 'Included in all ziyarat trips', hi: 'सभी ज़ियारत यात्राओं में शामिल' },
+  ],
+  order: 7,
+},
   {
     slug: 'short-ziyarat-with-guide',
     icon: 'guide',

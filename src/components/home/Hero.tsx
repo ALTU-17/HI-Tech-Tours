@@ -54,7 +54,7 @@ export function Hero({ locale }: { locale: Locale }) {
             {d.hero.subtitle}
           </p>
 
-          <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
             <a
               href={telHref(site.phone)}
               className="group inline-flex items-center justify-center gap-2.5 rounded-full bg-forest-800 px-7 py-4 text-[0.9375rem] font-semibold text-paper shadow-[0_16px_38px_-14px_rgb(6_46_34/0.65)] transition-all duration-300 hover:bg-forest-700 active:scale-[0.98]"
@@ -70,6 +70,15 @@ export function Hero({ locale }: { locale: Locale }) {
             >
               <Icon name="whatsapp" className="h-4.5 w-4.5" />
               {d.home.heroCtaSecondary}
+            </a>
+            <a
+              href={site.social.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center justify-center gap-2.5 rounded-full border border-forest-700/25 bg-cream/70 px-5 py-4 text-[0.9375rem] font-semibold text-forest-800 transition-all duration-300 hover:border-forest-700/60 hover:bg-forest-100/60 active:scale-[0.98]"
+            >
+              <Icon name="instagram" className="h-4.5 w-4.5" />
+              {d.nav.instagram}
             </a>
           </div>
 

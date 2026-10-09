@@ -67,6 +67,18 @@ export function Footer({ locale }: { locale: Locale }) {
                   {d.common.whatsappUs}
                 </a>
               </p>
+              <p className="flex items-center gap-3">
+                <a
+                  href={site.social.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="link-underline inline-flex items-center gap-2 text-gold-400"
+                  aria-label="Instagram"
+                >
+                  <Icon name="instagram" className="h-4 w-4 text-gold-400" />
+                  {d.nav.instagram}
+                </a>
+              </p>
             </address>
           </div>
 

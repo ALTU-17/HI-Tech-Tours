@@ -118,13 +118,13 @@ export default async function ServicesIndexPage({
                   <p className="mt-2.5 flex-1 text-sm leading-relaxed text-ink-soft">
                     {t_(service.summary, locale)}
                   </p>
-                  <span className="mt-5 flex items-center gap-2 border-t border-sand/70 pt-4 text-sm font-semibold text-forest-700">
+                  {/* <span className="mt-5 flex items-center gap-2 border-t border-sand/70 pt-4 text-sm font-semibold text-forest-700">
                     {d.common.learnMore}
                     <Icon
                       name="arrow"
                       className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 rtl:-scale-x-100 rtl:group-hover:-translate-x-1"
                     />
-                  </span>
+                  </span> */}
                 </Link>
               </Reveal>
             )

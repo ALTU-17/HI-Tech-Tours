@@ -96,6 +96,19 @@ export function OfficeSection({ locale }: { locale: Locale }) {
                       </span>
                     </p>
 
+                    <p className="flex items-center gap-2 text-sm text-ink-muted">
+                      <a
+                        href={site.social.instagram}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 link-underline"
+                        aria-label="Instagram"
+                      >
+                        <Icon name="instagram" className="h-4 w-4" />
+                        {d.nav.instagram}
+                      </a>
+                    </p>
+
                     {/* Named contacts — each with their own direct line and
                         WhatsApp, so a pilgrim reaches a person, not a desk. */}
                     {office.contacts.map((contact) => (

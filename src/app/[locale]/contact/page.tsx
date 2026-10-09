@@ -107,6 +107,15 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
               <Icon name="whatsapp" className="h-4.5 w-4.5" />
               {d.common.whatsappUs}
             </a>
+            <a
+              href={site.social.instagram}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2.5 rounded-full border border-forest-700/25 bg-cream px-7 py-3.5 text-sm font-semibold text-forest-800 transition-colors hover:border-forest-700/60 hover:bg-forest-100/50"
+            >
+              <Icon name="instagram" className="h-4.5 w-4.5" />
+              {d.nav.instagram}
+            </a>
           </div>
         </div>
       </header>
@@ -117,7 +126,7 @@ export default async function ContactPage({ params }: { params: Promise<{ locale
           <aside className="space-y-5">
             <div className="card-surface p-6">
               <h2 className="text-xs font-bold tracking-[0.18em] text-forest-700 uppercase">
-                {d.contactPage.headOffice}
+                {d.contactPage.branchContacts}
               </h2>
               <address className="mt-4 space-y-4 text-[0.9375rem] leading-relaxed not-italic">
                 <p className="flex items-start gap-3">

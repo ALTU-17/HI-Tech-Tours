@@ -124,9 +124,9 @@ export default async function GuidesIndexPage({
                 <p className="mt-3 flex-1 text-[0.9375rem] leading-relaxed text-ink-soft">
                   {t_(guide.description, locale)}
                 </p>
-                <p className="mt-5 border-t border-sand/70 pt-4 text-sm font-semibold text-forest-700">
+                {/* <p className="mt-5 border-t border-sand/70 pt-4 text-sm font-semibold text-forest-700">
                   {d.common.learnMore}
-                </p>
+                </p> */}
               </Link>
             </Reveal>
           ))}
