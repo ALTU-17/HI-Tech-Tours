@@ -6,10 +6,14 @@ import { telHref, whatsappHref, enquiryMessage } from '@/lib/contact'
 import { getDictionary, type Locale } from '@/i18n'
 
 /**
- * Two office sections displayed side by side.
+ * The offices a pilgrim can walk into, one card per entry in `site.offices`:
  *
- * 1. Amaravati Branch (Mahavir Chowk, Ambad, Jalna) — uses the branch image
- * 2. Aurangabad Head Office (Jinsi Chowk) — uses the founder/office image
+ * 1. Jalna Branch (Mahavir Chowk, Ambad, Jalna)
+ * 2. Aurangabad Head Office (Jinsi Chowk)
+ * 3. Deorai Beed Branch (Beed district)
+ *
+ * The card header shows a pin icon instead of the office photograph, so no
+ * image is loaded for any of them today.
  */
 export function OfficeSection({ locale }: { locale: Locale }) {
   const d = getDictionary(locale)
@@ -43,8 +47,13 @@ export function OfficeSection({ locale }: { locale: Locale }) {
           </div>
         </Reveal>
 
-        {/* Two office cards */}
-        <div className="mt-12 grid gap-8 lg:grid-cols-2">
+        {/*
+          Office cards, one row of three from `xl` up: the container caps at
+          78rem, so each card is ~373px there and the longest Hindi button label
+          ("इस कार्यालय को व्हाट्सएप करें") still has ~96px to spare at 1280px.
+          Below `xl` the cards pair up.
+        */}
+        <div className="mt-12 grid gap-8 lg:grid-cols-2 xl:grid-cols-3">
           {offices.map((office, idx) => (
             <Reveal
               key={office.id}

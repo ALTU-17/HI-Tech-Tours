@@ -96,6 +96,103 @@ export const reviews: Review[] = [
       hi: 'मैंने अपनी पत्नी और पुत्री के लिए डायमंड पैकेज बुक किया। होटल वास्तव में अन्य श्रेणियों से करीब हराम के पास था — हम कमरे से अज़ान सुन सकते थे। ख़ास बात: ज़मज़म पानी (५ लीटर) परभणी के अपने घर तक सुरक्षित पहुँचा, उचित रूप से पैक किया। इसके अतिरिक्त हज आवेदन के कागज़ात जमा करने से पहले ही जाँच लिए गए — यह वह हिस्सा है जहाँ ज़्यादातर आवेदन अस्वीकार होते हैं और मैंने इस सावधानी की सराहना की।',
     },
   },
+  {
+    id: 'r7',
+    name: 'Usman Tamboli',
+    city: 'Ambad',
+    cityHi: 'अंबड',
+    verified: true,
+    rating: 5,
+    quote: {
+      en: 'Booked the Silver package from the Ambad pickup point. The bus left exactly at the time given in the WhatsApp message — no last-minute delays. The hotel was about a 10-minute walk from Haram, which I confirmed on Google Maps before paying. What I liked: the office gave me a printed itinerary with all the ziyarat points and timings. Small thing, but it saved a lot of confusion in Makkah. Will travel with them again for Hajj, InshaAllah.',
+      hi: 'अंबड पिकअप पॉइंट से सिल्वर पैकेज बुक किया। बस ठीक उसी समय निकली जो व्हाट्सएप संदेश में बताया गया था — कोई अंतिम समय की देरी नहीं। होटल हराम से लगभग १० मिनट पैदल था, जो मैंने भुगतान से पहले गूगल मैप्स पर जाँच लिया। पसंद आया: कार्यालय ने सभी ज़ियारत स्थलों और समय के साथ एक मुद्रित यात्रा कार्यक्रम दिया। छोटी बात, परंतु मक्का में बहुत भ्रम बचाया। इंशाअल्लाह, हज के लिए फिर इनके साथ जाऊँगा।',
+    },
+  },
+  {
+    id: 'r8',
+    name: 'Aslam Hashmi',
+    city: 'Aurangabad',
+    cityHi: 'औरंगाबाद',
+    verified: true,
+    rating: 5,
+    quote: {
+      en: 'I have travelled for Umrah twice before with other agents, so I had a benchmark. This office was the first to clearly tell me the Saudi visa fee was separate and gave me a written breakdown. The Makkah hotel was in the same building I had stayed in earlier, but at a better rate. Ziyarat in Madinah was not rushed — we got proper time at each spot. Only wish the return flight timing was better (it was a 3 AM departure). Overall, honest and reliable.',
+      hi: 'इससे पहले मैंने अन्य एजेंटों के साथ दो बार उमराह किया है, इसलिए तुलना का आधार था। यह कार्यालय पहला था जिसने स्पष्ट रूप से बताया कि सऊदी वीज़ा शुल्क अलग है और लिखित विवरण दिया। मक्का होटल उसी इमारत में था जहाँ मैं पहले रुका था, परंतु बेहतर दर पर। मदीना में ज़ियारत में जल्दबाज़ी नहीं थी — हर स्थान पर उचित समय मिला। केवल इच्छा थी कि वापसी उड़ान का समय बेहतर होता (सुबह ३ बजे की थी)। कुल मिलाकर, ईमानदार और भरोसेमंद।',
+    },
+  },
+  {
+    id: 'r9',
+    name: 'Maulna Siraj',
+    city: 'Aurangabad',
+    cityHi: 'औरंगाबाद',
+    verified: true,
+    rating: 5,
+    quote: {
+      en: 'As a religious teacher, I am careful about who I recommend to my students. I travelled with a group of 12 from our madrasa. The office arranged separate accommodation for the women in our group and ensured the food was genuinely halal and simple — no unnecessary items. The pre-departure briefing covered the fiqh of Umrah properly, which many agents skip. The local coordinator in Makkah was knowledgeable and patient with our elderly members. Highly recommended for groups.',
+      hi: 'एक धार्मिक शिक्षक के रूप में, मैं सावधान रहता हूँ कि अपने छात्रों को किसकी सिफ़ारिश करूँ। मैंने अपने मदरसे के १२ लोगों के समूह के साथ यात्रा की। कार्यालय ने हमारे समूह की महिलाओं के लिए अलग आवास की व्यवस्था की और सुनिश्चित किया कि भोजन वास्तव में हलाल और सादा हो — कोई अनावश्यक वस्तु नहीं। प्रस्थान-पूर्व ब्रीफिंग में उमराह की फ़िक़्ह ठीक से समझाई गई, जो कई एजेंट छोड़ देते हैं। मक्का में स्थानीय समन्वयक जानकार और हमारे बुज़ुर्ग सदस्यों के साथ धैर्यवान था। समूहों के लिए अत्यधिक अनुशंसित।',
+    },
+  },
+  {
+    id: 'r10',
+    name: 'Mufti Faheem Sahab',
+    city: 'Jalna',
+    cityHi: 'जालना',
+    verified: true,
+    rating: 5,
+    quote: {
+      en: 'I accompanied a group of 25 people from Jalna as their religious guide. The office coordinated directly with me on all arrangements — hotel distances, prayer timings, and ziyarat schedule. They respected the fact that our group needed time for daily lessons and did not over-schedule us. The buses were clean and the drivers were careful. I have already recommended them to two other groups from our area. May Allah reward them.',
+      hi: 'मैं जालना से २५ लोगों के समूह के साथ उनके धार्मिक मार्गदर्शक के रूप में गया। कार्यालय ने सभी व्यवस्थाओं पर सीधे मुझसे समन्वय किया — होटल की दूरी, नमाज़ के समय और ज़ियारत कार्यक्रम। उन्होंने इस बात का सम्मान किया कि हमारे समूह को दैनिक पाठ के लिए समय चाहिए और हमें अत्यधिक व्यस्त नहीं किया। बसें साफ़ थीं और चालक सावधान थे। मैंने पहले ही हमारे क्षेत्र के दो अन्य समूहों को इनकी सिफ़ारिश की है। अल्लाह उन्हें बदला दे।',
+    },
+  },
+  {
+    id: 'r11',
+    name: 'Shaikh Musa',
+    city: 'Shirala, Georai',
+    cityHi: 'शिराला, गेवराई',
+    verified: true,
+    rating: 4,
+    quote: {
+      en: 'Travelled from Georai with my brother. The pickup was arranged from Shirala, which saved us a trip to Aurangabad. Visa came through in 22 days. The hotel in Makkah was good but a bit further than I expected — about 18 minutes walking, not the 12 mentioned for other packages. The office was honest about this when I asked, so no complaint. Madinah hotel was excellent and very close. Food was home-style. Would book again for the price.',
+      hi: 'मैं अपने भाई के साथ गेवराई से गया। पिकअप शिराला से व्यवस्थित किया गया, जिससे औरंगाबाद की यात्रा बच गई। वीज़ा २२ दिनों में आ गया। मक्का का होटल अच्छा था परंतु अपेक्षा से थोड़ा दूर — लगभग १८ मिनट पैदल, अन्य पैकेजों में बताए गए १२ मिनट नहीं। जब मैंने पूछा तो कार्यालय ने इस बारे में ईमानदारी से बताया, इसलिए कोई शिकायत नहीं। मदीना होटल उत्कृष्ट और बहुत करीब था। भोजन घर जैसा था। इस दाम पर फिर बुक करूँगा।',
+    },
+  },
+  {
+    id: 'r12',
+    name: 'Sharukh Chaudry',
+    city: 'Ambad',
+    cityHi: 'अंबड',
+    verified: true,
+    rating: 5,
+    quote: {
+      en: 'Went for Umrah with my father who uses a wheelchair. The office arranged a wheelchair-accessible room and informed the hotel in advance — we did not have to explain anything on arrival. The Haram distance was manageable, and the coordinator helped us with the electric cart service for Tawaf. This level of care is rare. The return transfer to Ambad was also comfortable. JazakAllah khair to the entire team.',
+      hi: 'मैं अपने पिताजी के साथ उमराह गया जो व्हीलचेयर का उपयोग करते हैं। कार्यालय ने व्हीलचेयर-सुलभ कमरा व्यवस्थित किया और होटल को पहले से सूचित किया — आगमन पर हमें कुछ समझाना नहीं पड़ा। हराम की दूरी संभालने योग्य थी और समन्वयक ने तवाफ के लिए इलेक्ट्रिक कार्ट सेवा में सहायता की। इस स्तर की देखभाल दुर्लभ है। अंबड तक वापसी ट्रांसफर भी आरामदायक था। पूरी टीम को जज़ाकअल्लाह ख़ैर।',
+    },
+  },
+  {
+    id: 'r13',
+    name: 'Nabi Bhai',
+    city: 'Partur',
+    cityHi: 'परतूर',
+    verified: true,
+    rating: 5,
+    quote: {
+      en: 'I am 68 years old and this was my first Umrah. My son booked everything from Partur. The office called me personally two days before departure to explain the reporting time and what to carry. At the airport, their representative was already waiting with our tickets and luggage tags. In Makkah, the hotel lift was close to our room and the food was not too spicy — good for my health. I was able to complete Umrah comfortably. May Allah bless this team.',
+      hi: 'मैं ६८ वर्ष का हूँ और यह मेरा पहला उमराह था। मेरे बेटे ने परतूर से सब कुछ बुक किया। कार्यालय ने प्रस्थान से दो दिन पहले मुझे व्यक्तिगत रूप से फोन करके रिपोर्टिंग समय और क्या ले जाना है बताया। हवाई अड्डे पर उनका प्रतिनिधि पहले से हमारे टिकट और सामान टैग लेकर प्रतीक्षा कर रहा था। मक्का में होटल की लिफ्ट हमारे कमरे के पास थी और भोजन अधिक मसालेदार नहीं था — मेरे स्वास्थ्य के लिए अच्छा। मैं आराम से उमराह पूरा कर सका। अल्लाह इस टीम को आशीर्वाद दे।',
+    },
+  },
+  {
+    id: 'r14',
+    name: 'Ajaz Shaikh',
+    city: 'Ghansavangi',
+    cityHi: 'घनसावंगी',
+    verified: true,
+    rating: 4,
+    quote: {
+      en: 'Booked the Gold package from Ghansavangi. The office arranged our pickup from Jalna since Ghansavangi is small — this was helpful. Visa and tickets came on time. The Makkah hotel was clean and the staff was polite. One thing I would suggest: the pre-departure briefing could include more about what to expect at the Saudi airport, especially for first-timers. The ziyarat in Madinah was the highlight of the trip. Good value for money overall.',
+      hi: 'घनसावंगी से गोल्ड पैकेज बुक किया। चूँकि घनसावंगी छोटा है, कार्यालय ने हमारा पिकअप जालना से व्यवस्थित किया — यह सहायक था। वीज़ा और टिकट समय पर आए। मक्का होटल साफ़ था और कर्मचारी विनम्र थे। एक सुझाव: प्रस्थान-पूर्व ब्रीफिंग में सऊदी हवाई अड्डे पर क्या अपेक्षा करें, इस पर अधिक जानकारी होनी चाहिए, विशेषकर पहली बार जाने वालों के लिए। मदीना की ज़ियारत यात्रा का मुख्य आकर्षण थी। कुल मिलाकर पैसे का अच्छा मूल्य।',
+    },
+  },
+
 ]
 
 /** Only verified reviews ever reach JSON-LD. */

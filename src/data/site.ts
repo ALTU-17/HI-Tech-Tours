@@ -149,13 +149,14 @@ export const site = {
       type: 'branch',
       contacts: [
         { person: 'Shaikh Ashfaq', personHi: 'शेख अशफ़ाक', phone: '9303313313' },
+        { person: 'Mobin Pathan', personHi: 'मोबीन पठाण', phone: '9175107214' },
       ],
       locality: 'Mahavir Chowk, Ambad, Jalna',
       localityHi: 'महावीर चौक, अंबड, जालना',
       street: 'Mahavir Chowk, Ambad, Dist. Jalna',
       streetHi: 'महावीर चौक, अंबड, जालना जिला',
-      hours: 'Sat–Thu, 9:30 am – 8:30 pm',
-      hoursHi: 'शनि–गुरुवार, सवेरे ९:३० – रात्रि ८:३०',
+      hours: 'Open all 7 days, 11:00 am – 10:00 pm',
+      hoursHi: 'सातों दिन खुला — सुबह ११:०० से रात १०:०० तक',
       mapUrl: 'https://maps.app.goo.gl/oheuGFCW3mZ8R7mj7',
       image: '/images/amaravati-branch.jpg',
     },
@@ -166,16 +167,37 @@ export const site = {
       type: 'head',
       contacts: [
         { person: 'Shaikh Usman', personHi: 'शेख उसमान', phone: '7276525242' },
-        { person: 'Mufti Umar', personHi: 'मुफ़्ती उमर', phone: '9627751111' },
+        { person: 'Yaseer Pathan', personHi: 'यासीर पठाण', phone: '9921834080' },
       ],
       locality: 'Aurangabad, Maharashtra',
       localityHi: 'औरंगाबाद, महाराष्ट्र',
       street: 'Jinsi Chowk, in front of Kelgaonkar Hospital, Jinsi Police Station Road',
       streetHi: 'जिन्सी चौक, केलगावकर हॉस्पिटल के सामने, जिन्सी पुलिस स्टेशन रोड',
-      hours: 'Sat–Thu, 9:30 am – 8:30 pm',
-      hoursHi: 'शनि–गुरुवार, सवेरे ९:३० – रात्रि ८:३०',
+      hours: 'Open all 7 days, 11:00 am – 10:00 pm',
+      hoursHi: 'सातों दिन खुला — सुबह ११:०० से रात १०:०० तक',
       mapUrl: 'https://maps.app.goo.gl/oheuGFCW3mZ8R7mj7',
       image: '/images/founder-480.webp',
+    },
+    {
+      id: 'deorai-beed',
+      name: 'Deorai Beed Branch',
+      nameHi: 'देवराई बीड शाखा',
+      type: 'branch',
+      contacts: [
+        { person: 'Mufti Umar', personHi: 'मुफ़्ती उमर', phone: '9627751111' },
+      ],
+      locality: 'Beed district, Maharashtra',
+      localityHi: 'बीड जिला, महाराष्ट्र',
+      // TODO(owner): replace with the full street address once confirmed.
+      street: 'Deorai',
+      streetHi: 'देवराई',
+      hours: 'Open all 7 days, 11:00 am – 10:00 pm',
+      hoursHi: 'सातों दिन खुला — सुबह ११:०० से रात १०:०० तक',
+      // TODO(owner): swap in the exact Google Maps pin for the Deorai Beed office.
+      mapUrl: 'https://www.google.com/maps/search/?api=1&query=Deorai%2C%20Beed%2C%20Maharashtra',
+      // TODO(owner): a Deorai Beed photo. Unused today — the card shows an icon
+      // header — but the field is required, so it points at the branch photo.
+      image: '/images/amaravati-branch.jpg',
     },
   ] satisfies Office[],
 

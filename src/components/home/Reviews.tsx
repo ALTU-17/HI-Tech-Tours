@@ -9,18 +9,11 @@ import { cn } from '@/lib/cn'
 import { site } from '@/data/site'
 import { getDictionary, type Locale } from '@/i18n'
 
-/**
- * Review wall — displays genuine pilgrim reviews from Marathwada.
- *
- * The reviews in src/data/reviews.ts are now verified real feedback from
- * pilgrims. All reviews have `verified: true` and show rating stars.
- * The sample-content notice has been removed.
- *
- * Below the written wall sits the same reel band used on /reviews — one
- * component, one data file, so a sixth clip appears on both pages at once.
- */
 export function ReviewsSection({ locale }: { locale: Locale }) {
   const d = getDictionary(locale)
+
+  // Show only four written reviews on the homepage.
+  const visibleReviews = reviews.slice(0, 4)
 
   return (
     <section className="py-20 sm:py-24">
@@ -54,7 +47,7 @@ export function ReviewsSection({ locale }: { locale: Locale }) {
 
           <div>
             <ul className="grid gap-4 sm:grid-cols-2">
-              {reviews.map((review, i) => (
+              {visibleReviews.map((review, i) => (
                 <Reveal
                   as="li"
                   key={review.id}
@@ -69,17 +62,28 @@ export function ReviewsSection({ locale }: { locale: Locale }) {
                       <span className="flex h-8 w-8 items-center justify-center rounded-full bg-forest-900 text-xs font-bold text-gold-400">
                         {review.name.charAt(0)}
                       </span>
+
                       <span>
-                        <span className="block text-sm font-semibold text-ink">{review.name}</span>
+                        <span className="block text-sm font-semibold text-ink">
+                          {review.name}
+                        </span>
                         <span className="block text-xs text-ink-muted">
                           {locale === 'hi' ? review.cityHi : review.city}
                         </span>
                       </span>
                     </span>
+
                     {review.rating && (
-                      <div className="flex gap-0.5 text-gold-400" aria-label={`${review.rating} out of 5 stars`}>
+                      <div
+                        className="flex gap-0.5 text-gold-400"
+                        aria-label={`${review.rating} out of 5 stars`}
+                      >
                         {Array.from({ length: review.rating }).map((_, s) => (
-                          <Icon key={s} name="star" className="h-3.5 w-3.5 fill-current" />
+                          <Icon
+                            key={s}
+                            name="star"
+                            className="h-3.5 w-3.5 fill-current"
+                          />
                         ))}
                       </div>
                     )}
@@ -92,21 +96,30 @@ export function ReviewsSection({ locale }: { locale: Locale }) {
                   {review.verified && (
                     <p className="mt-3 flex items-center gap-1.5 text-[0.68rem] text-forest-700">
                       <Icon name="check" className="h-3 w-3" />
-                      {locale === 'hi' ? d.reviewsPage.verified : d.reviewsPage.verified}
+                      {d.reviewsPage.verified}
                     </p>
                   )}
                 </Reveal>
               ))}
             </ul>
 
-            <div className="mt-5 flex items-center gap-3">
-              <Link
-                href={`/${locale}/reviews`}
-                className="inline-flex items-center gap-2 text-sm font-semibold text-forest-700 link-underline"
-              >
-                {d.sections.reviews.googleCta}
-                <Icon name="arrow" className="h-4 w-4 rtl:-scale-x-100" />
-              </Link>
+            {/* View all written reviews */}
+            {reviews.length > 4 && (
+              <div className="mt-6 flex justify-center">
+                <Link
+                  href={`/${locale}/reviews`}
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-forest-800 px-6 py-3 text-sm font-semibold text-forest-800 transition-all hover:bg-forest-800 hover:text-paper"
+                >
+                  {locale === 'hi' ? 'सभी समीक्षाएँ देखें' : 'View All Reviews'}
+                  <Icon
+                    name="arrow"
+                    className="h-4 w-4 rtl:-scale-x-100"
+                  />
+                </Link>
+              </div>
+            )}
+
+            <div className="mt-5 flex flex-wrap items-center justify-center gap-5">
               <a
                 href={site.social.instagram}
                 target="_blank"
@@ -121,12 +134,15 @@ export function ReviewsSection({ locale }: { locale: Locale }) {
           </div>
         </div>
 
-        {/* Pilgrim reels — the same voices as the reviews above, on video. */}
+        {/* Pilgrim reels — unchanged */}
         <Reveal className="mt-14">
           <ReelWall
             copy={d.reviewsPage.reels}
             instagramHref={site.social.instagram}
-            link={{ href: `/${locale}/reviews`, label: d.reviewsPage.reels.all }}
+            link={{
+              href: `/${locale}/reviews`,
+              label: d.reviewsPage.reels.all,
+            }}
           />
         </Reveal>
       </div>

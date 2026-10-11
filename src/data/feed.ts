@@ -45,7 +45,7 @@ export function buildFeed() {
         country: site.country,
       },
       coordinates: site.geo,
-      openingHours: 'Sa-Th 09:30-20:30',
+      openingHours: 'Mo-Su 11:00-22:00',
       social: Object.fromEntries(
         Object.entries(site.social).filter(([, url]) => Boolean(url)),
       ),
@@ -65,7 +65,9 @@ export function buildFeed() {
         phone: c.phone,
         locality: c.locality,
         localityLocal: c.localityHi,
-        type: c.isOffice ? 'head office' : 'branch',
+        // Only a contact listed under `type: 'head'` is a head-office line; the
+        // other offices are branches, and the feed must not call them heads.
+        type: c.isOffice ? (c.type === 'head' ? 'head office' : 'branch') : 'branch',
       })),
     },
 

@@ -1,9 +1,11 @@
+import Image from 'next/image'
+
 import { Icon } from '@/components/Icon'
 import { Reveal } from '@/components/Reveal'
 import { SectionHeading } from '@/components/ui/SectionHeading'
-import { journey, standardInclusions, standardInclusionsHi } from '@/data/journey'
+import { complimentaryKit, journey, standardInclusions, standardInclusionsHi } from '@/data/journey'
 import { cn } from '@/lib/cn'
-import { getDictionary, type Locale } from '@/i18n'
+import { getDictionary, t_, type Locale } from '@/i18n'
 
 export function InclusionsSection({ locale }: { locale: Locale }) {
   const d = getDictionary(locale)
@@ -52,6 +54,35 @@ export function InclusionsSection({ locale }: { locale: Locale }) {
             ))}
           </ul>
         </div>
+
+        {/* The kit itself, photographed — the promise in the list beside it,
+            made visible. Caption names the four items the owner calls out. */}
+        <Reveal className="mt-14">
+          <figure>
+            <div className="overflow-hidden rounded-card bg-forest-900 ring-1 ring-paper/15">
+              <Image
+                src={complimentaryKit.src}
+                alt={t_(complimentaryKit.alt, locale)}
+                width={complimentaryKit.width}
+                height={complimentaryKit.height}
+                className="h-auto w-full"
+              />
+            </div>
+            <figcaption className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-7">
+              <span className="kicker text-gold-300">
+                {t_(complimentaryKit.caption, locale)}
+              </span>
+              <ul className="flex flex-wrap items-center gap-x-6 gap-y-2">
+                {complimentaryKit.items.map((item) => (
+                  <li key={item.en} className="flex items-center gap-2 text-sm text-paper/80">
+                    <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500" aria-hidden="true" />
+                    {t_(item, locale)}
+                  </li>
+                ))}
+              </ul>
+            </figcaption>
+          </figure>
+        </Reveal>
       </div>
     </section>
   )

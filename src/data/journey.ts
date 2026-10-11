@@ -96,6 +96,37 @@ export const standardInclusionsHi: string[] = [
 ]
 
 /**
+ * The complimentary travel kit, photographed for the home page. Kept beside the
+ * inclusions list so the photo caption can never drift from what the packages
+ * actually promise.
+ */
+export type KitPhoto = {
+  src: string
+  width: number
+  height: number
+  caption: { en: string; hi: string }
+  alt: { en: string; hi: string }
+  items: Array<{ en: string; hi: string }>
+}
+
+export const complimentaryKit: KitPhoto = {
+  src: '/images/umrah-travel-kit.webp',
+  width: 1440,
+  height: 812,
+  caption: { en: 'In every pilgrim’s kit', hi: 'हर जायरी की किट में' },
+  alt: {
+    en: 'The complimentary Umrah kit: a HI-TECH luggage bag, shoes bag and document bag beside a sealed 5 litre Zamzam bottle.',
+    hi: 'निःशुल्क उमरा किट: HI-TECH लगेज बैग, शूज़ बैग और डॉक्यूमेंट बैग, साथ में सीलबंद ५ लीटर ज़मज़म बोतल।',
+  },
+  items: [
+    { en: 'Luggage bag', hi: 'लगेज बैग' },
+    { en: 'Shoes bag', hi: 'शूज़ बैग' },
+    { en: 'Document bag', hi: 'डॉक्यूमेंट बैग' },
+    { en: '5 litre Zamzam bottle', hi: '५ लीटर ज़मज़म बोतल' },
+  ],
+}
+
+/**
  * Trust pillars. `proof` is deliberately concrete: a claim without a mechanism
  * behind it is exactly what a competitor aggregator will outrank.
  */

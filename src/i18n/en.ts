@@ -133,7 +133,7 @@ export const en = {
     },
     offices: {
       title: 'Our Offices in Marathwada',
-      lede: 'Visit us at either of our offices — the Amaravati branch in Jalna or the Aurangabad head office. Both are staffed and ready to help with your Umrah plans.',
+      lede: 'Visit us at any of our three offices — the Jalna branch at Mahavir Chowk, Ambad, the Aurangabad head office, or the Deorai Beed branch. All are staffed and ready to help with your Umrah plans.',
       taglineLabel: 'Our promise to you',
       headOffice: 'Head Office',
       branchOffice: 'Branch Office',
