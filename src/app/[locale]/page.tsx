@@ -7,6 +7,7 @@ import { BranchesSection, CtaBand } from '@/components/home/Branches'
 import { PillarsSection } from '@/components/home/Coverage'
 import { OfficeSection } from '@/components/home/OfficeSection'
 import { FounderSection } from '@/components/home/FounderSection'
+import { GallerySection } from '@/components/home/Gallery'
 import { Hero } from '@/components/home/Hero'
 import { InclusionsSection, JourneySection } from '@/components/home/Inclusions'
 import { PackagesSection } from '@/components/home/Packages'
@@ -134,6 +135,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <CoverageSection locale={locale} />
       */}
       <ReviewsSection locale={locale} />
+      <GallerySection locale={locale} />
 
       <OfficeSection locale={locale} />
 

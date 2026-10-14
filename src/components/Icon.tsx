@@ -10,7 +10,7 @@ import { cn } from '@/lib/cn'
  * unrelated styles.
  */
 
-const paths: Record<ServiceIcon | 'phone' | 'whatsapp' | 'pin' | 'clock' | 'check' | 'arrow' | 'star' | 'plus' | 'minus' | 'external' | 'shield' | 'plane2' | 'code' | 'mail' | 'instagram' | 'play' | 'pause' | 'replay' | 'sound' | 'soundOff', string> = {
+const paths: Record<ServiceIcon | 'phone' | 'whatsapp' | 'pin' | 'clock' | 'check' | 'arrow' | 'star' | 'plus' | 'minus' | 'external' | 'shield' | 'plane2' | 'code' | 'mail' | 'instagram' | 'play' | 'pause' | 'replay' | 'sound' | 'soundOff' | 'expand' | 'close', string> = {
   plane: 'M2.5 13.5 L21 4 L15.5 11.5 M14 12 L21 4 L11.5 14 L9 20 L7 16 L2.5 13.5 Z',
   hotel: 'M3 19V6.5h18V19M3 19h18M7.5 10h3M13.5 10h3M7.5 14h9M6.5 19v-2h3v2M14.5 19v-2h3v2',
   visa: 'M3.5 7.5h17v12h-17zM6.5 4.5h11v3h-11zM7.5 12.5h4M7.5 15.5h7M14.5 12.5h2.5v3h-2.5z',
@@ -47,6 +47,9 @@ const paths: Record<ServiceIcon | 'phone' | 'whatsapp' | 'pin' | 'clock' | 'chec
   replay: 'M19.6 12a7.6 7.6 0 1 1-2.2-5.4M19.6 4.6V9.4h-4.8',
   sound: 'M4 9.6h3.6L12 5.4v13.2L7.6 14.4H4zM15.6 9.4a3.8 3.8 0 0 1 0 5.2M18.2 6.9a7.4 7.4 0 0 1 0 10.2',
   soundOff: 'M4 9.6h3.6L12 5.4v13.2L7.6 14.4H4zM16.2 9.9l4.2 4.2M20.4 9.9l-4.2 4.2',
+  // Gallery lightbox: expand-to-corners and a close cross, same stroke grid.
+  expand: 'M9 4.5H4.5V9M15 4.5h4.5V9M15 19.5h4.5V15M9 19.5H4.5V15',
+  close: 'M6.5 6.5l11 11M17.5 6.5l-11 11',
 }
 
 export type IconName = keyof typeof paths

@@ -273,6 +273,18 @@ export const en = {
     },
   },
 
+  gallery: {
+    eyebrow: 'Gallery',
+    title: 'Photographs from the journeys we run',
+    lede: 'Group departures, the Haram in Makkah and Madinah, and the road between Marathwada and the airports — shared with the office by the pilgrims who travelled.',
+    prev: 'Previous photograph',
+    next: 'Next photograph',
+    close: 'Close photograph',
+    open: 'View this photograph full size',
+    alt: 'Photograph from a Hi-Tech Haj Umrah Services pilgrimage',
+    note: 'Shared with our office by pilgrims who travelled with us. Tap a photograph to see it full size, or swipe the row to move through the album.',
+  },
+
   faqPage: {
     title: 'Frequently asked questions',
     description:
